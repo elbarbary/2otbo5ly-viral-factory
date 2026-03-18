@@ -1,0 +1,843 @@
+{
+  "brand": {
+    "name": "2otbo5ly",
+    "handle": "@2otbo5ly",
+    "app_summary": "2otbo5ly connects Egyptian customers with nearby home chefs. A user shares a TikTok food video link, sets a budget in EGP, and home chefs from the area send offers to cook it and deliver it. The meals are TikTok-famous dishes you can't order anywhere else.",
+    "launch_window_days": 10,
+    "goal": "Build hype before launch, earn followers, and make people wait for the app opening.",
+    "audience": "Egyptian TikTok users, especially Cairo, Giza, Alexandria, Mansoura, and similar urban areas. Students, office workers, bachelors, families, and people who crave restaurant-looking food without restaurant pricing.",
+    "voice_rules": [
+      "Write only in colloquial Egyptian Arabic.",
+      "Sound native to Egyptian TikTok, not like an ad.",
+      "Use short punchy lines and price-first hooks.",
+      "Avoid Modern Standard Arabic unless it is unavoidable.",
+      "Avoid translated startup language."
+    ],
+    "cities": ["Cairo", "Giza", "Alexandria", "Mansoura", "Zagazig", "Tanta"],
+    "price_points_egp": [150, 250, 500, 700],
+    "content_pillars": [
+      "Price challenge",
+      "TikTok dish recreation",
+      "Home chef flex",
+      "Ramadan food pressure",
+      "Premium-looking homemade food",
+      "Cheaper than restaurants"
+    ],
+    "pain_points": [
+      "Restaurant food arrives cold or ugly",
+      "TikTok dishes look impossible to order",
+      "People want better food on a fixed budget",
+      "Users do not know trusted home chefs nearby"
+    ],
+    "banned_phrases": [
+      "حمل التطبيق الآن",
+      "يمكنك",
+      "من خلال منصتنا",
+      "أفضل تجربة",
+      "حل مبتكر",
+      "انضم إلينا",
+      "اكتشف",
+      "اطلب الآن"
+    ],
+    "viral_edit_text_bank": [
+      "مين يقدر يعملها؟",
+      "500 جنيه بس",
+      "في منطقتك",
+      "مش لازم مطعم",
+      "ابعت اللينك",
+      "استنى للاخر",
+      "شكلها مطعم",
+      "شيف بيت",
+      "على قد ميزانيتك",
+      "مين هيكسب؟"
+    ]
+  },
+
+  "series": {
+    "enabled": true,
+    "title": "الشيف كريم",
+    "logline": "كريم منصور, a 24-year-old home cook from Shubra with giant passion and zero formal training, stumbles through failed TikTok content, restaurant rejections, kitchen drama, and personal lows—before finding his real home cooking viral TikTok dishes from his Cairo apartment kitchen and selling them through 2otbo5ly.",
+    "visual_mode": "cartoon_hybrid",
+    "animation_style": "2D Egyptian social comedy with bold outlines, expressive faces, fast reaction cuts, Cairo-neighborhood warmth, and meme-ready timing. Characters are stylized and consistent—not photoreal.",
+    "food_rendering": "Craveable stylized food with glossy texture, visible steam, rich warm highlights, and enough realism to make viewers hungry. Food must look appetizing, never childish.",
+    "continuity_state_path": "runs/series/2otbo5ly-continuity.json",
+    "update_memory": true,
+    "character_voices": {
+      "narrator": "Kore",
+      "كريم": "Charon",
+      "فارس": "Puck",
+      "أم كريم": "Aoede",
+      "الشيف حاتم": "Fenrir",
+      "نور": "Leda",
+      "سلمى": "Callisto"
+    },
+
+    "protagonist": {
+      "name": "كريم منصور",
+      "name_en": "Karim Mansour",
+      "age": 24,
+      "neighborhood": "Shubra, Cairo",
+      "role": "Passionate home cook turned TikTok creator and 2otbo5ly home chef",
+      "personality": "Talented, proud, stubborn, endlessly optimistic, funny under pressure, deeply bothered by bad-looking food. Talks to his phone like it's a person. Rubs the back of his neck when thinking.",
+      "visual_locks": [
+        "mid-20s Egyptian man, medium build",
+        "messy dark curly hair, always slightly disheveled",
+        "warm brown eyes",
+        "short trimmed beard",
+        "default outfit: old blue hoodie or faded white t-shirt",
+        "chef whites only when working in a professional kitchen",
+        "off-white home apron when cooking at home",
+        "green rubber wristband on the right hand — always present",
+        "budget Android phone with a cracked bottom-right corner",
+        "usually has a small flour smudge or sauce splash somewhere on him"
+      ],
+      "signature_gesture": "rubs the back of his neck when thinking or embarrassed"
+    },
+
+    "supporting_cast": [
+      {
+        "name": "فارس",
+        "name_en": "Fares",
+        "age": 25,
+        "role": "Karim's best friend, cameraman, hype man, and chaos agent",
+        "personality": "Lanky, restless, always filming something, speaks in memes, accidentally posts things without permission, somehow becomes the operations manager by Act 5.",
+        "visual_locks": [
+          "tall and lanky Egyptian man",
+          "almost always in an Ahly jersey or a puffer jacket",
+          "cheap phone gimbal or selfie stick in hand",
+          "restless, comedic energy in every frame",
+          "wide expressive eyes"
+        ]
+      },
+      {
+        "name": "أم كريم (الست زينب)",
+        "name_en": "Um Karim / Mama Zeinab",
+        "age": 52,
+        "role": "Karim's mother — the real cook of the family, reality check, and emotional anchor",
+        "personality": "Warm but sharp-tongued, always right about the food, notices every ingredient cost, refuses to be on camera intentionally but ends up viral anyway.",
+        "visual_locks": [
+          "round face with warm expression that can turn sharp in a second",
+          "silver-streaked hair usually pulled back loosely",
+          "colorful galabeyya at home — varies by episode but always a galabeyya",
+          "reading glasses sometimes on her head",
+          "the blue and white speckled pot is her domain — she always has a hand near it"
+        ]
+      },
+      {
+        "name": "الشيف حاتم",
+        "name_en": "Chef Hatem",
+        "age": 48,
+        "role": "Culinary workshop instructor and eventual mentor figure",
+        "personality": "Heavy, deliberate, bald, 20 years in 5-star hotels, harsh but fair. Only gives praise through silence and nods. Appears from EP10 onward.",
+        "visual_locks": [
+          "heavyset Egyptian man in his late 40s",
+          "completely bald head",
+          "thick black mustache",
+          "always in chef whites with rolled-up sleeves",
+          "calm deliberate movements",
+          "worn chef's knife always visible on his belt or station"
+        ]
+      },
+      {
+        "name": "نور",
+        "name_en": "Nour",
+        "age": 23,
+        "role": "Food blogger, content creator, Karim's eventual love interest",
+        "personality": "Sharp, observant, genuinely passionate about food culture. Always has a camera or phone. Sees potential in Karim before he does. Appears from EP20 onward.",
+        "visual_locks": [
+          "short natural hair",
+          "round wire-frame glasses",
+          "always carrying a camera or phone",
+          "simple but put-together clothes — not flashy",
+          "warm focused expression when she's watching someone cook"
+        ]
+      },
+      {
+        "name": "سلمى",
+        "name_en": "Salma",
+        "age": 26,
+        "role": "Karim's coworker at Nil & Spice — sharp, ambitious, sometimes antagonist, sometimes ally",
+        "personality": "Competent and proud, doesn't suffer fools, secretly saving to go to culinary school in Spain. Warms to Karim slowly. Appears from EP16 onward.",
+        "visual_locks": [
+          "Egyptian woman, mid-20s",
+          "chef whites in kitchen scenes",
+          "hair always tied back tightly in kitchen",
+          "precise, efficient movements",
+          "expression usually unreadable until it isn't"
+        ]
+      }
+    ],
+
+    "location_bible": [
+      "HOME KITCHEN (Shubra apartment) — small and tight, white tiles with a small crack near the window above the sink, warm yellow overhead light, laundry lines visible through the window, the blue and white speckled pot always on the stove, herbs hanging near the window, a cheap ring light propped against a bottle of oil — this is Karim's main filming setup",
+      "THE ROOF — same building in Shubra, Cairo city visible in the distance, shot at golden hour or late at night, Karim and Fares talk here for big life moments",
+      "NIL & SPICE KITCHEN (Zamalek) — a professional open kitchen, stainless steel, hot and loud, appears EP16–EP29",
+      "THE WORKSHOP (Mohandeseen) — a converted apartment-turned-cooking-school, worn tables, Chef Hatem's domain, appears EP10–EP15",
+      "CAIRO STREETS — Shubra neighborhood streets, laundry overhead, koshary shops, familiar urban Cairo texture, used for transition and emotional beats"
+    ],
+
+    "style_bible": [
+      "cartoon characters, never photoreal humans",
+      "bold outline, warm Cairo palette (ochre, terracotta, soft yellow), expressive eyebrows",
+      "fast comedic reaction shots — character faces should be capable of wide exaggerated expressions",
+      "Arabic text overlays added in post-production, never baked into the generated video itself",
+      "Karim's green wristband must appear on his right hand in every shot where his hands are visible",
+      "same wardrobe and props in every episode unless the script explicitly describes a change",
+      "food must look craveable and glossy — never childish or flat",
+      "the blue and white speckled pot is a recurring visual anchor in the home kitchen",
+      "Cairo sound texture: azaan, traffic, street vendors audible in background",
+      "warm color temperature always — no cold filters or blue tones"
+    ],
+
+    "act_structure": [
+      {"act": 1, "title": "The Failed TikToker", "episodes": "1-8", "tone": "warm chaos, hopeful, slightly embarrassing"},
+      {"act": 2, "title": "The Restaurant Rejections and Workshops", "episodes": "9-16", "tone": "humbled, focused, earnest"},
+      {"act": 3, "title": "The Restaurant Years and Drama", "episodes": "17-32", "tone": "grittier, more cinematic, emotionally heavier"},
+      {"act": 4, "title": "The Return", "episodes": "33-38", "tone": "quiet and reflective, single-camera feeling"},
+      {"act": 5, "title": "The 2otbo5ly Era", "episodes": "39-50", "tone": "confident, warm, community-centered"}
+    ],
+
+    "episode_guide": [
+      {
+        "episode_number": 1,
+        "act": 1,
+        "title_ar": "أنا كريم وهنعمل كل حاجة",
+        "title_en": "Ana Karim w Hana3mel Kol 7aga",
+        "beat": "Karim films his first TikTok at 11pm in his family's kitchen while his mom sleeps. He attempts gourmet ful medames with truffle oil and poached eggs. The egg breaks, the truffle oil falls in the ful, he burns his hand. He posts it anyway. 34 views — 30 of which are Fares on different devices. Tone: warm disaster, unshakeable belief in himself.",
+        "key_characters": ["karim", "fares"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "hopeful chaos",
+        "continuity_goal": "Establish Karim as passionate but untrained, introduce Fares as sidekick",
+        "cliffhanger": "34 views but Karim captions it 'Egyptian fine dining, stay tuned' — he genuinely believes."
+      },
+      {
+        "episode_number": 2,
+        "act": 1,
+        "title_ar": "فايرال... تقريبا",
+        "title_en": "Viral... Almost",
+        "beat": "Karim tries a smash burger but has no smash tool so he uses his mom's heavy Quran stand. Um Karim walks in mid-smash. Their argument is more entertaining than the cooking. Fares secretly posts the argument clip — 4,000 views. Karim is furious, then sees the numbers and says 'we do it again.'",
+        "key_characters": ["karim", "fares", "um_karim"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "comedic chaos turning into accidental success",
+        "continuity_goal": "Introduce Um Karim, show that authentic family moments get more views than cooking",
+        "cliffhanger": "Karim realizes the audience wants the drama, not just the food."
+      },
+      {
+        "episode_number": 3,
+        "act": 1,
+        "title_ar": "إل براند",
+        "title_en": "The Brand",
+        "beat": "Karim and Fares sit on the roof deciding his brand. They go through 12 terrible names on a notepad. They settle on 'Chef Karim' — zero creativity, completely earnest. Karim films a mahshi tutorial — 22 minutes long. Nobody watches past 40 seconds. Karim refuses to edit it down: 'The people need to see the full process, Fares.'",
+        "key_characters": ["karim", "fares"],
+        "primary_location": "roof",
+        "emotion_tone": "earnest self-delusion, lovable stubbornness",
+        "continuity_goal": "Show Karim's creative blind spots and Fares's eye for content",
+        "cliffhanger": "The mahshi video has 12 views. The thumbnail is blurry."
+      },
+      {
+        "episode_number": 4,
+        "act": 1,
+        "title_ar": "الجيران",
+        "title_en": "The Neighbors",
+        "beat": "Karim does a live TikTok while cooking. The smells bring neighbors knocking. Am Saber from next door interrupts asking for extra rice. Um Karim keeps calling from the other room. Three viewers on the live — one just types 'what' repeatedly. Karim ends the live early when he realizes he left the stove on.",
+        "key_characters": ["karim", "um_karim"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "chaotic warmth, Cairo apartment building energy",
+        "continuity_goal": "Establish the kitchen as alive and chaotic, not a controlled studio",
+        "cliffhanger": "Karim stares at '3 viewers' on his screen. He opens his notes app and starts typing 'strategy'."
+      },
+      {
+        "episode_number": 5,
+        "act": 1,
+        "title_ar": "قسم التعليقات",
+        "title_en": "The Comments Section",
+        "beat": "Karim's most-viewed video hits 800 views — kushari remake with cheese melted on top. Comments destroy him: 'My grandmother's ghost cooks better', 'You are legally not allowed near food'. One comment says 'actually that looked good ngl' — Karim screenshots it as his phone wallpaper. He reads comments with Fares for the whole episode.",
+        "key_characters": ["karim", "fares"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "internet brutality softened by stubborn hope",
+        "continuity_goal": "Show Karim's resilience — he doesn't crumble, he files it away",
+        "cliffhanger": "He replies to every comment, including the mean ones, with 'شكراً على الاهتمام 🙏'."
+      },
+      {
+        "episode_number": 6,
+        "act": 1,
+        "title_ar": "البيفوت",
+        "title_en": "The Pivot",
+        "beat": "Karim pivots to 'educational content' after watching YouTube cooking channels all night. He films 'How to make perfect rice' — the rice comes out crunchy. Second take: mushy. He posts both as 'Part 1 and 2' calling the crunchy one 'al dente style.' Um Karim watches both videos and just says 'يا ابني' and walks away.",
+        "key_characters": ["karim", "um_karim"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "self-deception with growing self-awareness",
+        "continuity_goal": "First hint that Karim knows he needs to actually learn to cook",
+        "cliffhanger": "Um Karim's 'يا ابني' plays on repeat in Karim's head."
+      },
+      {
+        "episode_number": 7,
+        "act": 1,
+        "title_ar": "الكولاب اللي مجاش",
+        "title_en": "The Collab That Wasn't",
+        "beat": "Fares arranges a collab with Amr — a bigger food TikToker with 50K followers. They meet in a coffee shop in Heliopolis. Amr is condescending, calls Karim 'ya sa7by' with pity, suggests Karim be his 'sous chef' in videos. Karim smiles through the whole meeting. Outside he tells Fares: 'I will surpass him and I will remember this day.'",
+        "key_characters": ["karim", "fares"],
+        "primary_location": "cairo_streets",
+        "emotion_tone": "quiet pride, slow-burning determination",
+        "continuity_goal": "Plant a long-arc motivation — Karim will think of this moment many times",
+        "cliffhanger": "Karim opens TikTok on the metro home and watches Amr's videos, taking mental notes."
+      },
+      {
+        "episode_number": 8,
+        "act": 1,
+        "title_ar": "الأرقام مش بتكدب",
+        "title_en": "The Numbers Don't Lie",
+        "beat": "Three months in. Honest audit on the roof: 312 followers, average 600 views, one viral moment. No money. Abu Karim (his dad) starts making 'real jobs' comments at dinner. Karim decides he needs to actually learn to cook. End of Act 1 — he googles 'cooking courses Cairo' for the first time.",
+        "key_characters": ["karim", "fares"],
+        "primary_location": "roof",
+        "emotion_tone": "honest reckoning, pivot toward growth",
+        "continuity_goal": "Close Act 1 — the TikTok fantasy has met reality, something has to change",
+        "cliffhanger": "His google search shows a cooking class in Mohandeseen. He stares at it."
+      },
+      {
+        "episode_number": 9,
+        "act": 2,
+        "title_ar": "الإنترفيو",
+        "title_en": "The Interview",
+        "beat": "Karim prints his CV listing 'TikTok Food Creator' as experience. He walks into 4 restaurants in one day — all reject him within 5 minutes. One chef laughs. Another asks him to taste his own food from a photo. He walks back to Shubra in the heat, buys a koshary, sits on a curb and eats it slowly. Then he googles cooking courses.",
+        "key_characters": ["karim"],
+        "primary_location": "cairo_streets",
+        "emotion_tone": "humiliation absorbing into determination",
+        "continuity_goal": "The rejection that turns him toward real learning",
+        "cliffhanger": "He finds Chef Hatem's workshop in Mohandeseen. 400 EGP per session."
+      },
+      {
+        "episode_number": 10,
+        "act": 2,
+        "title_ar": "الورشة",
+        "title_en": "The Workshop",
+        "beat": "Karim enrolls in Chef Hatem's basic culinary workshop in Mohandeseen — a small apartment-turned-cooking-school. Other students: a bored housewife, a 17-year-old trying to impress a girl, and a guy who claims he already knows everything. Karim is the most earnest. Chef Hatem notices him not because he's good, but because he keeps asking 'why' instead of just 'how'. FIRST APPEARANCE OF CHEF HATEM.",
+        "key_characters": ["karim", "chef_hatem"],
+        "primary_location": "workshop",
+        "emotion_tone": "humbled beginner energy, genuine curiosity",
+        "continuity_goal": "Introduce Chef Hatem; establish mentor-student dynamic",
+        "cliffhanger": "Chef Hatem watches Karim's attempt and says nothing. Walks away. Karim stares at his own hands."
+      },
+      {
+        "episode_number": 11,
+        "act": 2,
+        "title_ar": "مهارة السكين",
+        "title_en": "Knife Skills",
+        "beat": "Entire episode: Karim learning to use a chef's knife. His hands are used to holding a phone, not a knife. Chef Hatem makes him do it 200 times. By end of class his cuts are even and clean. He calls his mom: 'I finally cut an onion right.' She says: 'habibi I've been doing that for 30 years.' Small, real moment of pride.",
+        "key_characters": ["karim", "chef_hatem"],
+        "primary_location": "workshop",
+        "emotion_tone": "focused, incremental, genuinely satisfying",
+        "continuity_goal": "Show Karim's capacity to learn when he slows down and listens",
+        "cliffhanger": "He stares at his clean-cut onion like it's a trophy."
+      },
+      {
+        "episode_number": 12,
+        "act": 2,
+        "title_ar": "الصوص",
+        "title_en": "The Sauce",
+        "beat": "Deep dive on sauces. Chef Hatem explains Egyptian cooking has its own sophisticated logic — the tasha, the da2a, the layered spice building. Karim has a revelation: his mom's cooking is technically complex, he just never saw it that way. He goes home and watches his mom cook for the first time actually paying attention.",
+        "key_characters": ["karim", "chef_hatem", "um_karim"],
+        "primary_location": "workshop",
+        "emotion_tone": "intellectual awakening, son seeing his mother clearly for the first time",
+        "continuity_goal": "Bridge between formal training and Karim's roots — the two must eventually merge",
+        "cliffhanger": "Um Karim catches him watching her and just raises an eyebrow."
+      },
+      {
+        "episode_number": 13,
+        "act": 2,
+        "title_ar": "أسرار أم كريم",
+        "title_en": "Um Karim's Secrets",
+        "beat": "Karim asks Um Karim to teach him her molokheyya. She refuses. He begs. She agrees — only if he does the dishes for a month. He agrees. They cook together slowly and warmly. She tells him how her own mother taught her. He quietly films a little on his phone. He doesn't post it. It's just for him.",
+        "key_characters": ["karim", "um_karim"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "the warmest episode so far — quiet, generational, real",
+        "continuity_goal": "Establish Um Karim's cooking as Karim's true culinary root",
+        "cliffhanger": "Karim watches the clip alone at night. Something has shifted in him."
+      },
+      {
+        "episode_number": 14,
+        "act": 2,
+        "title_ar": "الجولة التانية",
+        "title_en": "The Second Application Round",
+        "beat": "Armed with two months of workshops and new understanding, Karim applies again. Two callbacks. One restaurant ghosts him. The other — Nil & Spice, a mid-range Egyptian fusion place in Zamalek — calls him for a trial day. He barely sleeps the night before.",
+        "key_characters": ["karim"],
+        "primary_location": "cairo_streets",
+        "emotion_tone": "nervous hope, earned confidence",
+        "continuity_goal": "Set up the Nil & Spice arc",
+        "cliffhanger": "He stares at the Nil & Spice address on his cracked phone screen."
+      },
+      {
+        "episode_number": 15,
+        "act": 2,
+        "title_ar": "يوم التجربة",
+        "title_en": "The Trial Day",
+        "beat": "Trial day at Nil & Spice. Chaotic, loud, fast. Karim is on prep work. Makes mistakes but doesn't panic. He watches Chef Omar moving like a machine. At the end, Chef Omar says nothing. Three days later the owner calls: Karim can start as a commis chef. He screams alone in his room. Then opens TikTok and just looks at it without posting.",
+        "key_characters": ["karim"],
+        "primary_location": "nil_and_spice_kitchen",
+        "emotion_tone": "controlled chaos, quiet triumph",
+        "continuity_goal": "Karim has earned his first professional kitchen position",
+        "cliffhanger": "He looks at his 312 TikTok followers. He will come back for them."
+      },
+      {
+        "episode_number": 16,
+        "act": 2,
+        "title_ar": "أول يوم",
+        "title_en": "First Day",
+        "beat": "First day at Nil & Spice. Karim meets Salma (demi-chef, makes clear she's not his mentor), Mahmoud the pastry chef who hates everyone, Hassan the line cook who only talks about football, and Dina the expeditor who runs the floor with an iron clipboard. The kitchen is overwhelming and alive. He goes home at midnight smelling like grease, feet destroyed, smiling into his pillow. FIRST APPEARANCE OF SALMA.",
+        "key_characters": ["karim", "salma"],
+        "primary_location": "nil_and_spice_kitchen",
+        "emotion_tone": "initiation, exhausted joy",
+        "continuity_goal": "Establish the professional kitchen world and the cast within it",
+        "cliffhanger": "Salma glances at him as he leaves. 'He'll either get better or quit in two weeks.'"
+      },
+      {
+        "episode_number": 17,
+        "act": 3,
+        "title_ar": "الشغل",
+        "title_en": "The Grind",
+        "beat": "Montage episode: first month at Nil & Spice. Prep at 9am, service until midnight. Chef Omar yelling. Salma silently judging. Karim improving visibly. He films small break-time clips on his phone — not for posting, just for himself. He looks tired but alive.",
+        "key_characters": ["karim", "salma"],
+        "primary_location": "nil_and_spice_kitchen",
+        "emotion_tone": "grind energy, montage of becoming",
+        "continuity_goal": "Time pass — show Karim's professional growth over a month",
+        "cliffhanger": "He watches his old TikTok videos in the changing room. He can see every mistake now."
+      },
+      {
+        "episode_number": 18,
+        "act": 3,
+        "title_ar": "الغلطة",
+        "title_en": "The Mistake",
+        "beat": "Karim overcooks a table's lamb during a busy Friday service. Chef Omar tears him apart in front of the whole kitchen. Karim stands straight and takes it. After service, Salma hands him a water bottle without saying anything. He drinks it. She says: 'Everyone has that night.' First crack in her armor.",
+        "key_characters": ["karim", "salma"],
+        "primary_location": "nil_and_spice_kitchen",
+        "emotion_tone": "public humiliation, unexpected kindness",
+        "continuity_goal": "First real Karim-Salma moment — turns from colleagues to something more like allies",
+        "cliffhanger": "Karim keeps his head down. Tomorrow he will be better."
+      },
+      {
+        "episode_number": 19,
+        "act": 3,
+        "title_ar": "المنيو السري",
+        "title_en": "The Secret Menu",
+        "beat": "Karim notices Nil & Spice wastes a lot of lamb trim. He quietly makes a staff meal with the trimmings — spiced Egyptian hawawshi using old bread basket rolls. The staff loves it. Chef Omar eats it silently and says 'where'd you learn this.' Karim says 'my mom.' Chef Omar nods and walks away. Highest praise he ever gives.",
+        "key_characters": ["karim", "salma"],
+        "primary_location": "nil_and_spice_kitchen",
+        "emotion_tone": "quiet triumph, the mentor language of kitchens",
+        "continuity_goal": "Karim's instincts are being recognized — his roots are his strength",
+        "cliffhanger": "Dina asks if it could be a menu item. Karim looks at Chef Omar's back walking away."
+      },
+      {
+        "episode_number": 20,
+        "act": 3,
+        "title_ar": "نور",
+        "title_en": "Nour Appears",
+        "beat": "Food blogger Nour comes to review Nil & Spice. She notices the hawawshi being served to staff through the open kitchen window. She asks if it's on the menu. Karim says no. She says it should be. She follows him on Instagram. Karim stares at his phone for an embarrassing amount of time. FIRST APPEARANCE OF NOUR.",
+        "key_characters": ["karim", "nour"],
+        "primary_location": "nil_and_spice_kitchen",
+        "emotion_tone": "surprise connection, recognition from an unexpected source",
+        "continuity_goal": "Introduce Nour — she becomes a mirror for Karim's potential",
+        "cliffhanger": "He follows her back. Her bio says 'food is a language.' He reads it three times."
+      },
+      {
+        "episode_number": 21,
+        "act": 3,
+        "title_ar": "الترقية",
+        "title_en": "The Promotion",
+        "beat": "Six months in — Karim is promoted to demi-chef. Salma is genuinely pleased for him. Small celebration on the restaurant roof after closing: one bottle of Pepsi, a box of konafa, the whole kitchen team. Simple and warm.",
+        "key_characters": ["karim", "salma"],
+        "primary_location": "nil_and_spice_kitchen",
+        "emotion_tone": "earned joy, kitchen family warmth",
+        "continuity_goal": "Mark Karim's professional growth milestone",
+        "cliffhanger": "Salma quietly shows Karim a printout — a culinary school in Spain. She says nothing. Puts it back in her pocket."
+      },
+      {
+        "episode_number": 22,
+        "act": 3,
+        "title_ar": "التعارض",
+        "title_en": "The First Conflict",
+        "beat": "Chef Omar pushes a new menu direction — modernizing Egyptian food for tourists. Karim has ideas. He raises them. Chef Omar shuts him down: 'You're here to cook what's on the paper.' Karim feels the first friction between his passion and the job.",
+        "key_characters": ["karim", "salma"],
+        "primary_location": "nil_and_spice_kitchen",
+        "emotion_tone": "creative frustration, the tension of ambition inside a hierarchy",
+        "continuity_goal": "Plant the seed that this kitchen cannot hold Karim forever",
+        "cliffhanger": "Karim goes home and sketches a dish on a napkin. Crosses it out. Sketches it again."
+      },
+      {
+        "episode_number": 23,
+        "act": 3,
+        "title_ar": "الكيترينج",
+        "title_en": "The Catering Gig",
+        "beat": "Nil & Spice caters a big wedding in Nasr City. Karim is on the team — cooking for 400 people. Chaos and scale. He thrives unexpectedly. The bride's mother hugs him after eating his macarona bechamel. He cries a little in the van going home. Fares calls to check in; Karim just says 'today was good.'",
+        "key_characters": ["karim", "fares"],
+        "primary_location": "cairo_streets",
+        "emotion_tone": "scale, unexpected grace, quiet tears",
+        "continuity_goal": "Karim discovers he can perform at scale — this matters later",
+        "cliffhanger": "He looks out the van window at Cairo at night. Something is settling in him."
+      },
+      {
+        "episode_number": 24,
+        "act": 3,
+        "title_ar": "ريفيو نور",
+        "title_en": "Nour's Review",
+        "beat": "Nour posts her Nil & Spice review. It's glowing. She mentions 'a young cook with instincts that feel rooted in something older than the trend.' Karim reads it 40 times. He messages her a thank you. She replies instantly. They start talking.",
+        "key_characters": ["karim", "nour"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "being seen for the first time, quiet joy",
+        "continuity_goal": "The Karim-Nour dynamic begins in earnest",
+        "cliffhanger": "They're texting at 1am. She asks what his mom's molokheyya tastes like."
+      },
+      {
+        "episode_number": 25,
+        "act": 3,
+        "title_ar": "سر سلمى",
+        "title_en": "Salma's Secret",
+        "beat": "Karim discovers Salma has been quietly saving and applying to culinary school in Spain for two years. He's the first person in the kitchen she tells. This deepens their friendship and adds emotional weight — the kitchen is temporary for most people.",
+        "key_characters": ["karim", "salma"],
+        "primary_location": "nil_and_spice_kitchen",
+        "emotion_tone": "trust, shared ambition, the transience of kitchen bonds",
+        "continuity_goal": "Establish Salma's exit arc; show Karim has real, chosen bonds here",
+        "cliffhanger": "Salma says 'don't tell anyone.' Karim mimes zipping his lips. She almost smiles."
+      },
+      {
+        "episode_number": 26,
+        "act": 3,
+        "title_ar": "ماضي الشيف عمر",
+        "title_en": "Chef Omar's Past",
+        "beat": "After a long service, Karim and Chef Omar clean the kitchen alone. Omar opens up — he had his own restaurant once, it failed, he nearly lost everything. He says 'never fall in love with a business, fall in love with the craft.' Karim files this away.",
+        "key_characters": ["karim"],
+        "primary_location": "nil_and_spice_kitchen",
+        "emotion_tone": "unexpected mentor moment, weight of experience",
+        "continuity_goal": "Karim's future will test whether he heeds this advice",
+        "cliffhanger": "Karim closes the lights on the empty kitchen. He looks at it one extra second before leaving."
+      },
+      {
+        "episode_number": 27,
+        "act": 3,
+        "title_ar": "الشيف الجديد",
+        "title_en": "The New Chef",
+        "beat": "Nil & Spice hires a new executive chef — Chef Ramy, young, trained in Europe, wants to change everything. Immediate conflict with Chef Omar. Karim is caught between them. The kitchen atmosphere turns toxic.",
+        "key_characters": ["karim", "salma"],
+        "primary_location": "nil_and_spice_kitchen",
+        "emotion_tone": "tension, institutional conflict, loyalty tested",
+        "continuity_goal": "Introduce the disruption that will fracture the kitchen",
+        "cliffhanger": "Chef Ramy calls a meeting and removes the staff meal from the schedule."
+      },
+      {
+        "episode_number": 28,
+        "act": 3,
+        "title_ar": "الإستقالة",
+        "title_en": "The Walkout",
+        "beat": "Chef Omar resigns. Three line cooks leave with him. Karim stays — he needs the money. But the kitchen feels wrong. Chef Ramy is technically skilled but cold. He removes the hawawshi staff meal. Small thing. Big signal.",
+        "key_characters": ["karim", "salma"],
+        "primary_location": "nil_and_spice_kitchen",
+        "emotion_tone": "grief for what was, moral compromise, staying anyway",
+        "continuity_goal": "Karim's time at Nil & Spice is numbered",
+        "cliffhanger": "Karim stands at the station where the hawawshi used to be made."
+      },
+      {
+        "episode_number": 29,
+        "act": 3,
+        "title_ar": "كريم بيسيب",
+        "title_en": "Karim Leaves",
+        "beat": "Chef Ramy dismisses one of Karim's suggestions with 'this isn't a TikTok kitchen.' Karim gives two weeks' notice. Dina says he's making a mistake. Salma says 'you'll land somewhere.' He walks out on his last night into Cairo traffic and azaan.",
+        "key_characters": ["karim", "salma"],
+        "primary_location": "nil_and_spice_kitchen",
+        "emotion_tone": "quiet dignity, leaving on principle",
+        "continuity_goal": "End of the Nil & Spice arc — Karim chooses himself",
+        "cliffhanger": "He stands outside on the street. Cars pass. He has nowhere to be tomorrow for the first time in a year."
+      },
+      {
+        "episode_number": 30,
+        "act": 3,
+        "title_ar": "المطعم التاني",
+        "title_en": "The Second Restaurant",
+        "beat": "Karim gets hired at Beit el Sheikh — upscale Egyptian in Maadi, better pay. But the food is frozen-then-plated. Nothing made fresh. He's horrified. He stays three months, learns nothing, watches his love for cooking slowly dim.",
+        "key_characters": ["karim"],
+        "primary_location": "cairo_streets",
+        "emotion_tone": "slow dimming, wrong place energy",
+        "continuity_goal": "Show that money and prestige without craft drains him",
+        "cliffhanger": "He sits in a walk-in freezer for a moment, just staring at frozen trays of 'mahshi.'"
+      },
+      {
+        "episode_number": 31,
+        "act": 3,
+        "title_ar": "المطعم التالت",
+        "title_en": "The Third Restaurant",
+        "beat": "A modern café-restaurant in New Cairo — young team, good food, Karim is happy for a while. Then the owner runs out of money. Payroll delayed twice. The team starts fighting. Karim is owed three months' salary when it closes.",
+        "key_characters": ["karim"],
+        "primary_location": "cairo_streets",
+        "emotion_tone": "false hope crushed, financial betrayal",
+        "continuity_goal": "The external world keeps failing him — he must find something he controls",
+        "cliffhanger": "He leaves with a handwritten IOU and nothing else."
+      },
+      {
+        "episode_number": 32,
+        "act": 3,
+        "title_ar": "أدنى نقطة",
+        "title_en": "The Low Point",
+        "beat": "Karim is unemployed, owed money he may never see, back in Shubra. He doesn't cook at home for two weeks. Um Karim leaves plates outside his door. He opens his old TikTok — 312 followers, same terrible videos. He watches them with a strange mix of embarrassment and tenderness. Fares sits with him on the roof all night without saying much.",
+        "key_characters": ["karim", "fares", "um_karim"],
+        "primary_location": "roof",
+        "emotion_tone": "genuine low point — quiet, heavy, real",
+        "continuity_goal": "The darkest before the turn — plant the emotional reset for Act 4",
+        "cliffhanger": "Um Karim leaves a bowl of roz bel laban outside his door. He opens the door and sees it."
+      },
+      {
+        "episode_number": 33,
+        "act": 4,
+        "title_ar": "دفعة أم كريم",
+        "title_en": "Um Karim's Push",
+        "beat": "Um Karim makes Karim's favorite meal — roz bel laban with cinnamon, old Cairo style. Sits with him. Says: 'Your grandmother used to say the food you cook when nobody's watching is the truest thing about you.' She puts his phone on the table. He picks it up.",
+        "key_characters": ["karim", "um_karim"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "the gentlest turning point, maternal wisdom without drama",
+        "continuity_goal": "The pivot back to TikTok is earned through love, not ambition",
+        "cliffhanger": "He opens the camera app."
+      },
+      {
+        "episode_number": 34,
+        "act": 4,
+        "title_ar": "أول فيديو جديد",
+        "title_en": "The First New Video",
+        "beat": "Karim films himself making hawawshi — the Nil & Spice recipe. Phone propped against a bottle of oil, no ring light, no script. He talks while he cooks like he's talking to one person. Posts at 1am. Goes to sleep. Wakes up to 40K views. Stares at his ceiling.",
+        "key_characters": ["karim"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "raw authenticity rewarded, quiet shock of being seen",
+        "continuity_goal": "The phone-against-oil-bottle setup is now iconic — it must recur",
+        "cliffhanger": "40K views. He doesn't know what to do with his hands."
+      },
+      {
+        "episode_number": 35,
+        "act": 4,
+        "title_ar": "الجمهور موجود",
+        "title_en": "The Audience Is There",
+        "beat": "The comments are real: 'My grandmother used to make this', 'Where did you learn this ratio?' Karim replies to every comment for three days. Nour texts: 'I saw it. I knew it was in there.' Fares films him answering comments — posts it — 80K views.",
+        "key_characters": ["karim", "fares", "nour"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "belonging, being found by the right people",
+        "continuity_goal": "Establish the new audience as real and relational — not just numbers",
+        "cliffhanger": "Someone in the comments: 'Can I order this somewhere?'"
+      },
+      {
+        "episode_number": 36,
+        "act": 4,
+        "title_ar": "القناة بتكبر",
+        "title_en": "The Channel Grows",
+        "beat": "Three more videos: mahshi, an honest 'failures' video where Karim talks about the restaurant collapses, and the molokheyya with Um Karim's permission finally. The molokheyya video hits 200K. Someone asks in comments: 'Can I order this somewhere?'",
+        "key_characters": ["karim", "um_karim", "fares"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "momentum building, something is working",
+        "continuity_goal": "The comment 'can I order this?' is the seed of the 2otbo5ly discovery",
+        "cliffhanger": "Karim screenshots the comment. Texts it to Nour."
+      },
+      {
+        "episode_number": 37,
+        "act": 4,
+        "title_ar": "اكتشاف 2otbo5ly",
+        "title_en": "The Discovery of 2otbo5ly",
+        "beat": "Nour tells Karim about 2otbo5ly — an app where home chefs cook TikTok meals people can't get in restaurants, using video links and budgets. Karim is skeptical. 'So I cook in my house and deliver?' Nour shows him the user numbers. He goes quiet a long time. 'That's exactly what I've been doing already.'",
+        "key_characters": ["karim", "nour"],
+        "primary_location": "cairo_streets",
+        "emotion_tone": "the puzzle piece clicks, slow recognition of destiny",
+        "continuity_goal": "2otbo5ly is introduced as a system that formalizes what Karim already is",
+        "cliffhanger": "He opens the 2otbo5ly app for the first time."
+      },
+      {
+        "episode_number": 38,
+        "act": 4,
+        "title_ar": "التسجيل",
+        "title_en": "Signing Up",
+        "beat": "Karim creates his 2otbo5ly chef profile — lists three dishes. First order comes in 4 hours later: a woman in Dokki wants Um Karim's molokheyya (she saw the video). Karim makes it. Um Karim supervises. They pack it together. He delivers it himself. The woman opens the door, smells it, says 'aywa, da el kalam.' Karim calls Fares from the elevator: 'I think I found it.'",
+        "key_characters": ["karim", "um_karim", "fares"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "completion, everything converging into one right moment",
+        "continuity_goal": "Karim's first 2otbo5ly order lands perfectly — this is the beginning",
+        "cliffhanger": "He gets another order notification in the elevator. Then another."
+      },
+      {
+        "episode_number": 39,
+        "act": 5,
+        "title_ar": "الإعداد",
+        "title_en": "The Setup",
+        "beat": "Karim reorganizes the home kitchen with Um Karim's blessing. Buys proper lighting with money from the first three 2otbo5ly orders. Um Karim becomes official quality control — tastes everything before it goes out. Fares becomes de facto operations manager and makes a spreadsheet, which is the funniest thing Karim has ever seen.",
+        "key_characters": ["karim", "fares", "um_karim"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "joyful building, the team assembles naturally",
+        "continuity_goal": "The home kitchen is now the studio AND the restaurant — establish this visually",
+        "cliffhanger": "The ring light is up. The blue speckled pot is center stage. Karim looks at the setup and nods."
+      },
+      {
+        "episode_number": 40,
+        "act": 5,
+        "title_ar": "تحدي الريكويست الأول",
+        "title_en": "The First Request Challenge",
+        "beat": "A user posts on 2otbo5ly: a viral TikTok of 'Crème brûlée kunafa' — French-Egyptian fusion nobody makes. Budget 150 EGP. Karim films himself reading the request live on TikTok, figuring it out, failing twice, then nailing it. The request video hits 500K. The customer is happy. This becomes the show's signature format.",
+        "key_characters": ["karim", "fares"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "challenge energy, creative problem solving, triumph",
+        "continuity_goal": "Establish the 2otbo5ly challenge format — TikTok link + budget = episode content",
+        "cliffhanger": "Another request comes in immediately. Then three more."
+      },
+      {
+        "episode_number": 41,
+        "act": 5,
+        "title_ar": "الريكويست الصعب",
+        "title_en": "The Hard Request",
+        "beat": "A request: 'smash burger stuffed with hawawshi filling.' Karim takes it as a personal mission. Five versions over two days, each posted. The process gets more views than the final product. When he nails it, the reveal hits 1M views. He sits on his kitchen floor and breathes.",
+        "key_characters": ["karim", "fares"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "obsessive creative pursuit rewarded",
+        "continuity_goal": "First 1M view moment — milestone for the character arc",
+        "cliffhanger": "He looks at his follower count: 800K. He calls his dad."
+      },
+      {
+        "episode_number": 42,
+        "act": 5,
+        "title_ar": "سلمى ترجع",
+        "title_en": "Salma Returns",
+        "beat": "Salma comes back from Spain for Eid — the culinary school fell through, visa issues. She's quiet about it. Karim invites her to cook with him for a big 2otbo5ly Eid order — 15 families. They work all night. At dawn Salma says 'you finally found your restaurant.' Karim looks around the home kitchen and says 'yeah.'",
+        "key_characters": ["karim", "salma"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "return, reunion, two people who needed a moment like this",
+        "continuity_goal": "Close Salma's arc; reinforce that the home kitchen is a real kitchen",
+        "cliffhanger": "Salma stays. She doesn't say it explicitly — she just doesn't leave."
+      },
+      {
+        "episode_number": 43,
+        "act": 5,
+        "title_ar": "شوارعنا في بيتك",
+        "title_en": "Shaware3na fi Beitak",
+        "beat": "Karim launches a sub-series: Egyptian street food recreations for 2otbo5ly delivery. Feteer meshaltet, Shubra-style hawawshi, taameya with specific herbs. Orders spike. He starts a waitlist. Um Karim wakes at 6am to help with prep. He films this. The internet loves Um Karim.",
+        "key_characters": ["karim", "um_karim", "fares"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "abundance, craft meeting community",
+        "continuity_goal": "Show the operation scaling while keeping the home kitchen soul",
+        "cliffhanger": "The waitlist hits 200 people. Karim stares at it."
+      },
+      {
+        "episode_number": 44,
+        "act": 5,
+        "title_ar": "أم كريم بتاخد الإنترنت",
+        "title_en": "Um Karim Goes Viral",
+        "beat": "Um Karim — without knowing she's on camera — tastes a sauce Karim made, makes a face, adjusts it with her finger, tastes again, nods, and walks away. Karim posts it. 3M views. 'Um Karim is the real chef' becomes a comment on every video. She refuses to appear on camera intentionally. Ever.",
+        "key_characters": ["karim", "um_karim"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "accidental greatness, the internet finding the realest thing in the room",
+        "continuity_goal": "Um Karim becomes a beloved offscreen character — lean into this from now on",
+        "cliffhanger": "Um Karim sees the 3M views on Karim's phone and says 'طب وبعدين؟' and goes back to the kitchen."
+      },
+      {
+        "episode_number": 45,
+        "act": 5,
+        "title_ar": "المنافسة",
+        "title_en": "The Competition",
+        "beat": "Another 2otbo5ly chef starts copying Karim's recipes exactly — same dishes, lower prices. Karim's comments section explodes with outrage. Karim posts a response video showing his full development process — research, fails, iterations — and says 'the recipe isn't the thing, the story is.' The video turns the situation into a teaching moment. His numbers grow. The other chef's don't.",
+        "key_characters": ["karim", "fares"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "competitive threat handled with creative confidence",
+        "continuity_goal": "Establish Karim's process and philosophy as the real product",
+        "cliffhanger": "Chef Ramy (from EP29) watches the video on his phone. We don't see his face."
+      },
+      {
+        "episode_number": 46,
+        "act": 5,
+        "title_ar": "الدوكيومنتري",
+        "title_en": "Nour and the Documentary",
+        "beat": "Nour proposes making a short documentary about Karim and 2otbo5ly for a food media platform. He's nervous — he's always been on his own terms. They navigate the first real tension in their dynamic. He says yes eventually. Filming begins. The audience sees Karim through Nour's lens — more vulnerable, more considered.",
+        "key_characters": ["karim", "nour"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "vulnerability, being seen by someone you care about",
+        "continuity_goal": "Karim-Nour dynamic reaches emotional depth; show Karim allowing himself to be seen",
+        "cliffhanger": "Nour asks him on camera: 'What would you cook for someone you love?' Long pause."
+      },
+      {
+        "episode_number": 47,
+        "act": 5,
+        "title_ar": "رمضان",
+        "title_en": "The Ramadan Episode",
+        "beat": "Ramadan. Karim launches a special 2otbo5ly Ramadan menu — all the things people miss from grandmother's iftar. Umm Ali old way, feteer with honey and cream, stuffed pigeon done right. Orders 10x normal. He works with Um Karim, Salma, and Fares. The kitchen during Ramadan — warm, chaotic, alive.",
+        "key_characters": ["karim", "fares", "um_karim", "salma"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "fullness, Ramadan warmth, the kitchen at its most alive",
+        "continuity_goal": "Show the team at full strength and the kitchen at its peak",
+        "cliffhanger": "The iftar azaan plays. All four of them stop and just listen."
+      },
+      {
+        "episode_number": 48,
+        "act": 5,
+        "title_ar": "الشيف حاتم يرجع",
+        "title_en": "Chef Hatem Comes Back",
+        "beat": "Chef Hatem sees one of Karim's videos and messages him. They meet for coffee. Hatem says the teaching thing never made real money, he's thinking of closing. Karim offers: 'Come cook with me one day a week — I'll post it as a series, what I learned and from who.' Hatem laughs. Then agrees.",
+        "key_characters": ["karim", "chef_hatem"],
+        "primary_location": "cairo_streets",
+        "emotion_tone": "full circle, mentorship returned as partnership",
+        "continuity_goal": "Close the Chef Hatem arc with a return that elevates both characters",
+        "cliffhanger": "First 'Karim and Hatem Cook' session is scheduled for next week."
+      },
+      {
+        "episode_number": 49,
+        "act": 5,
+        "title_ar": "الريكويست اللي غير كل حاجة",
+        "title_en": "The Request That Changes Everything",
+        "beat": "A 2otbo5ly request with a big budget: Japanese-Egyptian fusion tacos filled with koshari for a dinner party of 20, with full presentation. Karim takes it as the hardest challenge yet. A week of development, all posted. The final delivery — Karim arrives, sets up, the host tastes it and goes quiet, then says 'this is actually genius.' Best produced episode of the series.",
+        "key_characters": ["karim", "fares", "salma"],
+        "primary_location": "home_kitchen",
+        "emotion_tone": "peak craft, ambition fully realized",
+        "continuity_goal": "Show Karim operating at full technical and creative capacity",
+        "cliffhanger": "The host asks: 'Do you ever think about opening a real restaurant?' Karim smiles but doesn't answer."
+      },
+      {
+        "episode_number": 50,
+        "act": 5,
+        "title_ar": "سنة بعدها",
+        "title_en": "One Year Later",
+        "beat": "Karim walks through Shubra, films the street, stops at the koshary shop from EP09 where he sat on the curb after his rejections. Buys one. Sits in the same spot. Voiceover recaps the journey without sentimentality. Stats: 800K followers. 400+ 2otbo5ly orders, 4.9 rating. The team: Um Karim, Fares, Salma (part-time), Chef Hatem (weekly). Final scene: cooking with his mom in the kitchen, laughing. Last shot: phone propped against the bottle of oil — same setup as EP34.",
+        "key_characters": ["karim", "fares", "um_karim", "salma", "chef_hatem", "nour"],
+        "primary_location": "cairo_streets",
+        "emotion_tone": "earned reflection, warmth without sentimentality, open ending",
+        "continuity_goal": "Close the arc — Karim has found his place. The phone-against-oil-bottle is the final image.",
+        "cliffhanger": "Caption: 'Still here. Still cooking.' The next order notification arrives."
+      }
+    ]
+  },
+
+  "pipeline": {
+    "concept_pool_size": 4,
+    "videos_per_run": 1,
+    "script_iterations": 3,
+    "video_prompt_iterations": 3,
+    "research_temperature": 1.0,
+    "writing_temperature": 0.9,
+    "critic_temperature": 0.5,
+    "use_google_search": true,
+    "vertex_ai_search_datastore": "",
+    "keep_top_revisions": 3,
+    "run_root": "runs"
+  },
+
+  "models": {
+    "research_model": "gemini-2.5-flash",
+    "writing_model": "gemini-2.5-flash",
+    "critic_model": "gemini-2.5-flash",
+    "image_model": "imagen-4.0-generate-001",
+    "video_model": "veo-3.1-fast-generate-001",
+    "tts_model": "gemini-2.5-flash-tts"
+  },
+
+  "assets": {
+    "generate_images": true,
+    "generate_videos": true,
+    "generate_audio": true,
+    "image_size": "2K",
+    "video_aspect_ratio": "9:16",
+    "video_duration_seconds": 8,
+    "video_count_per_script": 4,
+    "video_resolution": "720p",
+    "video_person_generation": "allow_adult",
+    "video_enhance_prompt": true,
+    "video_output_gcs_uri": "",
+    "tts_language_code": "ar-EG",
+    "tts_voice_name": "Kore",
+    "tts_file_name": "voiceover.wav"
+  }
+}

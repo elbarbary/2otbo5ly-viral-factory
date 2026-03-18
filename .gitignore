@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+.venv313/
+*.egg-info/
+dist/
+build/
+
+# Runs output (large media files)
+runs/*/
+# Keep series state
+!runs/series/
+
+# Environment
+.env
+*.env
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
