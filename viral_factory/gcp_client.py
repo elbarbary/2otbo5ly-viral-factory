@@ -30,16 +30,22 @@ class VertexClientError(RuntimeError):
     pass
 
 
-def _with_retry(fn: Callable[[], _T], *, max_attempts: int = 4, base_delay: float = 5.0) -> _T:
-    """Call *fn* up to *max_attempts* times with exponential backoff + jitter."""
+def _with_retry(fn: Callable[[], _T], *, max_attempts: int = 5, base_delay: float = 5.0) -> _T:
+    """Call *fn* up to *max_attempts* times with exponential backoff + jitter.
+    429 RESOURCE_EXHAUSTED gets a longer fixed wait to clear the rate limit window."""
     for attempt in range(1, max_attempts + 1):
         try:
             return fn()
         except Exception as exc:
             if attempt == max_attempts:
                 raise
-            delay = base_delay * (2 ** (attempt - 1)) + random.uniform(0, 2)
-            print(f"  [retry {attempt}/{max_attempts - 1}] {exc!r} — retrying in {delay:.1f}s", flush=True)
+            exc_str = str(exc)
+            if "429" in exc_str or "RESOURCE_EXHAUSTED" in exc_str:
+                delay = 60.0 + random.uniform(0, 15)
+                print(f"  [rate-limit retry {attempt}/{max_attempts - 1}] waiting {delay:.0f}s for quota reset…", flush=True)
+            else:
+                delay = base_delay * (2 ** (attempt - 1)) + random.uniform(0, 2)
+                print(f"  [retry {attempt}/{max_attempts - 1}] {exc!r} — retrying in {delay:.1f}s", flush=True)
             time.sleep(delay)
     raise RuntimeError("unreachable")
 
@@ -232,13 +238,15 @@ class VertexFactoryClient:
         else:
             config_kwargs["response_mime_type"] = "application/json"
         config = self._genai_types.GenerateContentConfig(**config_kwargs)
-        response = self.text_client.models.generate_content(
-            model=model,
-            contents=prompt,
-            config=config
-        )
-        text = self._extract_text(response)
-        return extract_json_blob(text), self._response_to_dict(response)
+        def _call():
+            response = self.text_client.models.generate_content(
+                model=model,
+                contents=prompt,
+                config=config
+            )
+            text = self._extract_text(response)
+            return extract_json_blob(text), self._response_to_dict(response)
+        return _with_retry(_call)
 
     def generate_image(self, *, prompt: str, output_path: Path) -> Dict[str, Any]:
         def _call():
