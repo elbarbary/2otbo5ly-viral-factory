@@ -374,7 +374,7 @@ class VertexFactoryClient:
                 raise VertexClientError("Gemini TTS returned no audio data.")
             return pcm_bytes
 
-        pcm_bytes = _with_retry(_call)
+        pcm_bytes = _with_retry(_call, max_attempts=2)
         wav_bytes = _pcm_to_wav(pcm_bytes, sample_rate=24000, num_channels=1, sample_width=2)
         ensure_dir(output_path.parent)
         output_path.write_bytes(wav_bytes)
@@ -431,7 +431,7 @@ class VertexFactoryClient:
                 if not seg:
                     raise VertexClientError(f"TTS returned no audio for speaker '{speaker}'.")
                 return seg
-            all_pcm += _with_retry(_call)
+            all_pcm += _with_retry(_call, max_attempts=2)
 
         if not all_pcm:
             raise VertexClientError("Gemini TTS returned no audio data for dialogue.")
