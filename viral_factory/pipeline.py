@@ -154,7 +154,14 @@ class ViralFactoryPipeline:
             f"Emotional tone: {tone}. Story beat: {beat}"
         )
 
+    @staticmethod
+    def _log(ep: Optional[int], msg: str) -> None:
+        prefix = f"[EP{ep:02d}]" if ep is not None else "[--]"
+        print(f"{prefix} {msg}", flush=True)
+
     def plan(self, topic_hint: str, run_dir: Path | None = None, episode_number: Optional[int] = None) -> Dict[str, Any]:
+        ep = episode_number
+        self._log(ep, "researching…")
         # Resolve episode beat from guide
         episode_beat = self._resolve_episode_beat(episode_number)
 
@@ -183,6 +190,7 @@ class ViralFactoryPipeline:
         write_json(active_run_dir / "research.json", research)
         write_json(active_run_dir / "logs" / "research-response.json", research_raw)
 
+        self._log(ep, "writing concepts…")
         concepts_bundle, concepts_raw = self._generate_json(
             prompt=concept_prompt(self.config, research, topic_hint, continuity_state, episode_beat),
             model=self.config.models.writing_model,
@@ -237,6 +245,8 @@ class ViralFactoryPipeline:
         continuity_state: Dict[str, Any],
         episode_beat: Optional[Dict[str, Any]] = None
     ) -> Dict[str, Any]:
+        ep = int(episode_beat.get("episode_number", 0)) if episode_beat else None
+        self._log(ep, "writing script…")
         initial_script, initial_script_raw = self._generate_json(
             prompt=initial_script_prompt(self.config, research, concept, continuity_state, episode_beat),
             model=self.config.models.writing_model,
@@ -256,6 +266,7 @@ class ViralFactoryPipeline:
         ]
         current_script = initial_script
         for iteration_index in range(1, self.config.pipeline.script_iterations + 1):
+            self._log(ep, f"script revision {iteration_index}/{self.config.pipeline.script_iterations}…")
             revised, revised_raw = self._generate_json(
                 prompt=script_iteration_prompt(
                     self.config,
@@ -294,6 +305,7 @@ class ViralFactoryPipeline:
         final_script["heuristic_score"] = best_script_iteration.heuristic_score
         write_json(run_dir / "script-final.json", final_script)
 
+        self._log(ep, "writing video plan…")
         initial_video_plan, initial_video_plan_raw = self._generate_json(
             prompt=initial_video_plan_prompt(self.config, research, concept, final_script, continuity_state, episode_beat),
             model=self.config.models.writing_model,
@@ -312,6 +324,7 @@ class ViralFactoryPipeline:
         ]
         current_video_plan = initial_video_plan
         for iteration_index in range(1, self.config.pipeline.video_prompt_iterations + 1):
+            self._log(ep, f"video plan revision {iteration_index}/{self.config.pipeline.video_prompt_iterations}…")
             revised_plan, revised_plan_raw = self._generate_json(
                 prompt=video_iteration_prompt(
                     self.config,
@@ -380,6 +393,7 @@ class ViralFactoryPipeline:
         run_dir = Path(pack["run_dir"])
         media_dir = ensure_dir(run_dir / "media")
         asset_manifest: Dict[str, Any] = {}
+        ep = int(pack.get("episode_beat", {}).get("episode_number", 0)) or None
 
         # --- Character sheet: generate once, reuse across all episodes (thread-safe) ---
         series_character_sheet: Optional[Path] = None
@@ -388,6 +402,7 @@ class ViralFactoryPipeline:
             canonical_sheet = self._series_character_sheet_path()
             with self._continuity_lock:
                 if not canonical_sheet.exists():
+                    self._log(ep, "generating character sheet…")
                     character_sheet_prompt = pack["final_video_plan"].get("character_sheet_prompt_en", "")
                     if character_sheet_prompt:
                         ensure_dir(canonical_sheet.parent)
@@ -403,6 +418,7 @@ class ViralFactoryPipeline:
             location_path = media_dir / "location-sheet.png"
             location_sheet_prompt = pack["final_video_plan"].get("location_sheet_prompt_en", "")
             if location_sheet_prompt and not location_path.exists():
+                self._log(ep, "generating location sheet…")
                 asset_manifest["location_sheet"] = self.client.generate_image(
                     prompt=location_sheet_prompt,
                     output_path=location_path
@@ -431,6 +447,7 @@ class ViralFactoryPipeline:
                         f"Use this Arabic cover text idea: {pack['final_video_plan'].get('cover_text_ar', '')}. "
                         "High contrast food close-up, cinematic appetizing texture, no watermark, no brand logos."
                     )
+                self._log(ep, "generating cover…")
                 asset_manifest["cover_image"] = self.client.generate_image(
                     prompt=image_prompt,
                     output_path=cover_path
@@ -454,6 +471,7 @@ class ViralFactoryPipeline:
                 if self.config.assets.generate_audio:
                     shot_audio_path = media_dir / f"shot-{idx:02d}-audio.wav"
                     if not shot_audio_path.exists():
+                        self._log(ep, f"shot {shot_pos+1}/{n_shots} audio…")
                         # Assign dialogue lines to this shot proportionally
                         if dialogue_all and self.config.series.character_voices:
                             start = (shot_pos * len(dialogue_all)) // n_shots
@@ -485,11 +503,13 @@ class ViralFactoryPipeline:
                     shot_image_prompt = shot.get("shot_image_prompt_en", "")
                     if shot_image_prompt and self.config.assets.generate_images:
                         if not ref_image_path.exists():
+                            self._log(ep, f"shot {shot_pos+1}/{n_shots} ref image…")
                             self.client.generate_image(
                                 prompt=shot_image_prompt,
                                 output_path=ref_image_path,
                             )
                         source_image = ref_image_path
+                    self._log(ep, f"shot {shot_pos+1}/{n_shots} video (Veo, ~4 min)…")
                     metadata = self.client.generate_video(
                         prompt=shot["veo_prompt_en"],
                         negative_prompt=shot.get("negative_prompt_en", ""),
@@ -511,6 +531,7 @@ class ViralFactoryPipeline:
 
         # --- ffmpeg: assemble final episode video ---
         if self.config.assets.generate_videos:
+            self._log(ep, "assembling final episode video…")
             self._assemble_episode(run_dir, media_dir, asset_manifest)
 
         return asset_manifest
