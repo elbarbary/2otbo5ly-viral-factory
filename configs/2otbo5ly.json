@@ -63,13 +63,13 @@
     "continuity_state_path": "runs/series/2otbo5ly-continuity.json",
     "update_memory": true,
     "character_voices": {
-      "narrator": "Kore",
-      "كريم": "Charon",
-      "فارس": "Puck",
-      "أم كريم": "Aoede",
-      "الشيف حاتم": "Fenrir",
-      "نور": "Leda",
-      "سلمى": "Callisto"
+      "narrator": "ar-XA-Wavenet-D",
+      "كريم": "ar-XA-Wavenet-B",
+      "فارس": "ar-XA-Wavenet-C",
+      "أم كريم": "ar-XA-Wavenet-A",
+      "الشيف حاتم": "ar-XA-Wavenet-B",
+      "نور": "ar-XA-Wavenet-D",
+      "سلمى": "ar-XA-Wavenet-A"
     },
 
     "protagonist": {
@@ -836,8 +836,8 @@
     "video_person_generation": "allow_adult",
     "video_enhance_prompt": true,
     "video_output_gcs_uri": "",
-    "tts_language_code": "ar-EG",
-    "tts_voice_name": "Kore",
+    "tts_language_code": "ar-XA",
+    "tts_voice_name": "ar-XA-Wavenet-D",
     "tts_file_name": "voiceover.wav"
   }
 }
