@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import shutil
 import subprocess
+import threading
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
@@ -33,6 +34,7 @@ class ViralFactoryPipeline:
     def __init__(self, config: AppConfig) -> None:
         self.config = config
         self.client = VertexFactoryClient(config)
+        self._continuity_lock = threading.Lock()  # serialise continuity.json read-writes across threads
 
     def _repo_root(self) -> Path:
         return self.config.config_path.parent.parent
@@ -67,6 +69,12 @@ class ViralFactoryPipeline:
         }
         write_json(state_path, state)
         return state
+
+    def _update_series_state_locked(self, packs: List[Dict[str, Any]]) -> Dict[str, Any]:
+        """Thread-safe wrapper: re-reads current state, merges, writes, returns updated."""
+        with self._continuity_lock:
+            current = self._load_series_state()
+            return self._update_series_state(current, packs)
 
     def _update_series_state(self, continuity_state: Dict[str, Any], packs: List[Dict[str, Any]]) -> Dict[str, Any]:
         if not self.config.series.enabled or not self.config.series.update_memory:
@@ -205,7 +213,7 @@ class ViralFactoryPipeline:
                 )
             )
 
-        updated_series_state = self._update_series_state(continuity_state, packs)
+        updated_series_state = self._update_series_state_locked(packs)
         write_json(active_run_dir / "series-state-after.json", updated_series_state)
 
         manifest = {
@@ -433,33 +441,44 @@ class ViralFactoryPipeline:
             else:
                 asset_manifest["cover_image"] = {"reused_from": str(cover_path)}
 
-        if self.config.assets.generate_audio:
-            audio_path = media_dir / self.config.assets.tts_file_name
-            if not audio_path.exists():
-                dialogue = pack["final_script"].get("dialogue", [])
-                if dialogue and self.config.series.character_voices:
-                    asset_manifest["voiceover"] = self.client.synthesize_dialogue(
-                        dialogue=dialogue,
-                        character_voices=self.config.series.character_voices,
-                        default_voice=self.config.assets.tts_voice_name,
-                        language_code=self.config.assets.tts_language_code,
-                        output_path=audio_path,
-                    )
-                else:
-                    asset_manifest["voiceover"] = self.client.synthesize_speech(
-                        text=pack["final_script"]["voiceover"],
-                        prompt="Speak in energetic colloquial Egyptian Arabic suitable for a TikTok food teaser. Keep it fast, confident, and conversational.",
-                        output_path=audio_path
-                    )
-            else:
-                asset_manifest["voiceover"] = {"reused_from": str(audio_path)}
-
         if self.config.assets.generate_videos:
             shot_assets: List[Dict[str, Any]] = []
             shots = pack["final_video_plan"].get("shots", [])[:self.config.assets.video_count_per_script]
-            for shot in shots:
+
+            # Distribute dialogue lines evenly across shots for per-shot audio
+            dialogue_all = pack["final_script"].get("dialogue", [])
+            n_shots = len(shots)
+
+            for shot_pos, shot in enumerate(shots):
                 idx = int(shot["shot_index"])
                 video_path = media_dir / f"shot-{idx:02d}.mp4"
+
+                # --- Per-shot audio: slice of dialogue + overlay text ---
+                if self.config.assets.generate_audio:
+                    shot_audio_path = media_dir / f"shot-{idx:02d}-audio.wav"
+                    if not shot_audio_path.exists():
+                        # Assign dialogue lines to this shot proportionally
+                        if dialogue_all and self.config.series.character_voices:
+                            start = (shot_pos * len(dialogue_all)) // n_shots
+                            end = ((shot_pos + 1) * len(dialogue_all)) // n_shots
+                            shot_dialogue = dialogue_all[start:end]
+                            # Prepend overlay text as narrator line if dialogue slice is empty
+                            if not shot_dialogue:
+                                shot_dialogue = [{"speaker": "narrator", "text": shot.get("overlay_text_ar", "")}]
+                            self.client.synthesize_dialogue(
+                                dialogue=shot_dialogue,
+                                character_voices=self.config.series.character_voices,
+                                default_voice=self.config.assets.tts_voice_name,
+                                language_code=self.config.assets.tts_language_code,
+                                output_path=shot_audio_path,
+                            )
+                        else:
+                            self.client.synthesize_speech(
+                                text=shot.get("overlay_text_ar", ""),
+                                prompt="Speak in energetic colloquial Egyptian Arabic, fast and punchy.",
+                                output_path=shot_audio_path,
+                            )
+
                 if video_path.exists():
                     metadata: Dict[str, Any] = {"local_file": str(video_path), "reused": True}
                 else:
@@ -494,39 +513,65 @@ class ViralFactoryPipeline:
         write_json(run_dir / "media-manifest.json", asset_manifest)
 
         # --- ffmpeg: assemble final episode video ---
-        if self.config.assets.generate_videos and self.config.assets.generate_audio:
+        if self.config.assets.generate_videos:
             self._assemble_episode(run_dir, media_dir, asset_manifest)
 
         return asset_manifest
 
     def _assemble_episode(self, run_dir: Path, media_dir: Path, asset_manifest: Dict[str, Any]) -> None:
-        """Concatenate shot mp4s and mux with voiceover into a final episode file."""
+        """Concatenate shot mp4s, each muxed with its own audio clip, into a final episode file.
+
+        Each shot-NN.mp4 is paired with shot-NN-audio.wav. The audio is padded/trimmed
+        to the shot duration so audio and video are frame-aligned.
+        """
+        shot_dur = self.config.assets.video_duration_seconds
         shot_files = sorted(media_dir.glob("shot-??.mp4"))
-        audio_path = media_dir / self.config.assets.tts_file_name
-        if not shot_files or not audio_path.exists():
+        if not shot_files:
             return
 
         final_path = run_dir / "episode-final.mp4"
         n = len(shot_files)
 
-        # Single ffmpeg pass: concat video + loudnorm + stereo upmix + mux
+        # Build inputs: interleaved video + audio for each shot
         cmd: List[str] = ["ffmpeg", "-y"]
         for sf in shot_files:
             cmd += ["-i", str(sf)]
-        cmd += ["-i", str(audio_path)]
+            # Corresponding per-shot audio (fall back to silence if missing)
+            audio_file = media_dir / (sf.stem + "-audio.wav")
+            if audio_file.exists():
+                cmd += ["-i", str(audio_file)]
+            else:
+                # Generate silent audio as a fallback via lavfi
+                cmd += ["-f", "lavfi", "-i", f"anullsrc=r=48000:cl=stereo:d={shot_dur}"]
 
-        video_inputs = "".join(f"[{i}:v]" for i in range(n))
+        # Per-shot: pad/trim audio to shot_dur, stereo upmix, loudnorm
+        audio_parts: List[str] = []
+        for i in range(n):
+            v_idx = i * 2       # video input index
+            a_idx = i * 2 + 1   # audio input index
+            audio_parts.append(
+                f"[{a_idx}:a]atrim=duration={shot_dur},"
+                f"apad=pad_dur={shot_dur},"
+                f"atrim=duration={shot_dur},"
+                f"loudnorm,aresample=48000,"
+                f"pan=stereo|c0=c0|c1=c0[a{i}]"
+            )
+
+        video_concat_inputs = "".join(f"[{i*2}:v]" for i in range(n))
+        audio_concat_inputs = "".join(f"[a{i}]" for i in range(n))
+
         filter_complex = (
-            f"{video_inputs}concat=n={n}:v=1:a=0,"
+            ";".join(audio_parts) + ";"
+            f"{video_concat_inputs}concat=n={n}:v=1:a=0,"
             f"eq=saturation=1.12:contrast=1.05:gamma=0.98,format=yuv420p[v];"
-            f"[{n}:a]loudnorm,aresample=48000,pan=stereo|c0=c0|c1=c0[a]"
+            f"{audio_concat_inputs}concat=n={n}:v=0:a=1[a]"
         )
+
         cmd += [
             "-filter_complex", filter_complex,
             "-map", "[v]", "-map", "[a]",
             "-c:v", "libx264", "-pix_fmt", "yuv420p",
             "-c:a", "aac", "-b:a", "128k",
-            "-shortest",
             "-movflags", "+faststart",
             str(final_path)
         ]

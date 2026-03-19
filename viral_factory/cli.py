@@ -3,6 +3,8 @@ from __future__ import annotations
 import argparse
 import sys
 import time
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 from .config import load_config
@@ -67,6 +69,11 @@ def _build_parser() -> argparse.ArgumentParser:
     series_parser.add_argument(
         "--plan-only", action="store_true",
         help="Run planning stage only (no image/video/audio generation)."
+    )
+    series_parser.add_argument(
+        "--workers", type=int, default=1, metavar="N",
+        help="Number of episodes to generate in parallel (default: 1). "
+             "5 workers = ~3h for 50 episodes. Raises quota usage proportionally."
     )
 
     list_parser = subparsers.add_parser("episodes", help="List all episodes in the series episode guide.")
@@ -152,9 +159,7 @@ def _cmd_run_series(config, pipeline: ViralFactoryPipeline, args) -> None:
     from_ep = args.from_episode
     to_ep = args.to_episode if args.to_episode is not None else guide[-1]["episode_number"]
     episodes = [ep for ep in guide if from_ep <= ep["episode_number"] <= to_ep]
-
-    print(f"\n=== الشيف كريم — Full Series Run ===")
-    print(f"Episodes {from_ep}–{to_ep} ({len(episodes)} of {total} total)\n", flush=True)
+    workers = args.workers
 
     generate = not args.plan_only and any([
         config.assets.generate_images,
@@ -162,31 +167,55 @@ def _cmd_run_series(config, pipeline: ViralFactoryPipeline, args) -> None:
         config.assets.generate_videos,
     ])
 
+    print(f"\n=== الشيف كريم — Full Series Run ===", flush=True)
+    print(f"Episodes {from_ep}–{to_ep} ({len(episodes)} of {total} total) | workers={workers}\n", flush=True)
+
+    _print_lock = threading.Lock()
+    counters = {"done": 0, "failed": 0}
     series_start = time.monotonic()
-    for idx, ep in enumerate(episodes, start=1):
+
+    def _log(msg: str) -> None:
+        with _print_lock:
+            print(msg, flush=True)
+
+    def _run_one(ep: dict) -> int:
         ep_num = ep["episode_number"]
         t0 = time.monotonic()
-        print(f"\n[{idx}/{len(episodes)}] EP{ep_num:02d}: {ep.get('title_en', '')} — planning…", flush=True)
-        try:
-            manifest = pipeline.plan(topic_hint="", episode_number=ep_num)
-            if generate:
-                for pack in manifest["packs"]:
-                    print(f"  → generating assets…", flush=True)
-                    pipeline.generate_assets(Path(pack["run_dir"]) / "content-pack.json")
-            elapsed = time.monotonic() - t0
-            total_elapsed = time.monotonic() - series_start
-            remaining = len(episodes) - idx
-            eta_s = (total_elapsed / idx) * remaining if idx > 0 else 0
-            print(
-                f"  ✓ EP{ep_num:02d} done in {elapsed/60:.1f}m | "
-                f"total {total_elapsed/3600:.1f}h | "
-                f"ETA {eta_s/3600:.1f}h for {remaining} remaining",
-                flush=True
+        _log(f"  → EP{ep_num:02d} start: {ep.get('title_en', '')}")
+        manifest = pipeline.plan(topic_hint="", episode_number=ep_num)
+        if generate:
+            for pack in manifest["packs"]:
+                pipeline.generate_assets(Path(pack["run_dir"]) / "content-pack.json")
+        elapsed = time.monotonic() - t0
+        _log(f"  ✓ EP{ep_num:02d} done in {elapsed/60:.1f}m")
+        return ep_num
+
+    failed_episodes: List[int] = []
+
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = {executor.submit(_run_one, ep): ep["episode_number"] for ep in episodes}
+        for future in as_completed(futures):
+            ep_num = futures[future]
+            try:
+                future.result()
+                counters["done"] += 1
+            except Exception as exc:
+                counters["failed"] += 1
+                failed_episodes.append(ep_num)
+                _log(f"  ✗ EP{ep_num:02d} FAILED: {exc}")
+
+            done = counters["done"] + counters["failed"]
+            elapsed_total = time.monotonic() - series_start
+            remaining = len(episodes) - done
+            eta_s = (elapsed_total / done * remaining) if done > 0 else 0
+            _log(
+                f"  [{done}/{len(episodes)}] "
+                f"elapsed {elapsed_total/3600:.1f}h | ETA {eta_s/3600:.1f}h"
             )
-        except Exception as exc:
-            print(f"\n  ✗ EP{ep_num:02d} FAILED: {exc}", file=sys.stderr, flush=True)
-            print(f"  → Resume with: --from-episode {ep_num}", file=sys.stderr)
-            sys.exit(1)
 
     total_time = time.monotonic() - series_start
-    print(f"\n=== Series complete: {len(episodes)} episodes in {total_time/3600:.2f}h ===\n", flush=True)
+    print(f"\n=== Done: {counters['done']} OK, {counters['failed']} failed in {total_time/3600:.2f}h ===", flush=True)
+    if failed_episodes:
+        print(f"Failed episodes: {sorted(failed_episodes)}", file=sys.stderr)
+        print(f"Retry failed: --from-episode <N> --to-episode <N> for each", file=sys.stderr)
+        sys.exit(1)
