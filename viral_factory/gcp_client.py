@@ -146,16 +146,23 @@ class VertexFactoryClient:
             return "\n".join(parts)
         raise VertexClientError("Vertex AI response did not include text.")
 
+    _BINARY_KEYS = {"video_bytes", "image_bytes", "data", "raw_ref_image", "encoded_image"}
+
     def _strip_binary_fields(self, value: Any) -> Any:
         if isinstance(value, dict):
             cleaned: Dict[str, Any] = {}
             for key, item in value.items():
-                if key == "video_bytes":
+                if key in self._BINARY_KEYS:
+                    continue
+                # Skip any bytes values (e.g. base64-decoded blobs that got into response)
+                if isinstance(item, (bytes, bytearray)):
                     continue
                 cleaned[key] = self._strip_binary_fields(item)
             return cleaned
         if isinstance(value, list):
             return [self._strip_binary_fields(item) for item in value]
+        if isinstance(value, (bytes, bytearray)):
+            return None
         return value
 
     def _tools(self, use_google_search: bool, datastore: str) -> List[Any]:
@@ -258,7 +265,7 @@ class VertexFactoryClient:
             )
             ensure_dir(output_path.parent)
             response.generated_images[0].image.save(str(output_path))
-            return self._response_to_dict(response)
+            return self._strip_binary_fields(self._response_to_dict(response))
         return _with_retry(_call)
 
     def generate_video(
