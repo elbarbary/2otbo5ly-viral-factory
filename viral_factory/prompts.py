@@ -522,6 +522,7 @@ Return JSON only:
       "veo_prompt_en": "string",
       "negative_prompt_en": "string",
       "overlay_text_ar": "string",
+      "voiceover_ar": "string — the exact spoken lines (dialogue or narration) that play during this shot in colloquial Egyptian Arabic. Must match the action happening on screen. This is synthesized as the audio track for this clip.",
       "transition_note": "string",
       "camera_note": "string"
     }}
@@ -624,6 +625,7 @@ Return JSON only:
         "veo_prompt_en": "string",
         "negative_prompt_en": "string",
         "overlay_text_ar": "string",
+        "voiceover_ar": "string — the exact spoken lines (dialogue or narration) that play during this shot in colloquial Egyptian Arabic. Must match the action happening on screen.",
         "transition_note": "string",
         "camera_note": "string"
       }}

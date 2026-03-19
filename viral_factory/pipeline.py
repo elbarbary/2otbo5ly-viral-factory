@@ -467,17 +467,26 @@ class ViralFactoryPipeline:
                 idx = int(shot["shot_index"])
                 video_path = media_dir / f"shot-{idx:02d}.mp4"
 
-                # --- Per-shot audio: slice of dialogue + overlay text ---
+                # --- Per-shot audio: use shot-level voiceover_ar, fall back to proportional slice ---
                 if self.config.assets.generate_audio:
                     shot_audio_path = media_dir / f"shot-{idx:02d}-audio.wav"
                     if not shot_audio_path.exists():
                         self._log(ep, f"shot {shot_pos+1}/{n_shots} audio…")
-                        # Assign dialogue lines to this shot proportionally
-                        if dialogue_all and self.config.series.character_voices:
+                        shot_voiceover = shot.get("voiceover_ar", "").strip()
+                        if shot_voiceover and self.config.series.character_voices:
+                            # New path: shot has its own written voiceover — use it directly
+                            self.client.synthesize_dialogue(
+                                dialogue=[{"speaker": "كريم", "text": shot_voiceover}],
+                                character_voices=self.config.series.character_voices,
+                                default_voice=self.config.assets.tts_voice_name,
+                                language_code=self.config.assets.tts_language_code,
+                                output_path=shot_audio_path,
+                            )
+                        elif dialogue_all and self.config.series.character_voices:
+                            # Fallback: proportional slice of global dialogue (old episodes)
                             start = (shot_pos * len(dialogue_all)) // n_shots
                             end = ((shot_pos + 1) * len(dialogue_all)) // n_shots
                             shot_dialogue = dialogue_all[start:end]
-                            # Prepend overlay text as narrator line if dialogue slice is empty
                             if not shot_dialogue:
                                 shot_dialogue = [{"speaker": "narrator", "text": shot.get("overlay_text_ar", "")}]
                             self.client.synthesize_dialogue(
@@ -489,7 +498,7 @@ class ViralFactoryPipeline:
                             )
                         else:
                             self.client.synthesize_speech(
-                                text=shot.get("overlay_text_ar", ""),
+                                text=shot_voiceover or shot.get("overlay_text_ar", ""),
                                 prompt="Speak in energetic colloquial Egyptian Arabic, fast and punchy.",
                                 output_path=shot_audio_path,
                             )
