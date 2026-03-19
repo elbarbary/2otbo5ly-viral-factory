@@ -506,31 +506,31 @@ class ViralFactoryPipeline:
         if not shot_files or not audio_path.exists():
             return
 
-        ep_num = run_dir.parent.name  # e.g. "20260319-..."
         final_path = run_dir / "episode-final.mp4"
-        silent_path = run_dir / "episode-silent.mp4"
+        n = len(shot_files)
 
-        # Build ffmpeg concat filter
+        # Single ffmpeg pass: concat video + loudnorm + stereo upmix + mux
         cmd: List[str] = ["ffmpeg", "-y"]
         for sf in shot_files:
             cmd += ["-i", str(sf)]
-        n = len(shot_files)
-        concat_filter = "".join(f"[{i}:v]" for i in range(n))
-        concat_filter += f"concat=n={n}:v=1:a=0,eq=saturation=1.12:contrast=1.05:gamma=0.98,format=yuv420p[v]"
-        cmd += ["-filter_complex", concat_filter, "-map", "[v]", "-c:v", "libx264", "-pix_fmt", "yuv420p", str(silent_path)]
-        subprocess.run(cmd, check=True, capture_output=True)
+        cmd += ["-i", str(audio_path)]
 
-        # Mux audio
-        subprocess.run([
-            "ffmpeg", "-y",
-            "-i", str(silent_path),
-            "-i", str(audio_path),
-            "-map", "0:v", "-map", "1:a",
-            "-c:v", "copy", "-c:a", "aac", "-ar", "48000", "-shortest",
+        video_inputs = "".join(f"[{i}:v]" for i in range(n))
+        filter_complex = (
+            f"{video_inputs}concat=n={n}:v=1:a=0,"
+            f"eq=saturation=1.12:contrast=1.05:gamma=0.98,format=yuv420p[v];"
+            f"[{n}:a]loudnorm,aresample=48000,pan=stereo|c0=c0|c1=c0[a]"
+        )
+        cmd += [
+            "-filter_complex", filter_complex,
+            "-map", "[v]", "-map", "[a]",
+            "-c:v", "libx264", "-pix_fmt", "yuv420p",
+            "-c:a", "aac", "-b:a", "128k",
+            "-shortest",
+            "-movflags", "+faststart",
             str(final_path)
-        ], check=True, capture_output=True)
-
-        silent_path.unlink(missing_ok=True)
+        ]
+        subprocess.run(cmd, check=True, capture_output=True)
         asset_manifest["final_video"] = str(final_path)
 
     def _read_pack(self, pack_path: Path) -> Dict[str, Any]:
