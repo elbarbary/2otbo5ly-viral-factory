@@ -30,9 +30,9 @@ class VertexClientError(RuntimeError):
     pass
 
 
-def _with_retry(fn: Callable[[], _T], *, max_attempts: int = 5, base_delay: float = 5.0) -> _T:
+def _with_retry(fn: Callable[[], _T], *, max_attempts: int = 7, base_delay: float = 5.0) -> _T:
     """Call *fn* up to *max_attempts* times with exponential backoff + jitter.
-    429 RESOURCE_EXHAUSTED gets a longer fixed wait to clear the rate limit window."""
+    429 RESOURCE_EXHAUSTED and 500 INTERNAL errors get a longer fixed wait."""
     for attempt in range(1, max_attempts + 1):
         try:
             return fn()
@@ -43,6 +43,9 @@ def _with_retry(fn: Callable[[], _T], *, max_attempts: int = 5, base_delay: floa
             if "429" in exc_str or "RESOURCE_EXHAUSTED" in exc_str:
                 delay = 60.0 + random.uniform(0, 15)
                 print(f"  [rate-limit retry {attempt}/{max_attempts - 1}] waiting {delay:.0f}s for quota reset…", flush=True)
+            elif "500" in exc_str or "INTERNAL" in exc_str:
+                delay = 30.0 + random.uniform(0, 10)
+                print(f"  [server-error retry {attempt}/{max_attempts - 1}] waiting {delay:.0f}s…", flush=True)
             else:
                 delay = base_delay * (2 ** (attempt - 1)) + random.uniform(0, 2)
                 print(f"  [retry {attempt}/{max_attempts - 1}] {exc!r} — retrying in {delay:.1f}s", flush=True)
