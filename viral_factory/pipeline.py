@@ -197,6 +197,8 @@ class ViralFactoryPipeline:
             temperature=self.config.pipeline.writing_temperature,
             use_google_search=False
         )
+        if isinstance(concepts_bundle, list):
+            concepts_bundle = {"concepts": concepts_bundle}
         write_json(active_run_dir / "concepts.json", concepts_bundle)
         write_json(active_run_dir / "logs" / "concepts-response.json", concepts_raw)
 
@@ -253,6 +255,8 @@ class ViralFactoryPipeline:
             temperature=self.config.pipeline.writing_temperature,
             use_google_search=False
         )
+        if isinstance(initial_script, list):
+            initial_script = initial_script[0] if initial_script else {}
         initial_heuristic = score_script_heuristics(initial_script)
         write_json(run_dir / "script-00-initial.json", initial_script)
         write_json(run_dir / "logs" / "script-00-response.json", initial_script_raw)
@@ -312,6 +316,8 @@ class ViralFactoryPipeline:
             temperature=self.config.pipeline.writing_temperature,
             use_google_search=False
         )
+        if isinstance(initial_video_plan, list):
+            initial_video_plan = initial_video_plan[0] if initial_video_plan else {}
         write_json(run_dir / "video-plan-00-initial.json", initial_video_plan)
         write_json(run_dir / "logs" / "video-plan-00-response.json", initial_video_plan_raw)
 

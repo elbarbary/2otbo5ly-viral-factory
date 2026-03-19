@@ -36,7 +36,9 @@ def _json_default(value: Any) -> Any:
 
 def write_json(path: Path, payload: Any) -> None:
     ensure_dir(path.parent)
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2, default=_json_default), encoding="utf-8")
+    tmp = path.with_suffix(".tmp")
+    tmp.write_text(json.dumps(payload, ensure_ascii=False, indent=2, default=_json_default), encoding="utf-8")
+    tmp.replace(path)  # atomic rename on POSIX — readers never see a partial file
 
 
 def extract_json_blob(text: str) -> Any:
