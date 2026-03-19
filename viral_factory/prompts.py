@@ -326,10 +326,10 @@ Return JSON only:
   "continuity_updates": ["string"],
   "cta": "string",
   "dialogue": [
-    {
+    {{
       "speaker": "narrator | كريم | فارس | أم كريم | الشيف حاتم | نور | سلمى",
       "text": "the spoken line in colloquial Egyptian Arabic"
-    }
+    }}
   ]
 }}
 """.strip()
@@ -435,7 +435,13 @@ Return JSON only:
     "pinned_comment": "string",
     "cliffhanger": "string",
     "continuity_updates": ["string"],
-    "cta": "string"
+    "cta": "string",
+    "dialogue": [
+      {{
+        "speaker": "narrator | كريم | فارس | أم كريم | الشيف حاتم | نور | سلمى",
+        "text": "the spoken line in colloquial Egyptian Arabic"
+      }}
+    ]
   }}
 }}
 """.strip()
@@ -614,6 +620,7 @@ Return JSON only:
         "duration_seconds": {config.assets.video_duration_seconds},
         "purpose": "string",
         "continuity_lock": "string",
+        "shot_image_prompt_en": "string — still-frame Imagen prompt for the FIRST FRAME of this shot, full cartoon detail including all character visual locks",
         "veo_prompt_en": "string",
         "negative_prompt_en": "string",
         "overlay_text_ar": "string",
