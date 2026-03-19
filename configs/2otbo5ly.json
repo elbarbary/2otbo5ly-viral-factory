@@ -802,7 +802,7 @@
   },
 
   "pipeline": {
-    "concept_pool_size": 4,
+    "concept_pool_size": 2,
     "videos_per_run": 1,
     "script_iterations": 1,
     "video_prompt_iterations": 1,

@@ -381,27 +381,24 @@ class ViralFactoryPipeline:
         media_dir = ensure_dir(run_dir / "media")
         asset_manifest: Dict[str, Any] = {}
 
-        # --- Character sheet: generate once, reuse across all episodes ---
+        # --- Character sheet: generate once, reuse across all episodes (thread-safe) ---
         series_character_sheet: Optional[Path] = None
 
         if self.config.assets.generate_images and self.config.series.enabled:
             canonical_sheet = self._series_character_sheet_path()
+            with self._continuity_lock:
+                if not canonical_sheet.exists():
+                    character_sheet_prompt = pack["final_video_plan"].get("character_sheet_prompt_en", "")
+                    if character_sheet_prompt:
+                        ensure_dir(canonical_sheet.parent)
+                        self.client.generate_image(
+                            prompt=character_sheet_prompt,
+                            output_path=canonical_sheet
+                        )
             if canonical_sheet.exists():
-                # Reuse the already-generated canonical sheet
                 shutil.copy(canonical_sheet, media_dir / "character-sheet.png")
                 series_character_sheet = canonical_sheet
                 asset_manifest["character_sheet"] = {"reused_from": str(canonical_sheet)}
-            else:
-                # First episode — generate canonical sheet and store it in runs/series/
-                character_sheet_prompt = pack["final_video_plan"].get("character_sheet_prompt_en", "")
-                if character_sheet_prompt:
-                    ensure_dir(canonical_sheet.parent)
-                    asset_manifest["character_sheet"] = self.client.generate_image(
-                        prompt=character_sheet_prompt,
-                        output_path=canonical_sheet
-                    )
-                    shutil.copy(canonical_sheet, media_dir / "character-sheet.png")
-                    series_character_sheet = canonical_sheet
 
             location_path = media_dir / "location-sheet.png"
             location_sheet_prompt = pack["final_video_plan"].get("location_sheet_prompt_en", "")

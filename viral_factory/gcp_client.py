@@ -82,6 +82,7 @@ class VertexFactoryClient:
         self._genai_types = None
         self._text_client = None
         self._video_client = None
+        self._client_lock = __import__("threading").Lock()
 
     def _load_genai(self) -> None:
         if self._genai is not None:
@@ -112,14 +113,17 @@ class VertexFactoryClient:
     @property
     def text_client(self):
         if self._text_client is None:
-            self._text_client = self._make_client(os.getenv("GOOGLE_CLOUD_LOCATION", "global"), timeout_ms=120_000)
+            with self._client_lock:
+                if self._text_client is None:
+                    self._text_client = self._make_client(os.getenv("GOOGLE_CLOUD_LOCATION", "global"), timeout_ms=120_000)
         return self._text_client
 
     @property
     def video_client(self):
         if self._video_client is None:
-            # Veo generation can take many minutes; 30-minute timeout in milliseconds
-            self._video_client = self._make_client(os.getenv("GOOGLE_CLOUD_VIDEO_LOCATION", "us-central1"), timeout_ms=1_800_000)
+            with self._client_lock:
+                if self._video_client is None:
+                    self._video_client = self._make_client(os.getenv("GOOGLE_CLOUD_VIDEO_LOCATION", "us-central1"), timeout_ms=1_800_000)
         return self._video_client
 
     def _response_to_dict(self, response: Any) -> Dict[str, Any]:
