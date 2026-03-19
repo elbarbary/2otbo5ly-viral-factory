@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import shutil
+import subprocess
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
@@ -491,7 +492,46 @@ class ViralFactoryPipeline:
             asset_manifest["videos"] = shot_assets
 
         write_json(run_dir / "media-manifest.json", asset_manifest)
+
+        # --- ffmpeg: assemble final episode video ---
+        if self.config.assets.generate_videos and self.config.assets.generate_audio:
+            self._assemble_episode(run_dir, media_dir, asset_manifest)
+
         return asset_manifest
+
+    def _assemble_episode(self, run_dir: Path, media_dir: Path, asset_manifest: Dict[str, Any]) -> None:
+        """Concatenate shot mp4s and mux with voiceover into a final episode file."""
+        shot_files = sorted(media_dir.glob("shot-??.mp4"))
+        audio_path = media_dir / self.config.assets.tts_file_name
+        if not shot_files or not audio_path.exists():
+            return
+
+        ep_num = run_dir.parent.name  # e.g. "20260319-..."
+        final_path = run_dir / "episode-final.mp4"
+        silent_path = run_dir / "episode-silent.mp4"
+
+        # Build ffmpeg concat filter
+        cmd: List[str] = ["ffmpeg", "-y"]
+        for sf in shot_files:
+            cmd += ["-i", str(sf)]
+        n = len(shot_files)
+        concat_filter = "".join(f"[{i}:v]" for i in range(n))
+        concat_filter += f"concat=n={n}:v=1:a=0,eq=saturation=1.12:contrast=1.05:gamma=0.98,format=yuv420p[v]"
+        cmd += ["-filter_complex", concat_filter, "-map", "[v]", "-c:v", "libx264", "-pix_fmt", "yuv420p", str(silent_path)]
+        subprocess.run(cmd, check=True, capture_output=True)
+
+        # Mux audio
+        subprocess.run([
+            "ffmpeg", "-y",
+            "-i", str(silent_path),
+            "-i", str(audio_path),
+            "-map", "0:v", "-map", "1:a",
+            "-c:v", "copy", "-c:a", "aac", "-ar", "48000", "-shortest",
+            str(final_path)
+        ], check=True, capture_output=True)
+
+        silent_path.unlink(missing_ok=True)
+        asset_manifest["final_video"] = str(final_path)
 
     def _read_pack(self, pack_path: Path) -> Dict[str, Any]:
         return json.loads(pack_path.read_text(encoding="utf-8"))

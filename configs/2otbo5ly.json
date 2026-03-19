@@ -804,8 +804,8 @@
   "pipeline": {
     "concept_pool_size": 4,
     "videos_per_run": 1,
-    "script_iterations": 3,
-    "video_prompt_iterations": 3,
+    "script_iterations": 1,
+    "video_prompt_iterations": 1,
     "research_temperature": 1.0,
     "writing_temperature": 0.9,
     "critic_temperature": 0.5,
@@ -821,7 +821,7 @@
     "critic_model": "gemini-2.5-flash",
     "image_model": "imagen-4.0-generate-001",
     "video_model": "veo-3.1-fast-generate-001",
-    "tts_model": "gemini-2.5-flash-tts"
+    "tts_model": "gemini-2.5-flash-preview-tts"
   },
 
   "assets": {
@@ -831,7 +831,7 @@
     "image_size": "2K",
     "video_aspect_ratio": "9:16",
     "video_duration_seconds": 8,
-    "video_count_per_script": 4,
+    "video_count_per_script": 3,
     "video_resolution": "720p",
     "video_person_generation": "allow_adult",
     "video_enhance_prompt": true,

@@ -1,11 +1,14 @@
 from __future__ import annotations
 
 import os
+import random
 import socket
 import struct
 import time
 from pathlib import Path
-from typing import Any, Dict, List, Tuple
+from typing import Any, Callable, Dict, List, Tuple, TypeVar
+
+_T = TypeVar("_T")
 
 from .config import AppConfig
 from .io_utils import ensure_dir, extract_json_blob
@@ -25,6 +28,20 @@ socket.getaddrinfo = _ipv4_first_getaddrinfo
 
 class VertexClientError(RuntimeError):
     pass
+
+
+def _with_retry(fn: Callable[[], _T], *, max_attempts: int = 4, base_delay: float = 5.0) -> _T:
+    """Call *fn* up to *max_attempts* times with exponential backoff + jitter."""
+    for attempt in range(1, max_attempts + 1):
+        try:
+            return fn()
+        except Exception as exc:
+            if attempt == max_attempts:
+                raise
+            delay = base_delay * (2 ** (attempt - 1)) + random.uniform(0, 2)
+            print(f"  [retry {attempt}/{max_attempts - 1}] {exc!r} — retrying in {delay:.1f}s", flush=True)
+            time.sleep(delay)
+    raise RuntimeError("unreachable")
 
 
 def _pcm_to_wav(pcm: bytes, *, sample_rate: int, num_channels: int, sample_width: int) -> bytes:
@@ -224,15 +241,17 @@ class VertexFactoryClient:
         return extract_json_blob(text), self._response_to_dict(response)
 
     def generate_image(self, *, prompt: str, output_path: Path) -> Dict[str, Any]:
-        self._load_genai()
-        response = self.text_client.models.generate_images(
-            model=self.config.models.image_model,
-            prompt=prompt,
-            config=self._genai_types.GenerateImagesConfig(image_size=self.config.assets.image_size)
-        )
-        ensure_dir(output_path.parent)
-        response.generated_images[0].image.save(str(output_path))
-        return self._response_to_dict(response)
+        def _call():
+            self._load_genai()
+            response = self.text_client.models.generate_images(
+                model=self.config.models.image_model,
+                prompt=prompt,
+                config=self._genai_types.GenerateImagesConfig(image_size=self.config.assets.image_size)
+            )
+            ensure_dir(output_path.parent)
+            response.generated_images[0].image.save(str(output_path))
+            return self._response_to_dict(response)
+        return _with_retry(_call)
 
     def generate_video(
         self,
@@ -314,27 +333,26 @@ class VertexFactoryClient:
             ),
         )
 
-        response = self.text_client.models.generate_content(
-            model=model,
-            contents=text,
-            config=types.GenerateContentConfig(
-                response_modalities=["AUDIO"],
-                speech_config=speech_cfg,
-            ),
-        )
+        def _call():
+            response = self.text_client.models.generate_content(
+                model=model,
+                contents=text,
+                config=types.GenerateContentConfig(
+                    response_modalities=["AUDIO"],
+                    speech_config=speech_cfg,
+                ),
+            )
+            pcm_bytes: bytes = b""
+            for candidate in (response.candidates or []):
+                for part in (getattr(candidate.content, "parts", None) or []):
+                    blob = getattr(part, "inline_data", None)
+                    if blob and blob.data:
+                        pcm_bytes += blob.data
+            if not pcm_bytes:
+                raise VertexClientError("Gemini TTS returned no audio data.")
+            return pcm_bytes
 
-        # Extract raw PCM bytes from the inline_data part
-        pcm_bytes: bytes = b""
-        for candidate in (response.candidates or []):
-            for part in (getattr(candidate.content, "parts", None) or []):
-                blob = getattr(part, "inline_data", None)
-                if blob and blob.data:
-                    pcm_bytes += blob.data
-
-        if not pcm_bytes:
-            raise VertexClientError("Gemini TTS returned no audio data.")
-
-        # Wrap raw PCM in a WAV container (16-bit LE, mono, 24 000 Hz)
+        pcm_bytes = _with_retry(_call)
         wav_bytes = _pcm_to_wav(pcm_bytes, sample_rate=24000, num_channels=1, sample_width=2)
         ensure_dir(output_path.parent)
         output_path.write_bytes(wav_bytes)
@@ -373,19 +391,25 @@ class VertexFactoryClient:
                     prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name=voice_name)
                 ),
             )
-            response = self.text_client.models.generate_content(
-                model=model,
-                contents=text,
-                config=types.GenerateContentConfig(
-                    response_modalities=["AUDIO"],
-                    speech_config=speech_cfg,
-                ),
-            )
-            for candidate in (response.candidates or []):
-                for part in (getattr(candidate.content, "parts", None) or []):
-                    blob = getattr(part, "inline_data", None)
-                    if blob and blob.data:
-                        all_pcm += blob.data
+            def _call(t=text, sc=speech_cfg):
+                resp = self.text_client.models.generate_content(
+                    model=model,
+                    contents=t,
+                    config=types.GenerateContentConfig(
+                        response_modalities=["AUDIO"],
+                        speech_config=sc,
+                    ),
+                )
+                seg: bytes = b""
+                for candidate in (resp.candidates or []):
+                    for part in (getattr(candidate.content, "parts", None) or []):
+                        blob = getattr(part, "inline_data", None)
+                        if blob and blob.data:
+                            seg += blob.data
+                if not seg:
+                    raise VertexClientError(f"TTS returned no audio for speaker '{speaker}'.")
+                return seg
+            all_pcm += _with_retry(_call)
 
         if not all_pcm:
             raise VertexClientError("Gemini TTS returned no audio data for dialogue.")

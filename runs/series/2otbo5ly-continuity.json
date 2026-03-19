@@ -2,7 +2,7 @@
   "series_enabled": true,
   "title": "الشيف كريم",
   "visual_mode": "cartoon_hybrid",
-  "next_episode_number": 2,
+  "next_episode_number": 1,
   "active_visual_locks": [
     "cartoon characters, never photoreal humans",
     "bold outline, warm Cairo palette (ochre, terracotta, soft yellow), expressive eyebrows",
@@ -11,13 +11,10 @@
     "Karim: messy dark curly hair | warm brown eyes | short trimmed beard | green rubber wristband on RIGHT hand | cracked Android phone | home apron over blue hoodie or white t-shirt",
     "Karim's green wristband must appear on his right hand in every shot where his hands are visible",
     "the blue and white speckled pot is a recurring visual anchor in the home kitchen",
-    "food must look craveable and glossy, never childish or flat",
-    "Cairo sound texture: azaan, traffic, street vendors audible in background",
-    "warm color temperature always, no cold filters or blue tones",
-    "same wardrobe and props every episode unless the script explicitly describes a change",
-    "same wardrobe and props in every episode unless the script explicitly describes a change",
     "food must look craveable and glossy — never childish or flat",
+    "Cairo sound texture: azaan, traffic, street vendors audible in background",
     "warm color temperature always — no cold filters or blue tones",
+    "same wardrobe and props in every episode unless the script explicitly describes a change",
     "no photoreal humans, no text baked into the scene, no random characters"
   ],
   "protagonist_bible": {
@@ -100,24 +97,5 @@
     "WORKSHOP: converted apartment cooking school, worn tables, Chef Hatem's domain (Episodes 10-15)",
     "CAIRO STREETS: Shubra neighborhood, laundry overhead, koshary shops, urban Cairo texture"
   ],
-  "episodes": [
-    {
-      "episode_number": 1,
-      "name": "فول بالكمأة بـ1500 جنيه... بس طلع إيه؟",
-      "summary": "كريم منصور، في محاولته الأولى لصنع فيديو تيك توك، يحاول تحضير طبق فول مدمس 'جورميه' بزيت الكمأة وبيض بوش في مطبخ عائلته الهادئ. تنتهي المحاولة بكارثة كوميدية: البيضة تتكسر، زيت الكمأة ينسكب، ويحرق يده. رغم الفشل، ينشر الفيديو ويظل متفائلاً بشكل لا يتزعزع، حتى مع 34 مشاهدة فقط (معظمها من صديقه فارس).",
-      "cliffhanger": "رغم 34 مشاهدة فقط، كريم يبتسم بثقة ويضع كابشن 'أكل مصري راقي، استنونا!' مؤكداً إيمانه الراسخ بقدراته ومستقبله كشيف تيك توك، غير آبه بالواقع.",
-      "continuity_updates": [
-        "Introduce Karim as a passionate but untrained home cook, making his first TikTok video.",
-        "Establish Karim's home kitchen as his primary filming location, highlighting the blue and white speckled pot.",
-        "Introduce Karim's cracked Android phone as his filming device.",
-        "Implicitly introduce Fares as Karim's loyal (and perhaps only) initial audience/sidekick through a quick visual gag.",
-        "Show Karim's signature green rubber wristband and his neck-rubbing gesture as character tells.",
-        "Set the tone for 'Act 1: The Failed TikToker' - warm chaos, hopeful, slightly embarrassing, with a strong undercurrent of unshakeable optimism.",
-        "Emphasize the cultural tension of 'gourmet' ful to generate comment bait."
-      ],
-      "continuity_goal": "تأسيس كريم كشخص عاطفي ولكنه غير مدرب، وتقديم فارس كرفيق.",
-      "character_sheet_prompt_en": "Karim Mansour is a 2D cartoon, 24-year-old Egyptian man with messy dark curly hair (always slightly disheveled), warm brown eyes, a short trimmed beard, and a green rubber wristband (always present) on his RIGHT hand. He wears a home apron over a blue hoodie or faded white t-shirt. He often carries a budget Android phone with a cracked bottom-right corner. His style is expressive, bold outlines, and consistent with Cairo-neighborhood warmth. Fares is a 2D cartoon, tall and lanky Egyptian man, almost always in an Ahly jersey or a puffer jacket, carrying a cheap phone gimbal or selfie stick, with wide expressive eyes. Characters are stylized and consistent—not photoreal.",
-      "run_dir": "/Users/barbary/Documents/New project/runs/20260317-125541-episode-1-of/01-gourmet-ful-disaster"
-    }
-  ]
+  "episodes": []
 }
