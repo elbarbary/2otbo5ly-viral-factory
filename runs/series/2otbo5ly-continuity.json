@@ -2,7 +2,7 @@
   "series_enabled": true,
   "title": "الشيف كريم",
   "visual_mode": "cartoon_hybrid",
-  "next_episode_number": 1,
+  "next_episode_number": 51,
   "active_visual_locks": [
     "cartoon characters, never photoreal humans",
     "bold outline, warm Cairo palette (ochre, terracotta, soft yellow), expressive eyebrows",
@@ -15,7 +15,98 @@
     "Cairo sound texture: azaan, traffic, street vendors audible in background",
     "warm color temperature always — no cold filters or blue tones",
     "same wardrobe and props in every episode unless the script explicitly describes a change",
-    "no photoreal humans, no text baked into the scene, no random characters"
+    "no photoreal humans, no text baked into the scene, no random characters",
+    "2D cartoon style characters, never photoreal humans.",
+    "Bold outlines, expressive faces, wide exaggerated expressions.",
+    "Warm Cairo palette (ochre, terracotta, soft yellow), warm color temperature always.",
+    "Food must look craveable, glossy, with visible steam and rich highlights, never childish or flat.",
+    "Karim's green rubber wristband on his RIGHT hand must appear in every shot where his hands are visible.",
+    "Same wardrobe and props in every episode unless the script explicitly describes a change.",
+    "No random characters, only characters introduced in the series context appear if required by the script.",
+    "2D cartoon style characters, never photoreal humans",
+    "Bold outlines, expressive faces, wide exaggerated expressions",
+    "Warm Cairo palette (ochre, terracotta, soft yellow), warm color temperature always",
+    "Food must look craveable, glossy, with visible steam and rich highlights, never childish or flat",
+    "Karim's green rubber wristband on his RIGHT hand must appear in every shot where his hands are visible",
+    "Same wardrobe and props in every episode unless the script explicitly describes a change",
+    "No random characters, only characters introduced in the series context appear if required by the script",
+    "Um Karim: round face | silver-streaked hair pulled back | colorful galabeyya | reading glasses sometimes on head",
+    "No photoreal humans, no text baked into the scene, no random characters, no watermarks, no logos.",
+    "Comedic sound effects for moments of failure or surprise",
+    "fast comedic reaction shots — character faces should be capable of wide exaggerated expressions",
+    "Karim: messy dark curly hair | warm brown eyes | short trimmed beard | cracked Android phone | home apron over blue hoodie or white t-shirt",
+    "2D cartoon characters, never photoreal humans",
+    "No photoreal humans, no text baked into the scene, no watermarks, no logos",
+    "Food must look craveable, glossy, with visible steam and rich highlights, never childish or flat (N/A for this episode)",
+    "Food must look craveable, glossy, with visible steam and rich highlights, never childish or flat, unless intentionally showing a comedic failure",
+    "No photoreal humans, no text baked into the scene, no random characters, no watermarks, no logos",
+    "Fares: tall and lanky | Ahly jersey or puffer jacket | cheap gimbal in hand | wide expressive eyes",
+    "Fast comedic reaction shots — character faces should be capable of wide exaggerated expressions",
+    "No photoreal humans, no text baked into the scene, no watermarks, no logos.",
+    "Comedic sound effects for moments of failure or surprise.",
+    "Fast, energetic cuts to maintain viewer attention.",
+    "Quick reaction shots (e.g., exaggerated facial expressions, flinching).",
+    "Use of comedic sound effects to punctuate reactions or failures.",
+    "Cairo sound texture: azaan, traffic, street vendors audible in background.",
+    "Food must look craveable, glossy, with visible steam and rich highlights, never childish or flat, unless intentionally showing a comedic failure.",
+    "Karim: messy dark curly hair | warm brown eyes | short trimmed beard | green rubber wristband on RIGHT hand | cracked Android phone | home apron over blue hoodie",
+    "Fares: tall and lanky | Ahly jersey | cheap gimbal in hand | wide expressive eyes",
+    "Amr: stylized, smug expression, trendy clothes",
+    "Karim's budget Android phone with a cracked bottom-right corner must appear when he is holding it.",
+    "Comedic sound effects for moments of condescension or surprise",
+    "Cairo sound texture: muffled traffic, chatter in cafe, metro sounds (azan and street vendors for exterior shots only if applicable, but not in cafe/metro)",
+    "Food must look craveable, glossy, with visible steam and rich highlights, never childish or flat (if food is shown)",
+    "Fast, energetic cuts to maintain viewer attention",
+    "Quick reaction shots (e.g., exaggerated facial expressions, flinching)",
+    "Use of comedic sound effects to punctuate reactions or failures",
+    "Karim: messy dark curly hair, warm brown eyes, short trimmed beard, green rubber wristband on RIGHT hand, cracked Android phone (when visible), blue hoodie.",
+    "Generic restaurant chefs: 2D cartoon figures, distinctly not Chef Hatem, showing dismissive body language and exaggerated expressions of disdain. Vary their appearances (thin, round, bald, mustached) to show different restaurants, but ensure they remain generic.",
+    "Cairo sound texture: subtle muffled traffic, distant city hum, occasional indistinct chatter",
+    "Karim: messy dark curly hair, warm brown eyes, short trimmed beard, green rubber wristband on RIGHT hand, cracked Android phone, home apron over blue hoodie or white t-shirt",
+    "2D cartoon characters, never photoreal humans.",
+    "No random characters, only characters introduced in the series context appear.",
+    "Food must look craveable, glossy, with visible steam and rich highlights, never childish or flat, unless intentionally showing a comedic failure (like overcooked lamb).",
+    "Cairo sound texture: azaan, traffic, street vendors audible in background (muffled for indoor scenes).",
+    "Bold outlines, expressive faces, wide exaggerated expressions, fast comedic reaction shots.",
+    "Karim: messy dark curly hair | warm brown eyes | short trimmed beard | green rubber wristband on RIGHT hand | cracked Android phone (when visible) | chef whites (over faded white t-shirt).",
+    "Salma: chef whites | hair tied back tightly | precise, efficient movements | subtle expressions.",
+    "Use of comedic sound effects to punctuate actions or failures and enhance the narrative.",
+    "Cairo sound texture: subtle muffled traffic, distant city hum, occasional indistinct chatter, azaan (for exterior/rooftop scenes).",
+    "Chef Omar: heavyset Egyptian man in his late 40s, completely bald, with a thick black mustache. Always in chef whites with rolled-up sleeves and capable of exaggerated rage.",
+    "Karim: messy dark curly hair | warm brown eyes | short trimmed beard | cracked Android phone (when visible) | home apron over blue hoodie or white t-shirt",
+    "The blue and white speckled pot is a recurring visual anchor in the home kitchen",
+    "Cairo sound texture: azaan, traffic, street vendors audible in background for exterior shots, muffled kitchen sounds for interior",
+    "Food must look craveable, glossy, with visible steam and rich highlights, never childish or flat, unless intentionally showing a comedic failure (N/A for this episode)",
+    "Cairo sound texture: muffled traffic, indistinct chatter in background, with prominent kitchen sounds (clangs, sizzles, chopping).",
+    "Bold outlines, expressive faces, wide exaggerated expressions, fast comedic reaction shots",
+    "Warm Cairo palette (ochre, terracotta, soft yellow) as a baseline, but allowing for muted, desaturated tones to emphasize the kitchen's shift under Ramy",
+    "Food must look craveable, glossy, with visible steam and rich highlights, never childish or flat, especially the hawawshi flashback",
+    "Cairo sound texture: azaan, traffic, street vendors audible in background (muffled for indoor scenes)",
+    "Warm Cairo palette (ochre, terracotta, soft yellow) for characters, but a cooler, sterile palette for the professional kitchen environment.",
+    "Food must look craveable, glossy, with visible steam and rich highlights *unless* intentionally showing unappetizing frozen food.",
+    "Same wardrobe and props in every episode unless the script explicitly describes a change (Karim in chef whites for this episode).",
+    "No random characters, only characters introduced in the series context appear if required by the script (only Karim for this episode).",
+    "Fast, energetic cuts to maintain viewer attention, especially during the reveal.",
+    "Warm Cairo palette (ochre, terracotta, soft yellow) for general warmth, with cooler/desaturated tones for the modern restaurant that gradually becomes sterile/tense.",
+    "Food must look craveable, glossy, with visible steam and rich highlights in positive moments.",
+    "Comedic sound effects for moments of failure, surprise, or tension.",
+    "Warm Cairo palette (ochre, terracotta, soft yellow), warm color temperature always (except for initial despair scene).",
+    "No photoreal humans, no text baked into the scene, no watermarks, no logos, no English text, no Arabic text, no blurry images, no distorted faces, no extra limbs, no bad anatomy, no bad composition, not 3D, not CGI, not anime, not static, not low resolution, not NSFW.",
+    "The blue and white speckled pot is a recurring visual anchor in the home kitchen.",
+    "Comedic sound effects for moments of failure, surprise, or tension",
+    "Bold outlines, expressive faces, wide exaggerated expressions for comedic effect.",
+    "No photoreal humans, no text baked into the scene, no watermarks, no logos, no English text, no blurry images, no distorted faces, no extra limbs, no bad anatomy, no bad composition, not 3D, not CGI, not anime, not static, not low resolution, not NSFW.",
+    "Food must look craveable, glossy, with visible steam and rich highlights, never childish or flat, unless intentionally showing a comedic failure (like Karim's early attempts).",
+    "Cairo sound texture: azaan, traffic, street vendors audible in background (muffled for indoor scenes, prominent for outdoor).",
+    "Chef Hatem is always in chef whites with rolled-up sleeves, even in casual settings, as per visual locks.",
+    "No random characters, only characters introduced in the series context appear",
+    "No photoreal humans, no text baked into the scene, no watermarks, no logos, no blurry images, no distorted faces, no extra limbs, no bad anatomy, no bad composition, not 3D, not CGI, not anime, not static, not low resolution, not NSFW",
+    "Cairo sound texture: muffled traffic, distant city hum, faint distant azaan, occasional indistinct street vendor sounds (all subtle for indoor scenes).",
+    "No photoreal humans, no text baked into the scene, no watermarks, no logos, no English text, no Arabic text, no blurry images, no distorted faces, no extra limbs, no bad anatomy, no bad composition, not 3D, not CGI, not anime, not static, not low resolution, not NSFW",
+    "Food must look craveable, glossy, with visible steam and rich highlights, never childish or flat (though not directly applicable to this episode, it's a general style guide)",
+    "No photoreal humans, no text baked into the scene, no watermarks, no logos, no English text, no blurry images (unless intentional for flashback), no distorted faces, no extra limbs, no bad anatomy, no bad composition, not 3D, not CGI, not anime, not static, not low resolution, not NSFW",
+    "Food must look craveable, glossy, with visible steam and rich highlights, controversially appetizing but not a failure.",
+    "No photoreal humans, no text baked into the scene, no watermarks, no logos, no English text, no blurry images, no distorted faces, no extra limbs, no bad anatomy, no bad composition, not 3D, not CGI, not anime, not static, not low resolution, not NSFW"
   ],
   "protagonist_bible": {
     "name": "كريم منصور",
@@ -97,5 +188,1013 @@
     "WORKSHOP: converted apartment cooking school, worn tables, Chef Hatem's domain (Episodes 10-15)",
     "CAIRO STREETS: Shubra neighborhood, laundry overhead, koshary shops, urban Cairo texture"
   ],
-  "episodes": []
+  "episodes": [
+    {
+      "episode_number": 1,
+      "name": "فول فاخر بـ 150 جنيه... ولا كارثة؟",
+      "summary": "Karim, a passionate but untrained home cook, attempts to create 'gourmet ful medames' with truffle oil and poached eggs late at night in his family's kitchen for his first TikTok video. The cartoon video showcases his ambitious but clumsy process, leading to a comedic series of kitchen mishaps—a broken egg, spilled truffle oil, and a minor hand burn. Despite the messy outcome, he posts the video with unwavering optimism and a forced smile. The video receives only 34 views, 30 of which are from his best friend Fares, highlighting Karim's hopeful beginnings and the 'warm chaos' of his early content creation, while subtly teasing the future potential of home-cooked, restaurant-quality dishes.",
+      "cliffhanger": "Karim's unshakeable belief in his culinary vision despite the low view count and kitchen disasters, promising more 'fine dining' from his home kitchen, leaving viewers curious about what chaotic creation he'll attempt next and hinting at the potential for unique, home-cooked dishes.",
+      "continuity_updates": [
+        "Karim's character is established as an ambitious but clumsy home cook with an unshakeable belief in himself.",
+        "The primary location, Karim's home kitchen, is introduced with key visual anchors like the blue and white speckled pot.",
+        "Fares is implicitly introduced as Karim's loyal (and perhaps only) supporter through the view count.",
+        "The tone of 'warm chaos' and 'hopeful determination' for Act 1 is firmly set."
+      ],
+      "continuity_goal": "Establish Karim as passionate but untrained, introduce Fares as sidekick (implicitly through views).",
+      "character_sheet_prompt_en": "2D cartoon character, Karim, a 24-year-old Egyptian man, medium build, with messy dark curly hair, warm brown eyes, a short trimmed beard. He wears a home apron over a blue hoodie. On his right hand, he wears a green rubber wristband. He holds a budget Android phone with a cracked bottom-right corner. He has a small flour smudge or sauce splash somewhere on him. Bold outlines, expressive face, capable of wide exaggerated expressions. Not photoreal.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-194220-episode-1-of/01-gourmet-ful-disaster"
+    },
+    {
+      "episode_number": 7,
+      "name": "كلمة وهتفضل معلمة",
+      "summary": "Karim and Fares meet with Amr, a larger food TikToker, for a potential collaboration. Amr's condescending attitude and dismissive comments about Karim's potential, calling him 'ya sa7by' and suggesting he be a 'sous chef,' ignite a quiet but fierce determination in Karim. Leaving the meeting, Karim vows to Fares that he will surpass Amr, carrying the words as a future motivator. The episode ends with Karim on the metro, studying Amr's TikTok videos with intense focus, turning perceived disrespect into a driving force.",
+      "cliffhanger": "Karim is seen on the metro, intently scrolling through Amr's TikTok videos on his cracked phone, his green wristband clearly visible. He's not watching passively, but studying, analyzing, taking mental notes for a future challenge.",
+      "continuity_updates": [
+        "This moment plants a deep-seated motivation in Karim, which will drive his future culinary endeavors and his eventual partnership with 2otbo5ly. He will often recall this perceived disrespect as a catalyst for his ambition."
+      ],
+      "continuity_goal": "To plant a deep-seated motivation for Karim. This moment becomes a pivotal memory that drives his future culinary endeavors and his eventual partnership with 2otbo5ly, pushing him to prove his worth through his food.",
+      "character_sheet_prompt_en": "A 2D cartoon character, Karim Mansour, a mid-20s Egyptian man. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He wears a home apron over a blue hoodie or faded white t-shirt. A green rubber wristband is always visible on his RIGHT hand. He always carries a budget Android phone with a cracked bottom-right corner. His facial expressions are highly expressive, capable of wide exaggerated reactions for comedic effect. He is drawn with bold outlines and a warm Cairo color palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-194220-episode-7-of/01-kelma-w-hatofdal-mo3alema"
+    },
+    {
+      "episode_number": 8,
+      "name": "الأرقام مش بتكدب",
+      "summary": "بعد تلات شهور من محاولاته الفاشلة على تيك توك، كريم بيواجه الحقيقة المرة مع صاحبه فارس: 312 متابع ومتوسط 600 مشاهدة. أبوه بيضغط عليه عشان يلاقي 'شغلانة بجد'، وكريم بيحس بالإحباط. لكن لحظة اليأس دي بتتحول لنقطة تحول، لما بيقرر إنه مش هيستسلم وهيبدأ رحلة التعلم بجد عشان يبقى شيف حقيقي، وبيبحث عن كورسات طبخ في القاهرة.",
+      "cliffhanger": "Karim is staring at his phone, a search result for a cooking course in Mohandeseen highlighted, a mix of determination and trepidation on his face, signaling a major pivot in his journey.",
+      "continuity_updates": [
+        "Karim's mindset shifts from chasing viral fame to seeking genuine culinary education, marking the end of Act 1.",
+        "His low TikTok engagement is established as a major turning point, directly leading to his decision to seek formal training.",
+        "Parental pressure (Abu Karim's comments) adds to his motivation for change, reinforcing the cultural context.",
+        "Fares's character is further developed through his pragmatic and meme-infused dialogue, showcasing his role as Karim's supportive but blunt friend."
+      ],
+      "continuity_goal": "To definitively close Act 1 by showing Karim abandoning the superficial pursuit of viral fame and committing to a path of genuine culinary mastery, setting up his entry into Chef Hatem's workshop in Act 2.",
+      "character_sheet_prompt_en": "2D cartoon style character, a 24-year-old Egyptian man named Karim Mansour, medium build, with messy dark curly hair, warm brown eyes, short trimmed beard. He wears a home apron over a blue hoodie or faded white t-shirt. On his RIGHT hand, he always wears a green rubber wristband. He holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines. Fares is a tall and lanky 25-year-old Egyptian man, almost always in an Ahly jersey or a puffer jacket, with a cheap phone gimbal in hand and wide expressive eyes, restless comedic energy.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-194220-episode-8-of/01-numbers-dont-lie-reckoning"
+    },
+    {
+      "episode_number": 6,
+      "name": "البيفوت: رز المطاعم.. بس أنا؟",
+      "summary": "كريم بيحاول يعمل محتوى تعليمي عن طريقة عمل الرز المفلفل، لكن بيفشل مرتين: مرة الرز بيطلع ناشف، ومرة بيطلع معجن. بيحاول يداري فشله إنه يسمي الرز الناشف 'ألدينتي ستايل' وبيقسم الفيديو على جزئين. أمه بتدخل وبكلمة واحدة بس بتنهي موضوع الغرور بتاعه.",
+      "cliffhanger": "The video ends with Um Karim's 'يا ابني' lingering, possibly echoing, while Karim stares at his cracked phone screen, a flicker of doubt or realization crossing his face. A text overlay appears: 'مين هيكسب؟ كريم ولا الرز؟'",
+      "continuity_updates": [
+        "Karim: messy dark curly hair | warm brown eyes | short trimmed beard | green rubber wristband on RIGHT hand | cracked Android phone | home apron over blue hoodie",
+        "Um Karim: round face | silver-streaked hair pulled back | colorful galabeyya",
+        "Home kitchen: blue and white speckled pot always on the stove"
+      ],
+      "continuity_goal": "This video serves as the initial hint that Karim, despite his ambition and forced confidence, genuinely needs to improve his fundamental cooking skills, setting the stage for his journey to truly learn and become a better chef.",
+      "character_sheet_prompt_en": "2D cartoon style character, Karim Mansour, an Egyptian man, mid-20s, medium build, with messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie, and a green rubber wristband on his RIGHT hand. He always carries a budget Android phone with a cracked bottom-right corner. His facial features are expressive, with bold outlines, and rendered in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-194220-episode-6-of/01-al-dente-pivot"
+    },
+    {
+      "episode_number": 3,
+      "name": "محشي أمي... تريند ولا لأ؟",
+      "summary": "كريم وفارس على سطح البيت. فارس بيحاول يقنع كريم باسم 'براند' جديد، بس كريم بيصر إن 'الشيف كريم' هو الأنسب وإن الأكل هو اللي هيتكلم. كريم بيصور فيديو محشي كرنب مدته 22 دقيقة بتفاصيل التفاصيل ورافض أي مونتاج. فارس بيحاول يقنعه يختصر، لكن كريم بيصر على 'الأكل لازم يتاخد حقه'. في الآخر الفيديو بيجيب 12 مشاهدة بس، والصورة المصغرة (thumbnail) مش واضحة ومحدش فاهم منها حاجة.",
+      "cliffhanger": "كريم بيبص على فيديو المحشي اللي تعب فيه 22 دقيقة، والمشاهدات 12. طبق المحشي اللي يفتح النفس ده... يا ترى مين هيقدر يوصله للناس اللي عايزاه؟",
+      "continuity_updates": [
+        "Karim's character is firmly established as a highly skilled cook with a deep respect for traditional food, but completely naive about modern content creation and marketing.",
+        "Fares's role as the 'TikTok-savvy' friend and comic relief is reinforced through his exaggerated reactions and attempts to guide Karim.",
+        "The core problem that 2otbo5ly will solve (connecting talented home chefs with an audience craving specific, well-made dishes) is subtly introduced through the contrast between Karim's skill and his content's lack of reach."
+      ],
+      "continuity_goal": "تأكيد موهبة كريم في الطبخ رغم فشله في التقديم والتسويق لنفسه، وده بيعزز فكرة إن فيه شيفات بيوت موهوبة مش بتوصل. إظهار أهمية المنصة اللي ممكن تجمع الأكل الحلو بالجمهور اللي بيدور عليه.",
+      "character_sheet_prompt_en": "2D cartoon style, Egyptian man, mid-20s, medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He wears a home apron over a blue hoodie or a faded white t-shirt. On his RIGHT hand, he always wears a green rubber wristband. He often holds a budget Android phone with a cracked bottom-right corner. His face shows expressive eyebrows and capable of wide exaggerated expressions. He has a small flour smudge or sauce splash somewhere on him. Bold outlines, warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-194220-episode-3-of/01-mahshi-viral-fail"
+    },
+    {
+      "episode_number": 4,
+      "name": "لايف الشيف كريم: لما الريحة تجيب الجيران!",
+      "summary": "Karim attempts his first 'professional' TikTok live, making a delicious Hawawshi. His efforts are hilariously derailed by his mom calling from off-screen, a neighbor (Am Saber) knocking for food, and a persistent 'what' commenter. He ends the live prematurely when he realizes he left the stove on, leading to a moment of flustered determination to find a 'strategy'.",
+      "cliffhanger": "Karim, flustered, stares at his phone screen showing '3 viewers'. He rubs the back of his neck, then opens his notes app. We see him start typing 'استراتيجية اللايفات الجاية... لازم تتظبط!' as the screen fades.",
+      "continuity_updates": [
+        "Karim's initial attempts at 'professional' TikTok content are met with domestic chaos, highlighting the contrast between his aspirations and his home reality, and the immediate need for a 'strategy' to manage these interruptions.",
+        "The episode reinforces the 'chaotic warmth' of his Shubra home kitchen as a central setting, and the strong, food-centric community ties that both challenge and define his cooking environment.",
+        "Karim's determination to overcome obstacles and improve his content, despite setbacks, is established, hinting at his continuous effort to find a structured way to share his unique homemade dishes, foreshadowing the eventual need for a platform like 2otbo5ly."
+      ],
+      "continuity_goal": "To establish Karim's home kitchen as a lively, chaotic, and authentic space, reflecting the warm, community-driven nature of Egyptian households, rather than a sterile content studio.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing an off-white home apron over a faded white t-shirt. On his right hand, he wears a prominent green rubber wristband. He holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-194220-episode-4-of/01-karim-live-chaos-1"
+    },
+    {
+      "episode_number": 2,
+      "name": "سماش برجر أمي والمصحف",
+      "summary": "Karim, desperate to make a viral smash burger, uses his mom's sacred Quran stand as a 'smasher' in his home kitchen. Um Karim walks in mid-act, leading to a hilarious, culturally charged argument. Fares secretly films the entire chaos, and the video unexpectedly goes viral. Initially furious, Karim's anger turns to a mischievous grin when he sees the view count, realizing the power of authentic, chaotic content.",
+      "cliffhanger": "Karim, initially furious at Fares for posting the argument, sees the view count on Fares's cracked phone climb rapidly to 4,000. He rubs the back of his neck, a slow grin spreading across his face, then looks up at Fares with wide eyes, 'طب وإيه، نعملها تاني؟' (So, what, shall we do it again?) suggesting he's ready to embrace the drama for views.",
+      "continuity_updates": [
+        "Establishes Um Karim as a strong, traditional figure whose reactions are a source of both conflict and comedy.",
+        "Reinforces Fares's role as the mischievous content creator who understands TikTok's 'chaos culture'.",
+        "Highlights that authentic, unscripted (even chaotic) moments can gain significant traction, setting up Karim's eventual shift towards more 'real' content and paving the way for 2otbo5ly's focus on authentic home experiences."
+      ],
+      "continuity_goal": "Introduces Um Karim as a strong, traditional figure and establishes the comedic family dynamic. It also sets up the idea that raw, unscripted moments resonate more with the audience, laying the groundwork for Karim's future content strategy on 2otbo5ly where authentic home experiences are key.",
+      "character_sheet_prompt_en": "A 24-year-old Egyptian man, Karim Mansour, with messy dark curly hair, warm brown eyes, short trimmed beard, and a green rubber wristband on his RIGHT hand. He wears a home apron over a blue hoodie or faded white t-shirt. He usually has a small flour smudge or sauce splash somewhere on him. His budget Android phone with a cracked bottom-right corner is nearby or in hand. He is a cartoon character with bold outlines and expressive features.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-194220-episode-2-of/01-smash-burger-quran-stand-drama"
+    },
+    {
+      "episode_number": 5,
+      "name": "جريمة الكشري والكومنتات",
+      "summary": "كريم بيعرض طبق الكشري بالجبنة اللي عمله، لكن قسم التعليقات على تيك توك بيولع ضده. فارس بيقرأ الكومنتات القاسية بأداء مسرحي، وكريم بيحاول يستوعب الصدمة. في وسط الإحباط، فارس بيلاقي كومنت إيجابي واحد بس، وكريم بياخده كأمل جديد وبيصوره كخلفية لموبايله، وبيقرر يرد على كل التعليقات، حلوة ومرة.",
+      "cliffhanger": "CU على شاشة موبايل كريم المتصدعة وهو بيرد على كل الكومنتات. كومنت سلبي يظهر ('ايه القرف ده؟')، ويرد عليه كريم بـ'شكراً على الاهتمام 🙏'. الكومنت الإيجابي اللي صوره بيكون خلفية الموبايل بتاعته وهو بيواصل الردود بعزيمة وابتسامة خفيفة.",
+      "continuity_updates": [
+        "Karim's most-viewed video (kushari with cheese) is established as getting 800 views, sparking massive negative feedback.",
+        "Karim's resilience and stubborn hope are highlighted by him finding motivation in a single positive comment amidst overwhelming negativity.",
+        "The positive comment is screenshotted and becomes Karim's phone wallpaper, a visual anchor of his newfound determination.",
+        "Karim's commitment to engaging with his audience, both positive and negative, is established."
+      ],
+      "continuity_goal": "Show Karim's inherent resilience and stubborn optimism. Despite being 'destroyed' by comments, he finds motivation in the smallest positive feedback, reinforcing that he won't give up on his unique food journey.",
+      "character_sheet_prompt_en": "Cartoon character, Karim Mansour: mid-20s Egyptian man, medium build, messy dark curly hair, warm brown eyes, short trimmed beard, green rubber wristband on RIGHT hand, home apron over a faded white t-shirt, holding a budget Android phone with a cracked bottom-right corner. Cartoon character, Fares: tall and lanky Egyptian man, 25 years old, always in an Ahly jersey, holding a cheap phone gimbal, wide expressive eyes, restless comedic energy. All characters are 2D cartoon style, never photoreal, with bold outlines and expressive faces capable of wide exaggerated expressions.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-194220-episode-5-of/01-koshary-crime-comments"
+    },
+    {
+      "episode_number": 2,
+      "name": "سماش برجر أمي والمصحف: جاب مشاهدات",
+      "summary": "Karim tries to make a viral smash burger but, lacking a proper smasher, he impulsively uses his mother's antique Quran stand. Um Karim walks in, catching him in the act, leading to a hilarious, culturally charged argument. Fares, secretly filming the entire time, posts the chaotic footage. The argument, not the burger, goes unexpectedly viral with 4,000 views, initially infuriating Karim until he sees the view count and realizes the power of authentic, unscripted content.",
+      "cliffhanger": "Karim, seeing the viral views, looks at Fares with a slow, mischievous grin, rubbing the back of his neck: 'طب وإيه، نعملها تاني؟' (So, what, shall we do it again?) - implying he's ready to embrace the drama for views and has found his niche in authentic, chaotic content.",
+      "continuity_updates": [
+        "Introduces Um Karim as a strong, traditional figure whose reactions are a source of both conflict and comedy.",
+        "Establishes Fares's role as the mischievous content creator who understands TikTok's 'chaos culture' and what makes content viral.",
+        "Highlights that authentic, unscripted moments, even chaotic ones, can gain significant traction, setting up Karim's eventual shift towards more 'real' content and foreshadowing the appeal of authentic home experiences offered by 2otbo5ly."
+      ],
+      "continuity_goal": "Introduces Um Karim as a strong, traditional figure whose reactions are a source of both conflict and comedy. Establishes Fares's role as the mischievous content creator who understands TikTok's 'chaos culture.' Highlights that authentic, unscripted moments can gain significant traction, setting up Karim's eventual shift towards more 'real' content.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour: mid-20s Egyptian man, medium build, messy dark curly hair, warm brown eyes, short trimmed beard, green rubber wristband on RIGHT hand, home apron over a faded white t-shirt or blue hoodie. He often holds or is near a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. A 2D cartoon style character, Fares: tall and lanky Egyptian man, 25 years old, always in an Ahly jersey, holding a cheap phone gimbal, wide expressive eyes, restless comedic energy. A 2D cartoon style character, Um Karim (Mama Zeinab): 52-year-old Egyptian woman with a round face, warm but sharp expression, silver-streaked hair usually pulled back loosely, wearing a colorful galabeyya.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-195848-episode-2-of/01-quran-stand-smash-burger-chaos"
+    },
+    {
+      "episode_number": 5,
+      "name": "ملحمة الكومنتات: كشري بالجبنة",
+      "summary": "Karim's controversial koshary with cheese video gets brutally attacked in the comments section. Fares dramatically reads out the harshest critiques, sending Karim into despair. But a single positive comment rekindles Karim's stubborn optimism, leading him to defiantly embrace his unique culinary path.",
+      "cliffhanger": "Close-up on Karim's cracked Android phone screen, with the positive comment now his wallpaper. He types 'شكراً على الاهتمام 🙏' to a particularly mean comment, a sly smile playing on his lips, hinting at his new, unshakeable confidence.",
+      "continuity_updates": [
+        "Karim's resilience and stubborn hope are highlighted by him finding motivation in a single positive comment amidst overwhelming negativity.",
+        "The positive comment is screenshotted and becomes Karim's phone wallpaper, a visual anchor of his newfound determination.",
+        "Karim's commitment to engaging with his audience, both positive and negative, is established, hinting at his eventual strategy for finding an appreciative audience for his unique dishes (foreshadowing 2otbo5ly)."
+      ],
+      "continuity_goal": "To show Karim's inherent resilience and stubborn optimism. Despite being 'destroyed' by comments, he finds motivation in the smallest positive feedback, reinforcing that he won't give up on his unique food journey. This sets the stage for him to embrace 2otbo5ly later, where his unique dishes can find an appreciative audience.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build, bold outlines, expressive face, and wide exaggerated expressions. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing an off-white home apron over a faded white t-shirt. On his right hand, he wears a prominent green rubber wristband. He holds a budget Android phone with a cracked bottom-right corner. He usually has a small flour smudge or sauce splash somewhere on him. A 2D cartoon style character, Fares, a tall and lanky Egyptian man in his mid-20s, bold outlines, expressive face, and wide expressive eyes. He is wearing an Ahly jersey. He holds a cheap phone gimbal in one hand. He has restless, comedic energy.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-195848-episode-5-of/01-koshary-comments-meltdown"
+    },
+    {
+      "episode_number": 7,
+      "name": "الكولاب اللي مجاش: بداية التحدي",
+      "summary": "كريم وفارس بيقابلوا الشيف عمرو، تيك توكر مشهور، في كافيه شيك في مصر الجديدة عشان يتفقوا على كولاب. عمرو بيتعالى على كريم وبيطلب منه يبقى 'مساعد شيف' عنده. كريم بيعدي الموقف بابتسامة مصطنعة، لكن جواه بيوعد نفسه إنه هيتفوق عليه وهيفتكر اليوم ده كويس أوي. في المترو وهو راجع البيت، بيبدأ يحلل فيديوهات عمرو بعين كلها تحدي وإصرار.",
+      "cliffhanger": "Karim is on a crowded Cairo metro, holding his budget Android phone with the cracked bottom-right corner. His right hand, with the green rubber wristband, is scrolling through Amr's polished TikTok videos. He stares intently, taking mental notes, a focused, determined glint in his eye, briefly rubbing the back of his neck before returning his gaze to the screen.",
+      "continuity_updates": [
+        "Karim's quiet determination to surpass established figures like Amr is now a long-term motivation, fueled by a specific, memorable insult.",
+        "This encounter reinforces Karim's 'underdog' status and provides a clear antagonist/rival for future narrative arcs, making his eventual success more impactful.",
+        "The memory of Amr's condescension will serve as a constant reminder and fuel for Karim's ambition, especially as he moves towards and leverages 2otbo5ly as his platform.",
+        "The episode highlights the competitive and sometimes dismissive nature of the influencer world, setting the stage for 2otbo5ly as a more authentic and empowering platform for home chefs who value 'روح الأكل' over mere 'تظبيط'."
+      ],
+      "continuity_goal": "Plant a long-arc motivation for Karim, establishing a pivotal moment he will reference and draw strength from throughout his journey, particularly as he grows with 2otbo5ly.",
+      "character_sheet_prompt_en": "A 24-year-old Egyptian cartoon man, Karim Mansour, with messy dark curly hair, warm brown eyes, and a short trimmed beard. He wears an off-white home apron over a blue hoodie. On his right hand, he wears a prominent green rubber wristband. He holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He is never photoreal. Fares is a tall and lanky 25-year-old Egyptian cartoon man, wearing an Ahly jersey, holding a cheap phone gimbal, with wide expressive eyes and restless comedic energy. Amr is a stylized, slightly older Egyptian cartoon man with a smug, self-important expression, wearing trendy cafe attire.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-195848-episode-7-of/01-collab-that-wasnt-underdog"
+    },
+    {
+      "episode_number": 3,
+      "name": "اسم البراند بيجيب مشاهدات؟",
+      "summary": "كريم وفارس على السطح بيحاولوا يلاقوا اسم براند لكريم. كريم بيستقر على 'الشيف كريم' بكل فخر، وبيصور فيديو محشي 22 دقيقة مقتنع إن الناس محتاجة تشوف 'البروسيس الكاملة'. فارس بيحاول يقنعه إن تيك توك محتاج فيديوهات أقصر، لكن كريم بيصر على رأيه. الفيديو في الآخر بيجيب 12 مشاهدة بس، والصورة المصغرة بتاعته مشوشة.",
+      "cliffhanger": "CU على شاشة موبايل كريم المتصدعة، تعرض فيديو المحشي. عدد المشاهدات: '12 مشاهدة'. الصورة المصغرة (Thumbnail) مشوشة وباينة وحشة. كريم يرفع حاجبيه في حيرة.",
+      "continuity_updates": [
+        "The episode establishes Karim's initial naive understanding of TikTok content creation, prioritizing 'full process' over engagement, and his unoriginal branding.",
+        "Fares's role as the (often exasperated) content strategist and reality check for Karim is reinforced.",
+        "The inherent tension between authentic, detailed home cooking and the demands of short-form, viral content is highlighted, setting the stage for how 2otbo5ly will eventually bridge this gap.",
+        "The failure of Karim's 22-minute mahshi video underscores the challenge home chefs face in marketing themselves effectively on general platforms."
+      ],
+      "continuity_goal": "Show Karim's creative blind spots and Fares's eye for content, highlighting the tension between authentic cooking and TikTok's demands.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing an off-white home apron over a blue hoodie or faded white t-shirt. On his right hand, he wears a prominent green rubber wristband. He holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-195848-episode-3-of/01-brand-name-views"
+    },
+    {
+      "episode_number": 6,
+      "name": "الرز اليوتيوبرز: أسرار الشيف كريم!",
+      "summary": "بعد ليلة كاملة من مشاهدة فيديوهات الطبخ على يوتيوب، كريم بيقرر يتحول لـ'خبير رز' ويصور فيديو عن 'الرز المثالي'. أول محاولة بيطلع الرز كرانشي، بيسميه 'ال دنتي ستايل'. ثاني محاولة بيطلع معجن، بيسميه 'طري زي الزبدة'. أم كريم بتشاهد الفيديوهات وبكلمة واحدة 'يا ابني' بتلخص كل حاجة، لكن كريم بيحاول يحافظ على ثقته بنفسه. الحلقة تظهر صراع كريم بين طموحه وخبرته المتواضعة، وتنتهي بلحظة وعي ذاتي مبدئية.",
+      "cliffhanger": "لقطة مقربة على وش كريم، بيبص للموبايل بتاعه اللي شاشته مكسورة. كلمة 'يا ابني' بتاعة أم كريم بتتردد في ودنه بصوت خافت مع تأثير صدى، وهو بيفرك رقبته، وشكله بيبدأ يستوعب إن فيه حاجة غلط.",
+      "continuity_updates": [
+        "Karim's attempt to create 'educational content' is a humorous failure, reinforcing his raw passion but lack of fundamental skills.",
+        "Um Karim's 'يا ابني' establishes her as a quiet but authoritative voice of wisdom, foreshadowing her future role in guiding Karim's culinary journey.",
+        "This episode is the first clear hint that Karim knows, deep down, he needs to genuinely learn cooking techniques, setting the stage for his enrollment in Chef Hatem's workshops (Act 2).",
+        "The inherent conflict between Karim's online persona aspirations and his real-world cooking ability is further solidified."
+      ],
+      "continuity_goal": "توضيح أن كريم لسه في بداية الطريق ومحتاج يتعلم الطبخ بجد، وأن الثقة الزايدة مش كفاية، وده بيمهد لرحلته في ورش الطهي.",
+      "character_sheet_prompt_en": "A 2D cartoon character, Karim Mansour: a mid-20s Egyptian man, medium build, with messy dark curly hair, warm brown eyes, and a short trimmed beard. He wears an off-white home apron over a faded white t-shirt. On his right hand, he wears a prominent green rubber wristband. He usually has a small flour smudge or sauce splash somewhere on him. His budget Android phone with a cracked bottom-right corner is often visible. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. Another 2D cartoon character, Um Karim (Mama Zeinab): a 52-year-old Egyptian woman with a round face and a warm expression that can turn sharp. She has silver-streaked hair usually pulled back loosely. She wears a colorful galabeyya. Reading glasses are sometimes on her head. Both characters are cartoon style, never photoreal, with bold outlines and expressive faces.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-195848-episode-6-of/01-el-rozz-el-youtubers"
+    },
+    {
+      "episode_number": 8,
+      "name": "الأرقام مش بتكدب... وأبويا كمان",
+      "summary": "بعد تلات شهور من محاولات تيك توك فاشلة، كريم بيواجه حقيقة الأرقام الصادمة على السطح مع فارس: 312 متابع ومتوسط 600 مشاهدة بس. الإحباط بيزيد مع كلام أبوه المتكرر عن 'شغلانة محترمة'. لكن الإحباط ده بيتحول لعزيمة لما كريم بيقرر إنه لازم يتعلم الطبخ بجد، وبيبص على كورسات الطبخ في القاهرة، وده بيختم بيه الفصل الأول من رحلته وبيفتح باب جديد.",
+      "cliffhanger": "A close-up on Karim's cracked Android phone screen showing a search result for 'ورشة الشيف حاتم للطهي - المهندسين'. He stares at it with wide, determined eyes, the Cairo street sounds audible in the background.",
+      "continuity_updates": [
+        "This episode definitively closes Act 1 by establishing Karim's realization that superficial virality isn't sustainable and that genuine culinary skill is necessary to achieve his dreams and overcome financial/familial pressure.",
+        "It sets up Karim's decision to pursue formal culinary education, directly leading into Act 2 (The Restaurant Rejections and Workshops) and his encounter with Chef Hatem.",
+        "The conflict with Abu Karim regarding 'a real job' is heightened, serving as a strong external motivator for Karim to prove himself through a more structured path.",
+        "The introduction of 'Chef Hatem's Culinary Workshop' on Karim's phone screen directly foreshadows his mentor and the primary location for upcoming episodes, ensuring a smooth transition into the next act."
+      ],
+      "continuity_goal": "To definitively close Act 1 by showing Karim's pivot from chasing superficial virality to seeking genuine culinary education, laying the groundwork for his future as a skilled home chef and setting up his journey to become a suitable chef for 2otbo5ly.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a faded white t-shirt and an off-white home apron. On his right hand, he wears a prominent green rubber wristband, which must be visible. He often carries a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. Fares is a tall and lanky 25-year-old Egyptian man, almost always in an Ahly jersey or a puffer jacket, holding a cheap phone gimbal or selfie stick in hand. He has restless, comedic energy and wide expressive eyes. Abu Karim, as an exaggerated, stern, disapproving cartoon flash, is a middle-aged Egyptian man with a traditional mustache, appearing briefly with a speech bubble.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-195848-episode-8-of/01-el-arqam-mesh-betekdeb-aboya"
+    },
+    {
+      "episode_number": 4,
+      "name": "لايف الحواوشي اتقلب مسرحية",
+      "summary": "كريم بيحاول يعمل لايف طبخ 'احترافي' للحواوشي، لكن الأمور بتخرج عن السيطرة بسبب كومنتات غريبة من '3 مشاهدين'، ومكالمات أم كريم من جوه البيت، وخبط على الباب من الجيران اللي بيطلبوا رز زيادة. كريم بيحاول يحافظ على هدوءه لحد ما بيكتشف إنه نسي البوتاجاز شغال وبيقفّل اللايف فجأة.",
+      "cliffhanger": "كريم، وهو بيحك رقبته، بيبص لموبايله المتصدع اللي عليه كلمة '3 مشاهدين'. بيفتح تطبيق الملاحظات، ونشوفه وهو بيكتب 'استراتيجية اللايفات الجاية... لازم تتظبط!'",
+      "continuity_updates": [
+        "Karim's initial attempts at 'professional' TikTok content are met with domestic chaos, highlighting the contrast between his aspirations and his home reality, and the immediate need for a 'strategy' to manage these interruptions.",
+        "The episode reinforces the 'chaotic warmth' of his Shubra home kitchen as a central setting, and the strong, food-centric community ties that both challenge and define his cooking environment, specifically mentioning Am Saber's request for rice.",
+        "Karim's determination to overcome obstacles and improve his content, despite setbacks, is established, hinting at his continuous effort to find a structured way to share his unique homemade dishes, foreshadowing the eventual need for a platform like 2otbo5ly."
+      ],
+      "continuity_goal": "تأكيد أن مطبخ كريم مكان حيوي ومليء بالفوضى الجميلة، مش استوديو تصوير هادي، مما يعكس دفء وحقيقية البيوت المصرية.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing an off-white home apron over a blue hoodie or faded white t-shirt. On his right hand, he wears a prominent green rubber wristband. He holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-195848-episode-4-of/01-live-stream-chaos-hawawshi"
+    },
+    {
+      "episode_number": 1,
+      "name": "لما تحاول تعمل فول الشيفات بالليل",
+      "summary": "Karim attempts to make his first viral TikTok video: 'gourmet ful' with truffle oil and poached eggs, late at night in his family's kitchen. Despite his grand ambitions, a series of comical kitchen mishaps leads to a disastrous-looking dish and a burnt hand. He posts it anyway, only to find a meager 34 views, 30 of which are from his friend Fares's multiple phones. Yet, Karim's optimism remains unshakeable as he captions his post confidently, rubbing the back of his neck.",
+      "cliffhanger": "The episode ends with Karim confidently captioning his failed 'gourmet ful' video with 'فاين داينينج مصري، استنوا اللي جاي! ده لسه البداية!' despite the embarrassingly low view count, rubbing the back of his neck, hinting at his unwavering belief in himself and his culinary journey.",
+      "continuity_updates": [
+        "Karim's core personality as an ambitious, passionate, yet comically untrained home cook is established, with his signature neck-rub gesture integrated.",
+        "Fares is introduced as Karim's mischievous friend and initial 'hype man' (even if it's just himself watching the videos), solidifying his character.",
+        "The chaotic-warm nature of Karim's home kitchen in Shubra is set as the primary location, with visual anchors like the blue and white speckled pot and the cheap ring light.",
+        "The idea of elevating traditional Egyptian dishes with a 'gourmet' twist is introduced, setting a theme for future experiments and subtly teasing the potential for unique home-cooked offerings.",
+        "The struggle of a nascent TikTok content creator with low views and technical difficulties is highlighted, making Karim relatable and building anticipation for his growth.",
+        "The episode establishes a clear 'hopeful chaos' tone for Act 1 of the series."
+      ],
+      "continuity_goal": "Establishes Karim's core personality as highly ambitious and deeply passionate about food, yet hilariously unskilled in the 'fine dining' techniques he tries to emulate. Highlights the raw, authentic, and somewhat chaotic nature of his Shubra home kitchen (with the blue and white speckled pot visible).",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, always slightly disheveled, warm brown eyes, and a short trimmed beard. He is wearing an off-white home apron over a faded white t-shirt. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. He usually has a small flour smudge or sauce splash somewhere on him. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-195848-episode-1-of/01-gourmet-ful-fail"
+    },
+    {
+      "episode_number": 9,
+      "name": "أحلام المطاعم",
+      "summary": "بعد ما تيك توك قفلها في وشه، كريم بيقرر يروح للمطاعم الكبيرة. بيجهز CV محترم مكتوب فيه 'صانع محتوى أكل على تيك توك'، وفاكر إنه هيولع الدنيا. بس أحلامه بتتصادم مع الواقع المر. 4 مطاعم بترفضه في أقل من 5 دقايق، واحد بيضحك عليه، والتاني بيطلب منه 'يدوق صور الأكل' اللي على موبايله! محبط ومكسور، كريم بيرجع لشبرا، وبيلاقي راحته الوحيدة في طبق كشري على الرصيف. بس لحظة اليأس دي بتتحول لشرارة عزيمة. بيمسك موبايله المكسور، ويدور على كورسات طبخ، وبيلاقي ورشة الشيف حاتم في المهندسين، بس سعر الحصة بيصدمه.",
+      "cliffhanger": "The final shot is a close-up on Karim's cracked Android phone screen, showing a search result for 'ورشة الشيف حاتم للطهي - المهندسين' with a price tag of '400 جنيه للحصة', his eyes wide with a mix of shock and determination.",
+      "continuity_updates": [
+        "This episode explicitly shifts Karim from Act 1 (The Failed TikToker) to Act 2 (The Restaurant Rejections and Workshops), establishing the core conflict of his journey: the need for formal culinary training.",
+        "It demonstrates the harsh reality of the traditional restaurant industry, highlighting why Karim's unique talent and passion were initially overlooked, thereby setting the stage for 2otbo5ly as a platform that values home chefs.",
+        "The discovery of 'ورشة الشيف حاتم' directly foreshadows his mentor figure and the primary location for upcoming episodes, providing a clear path for his character development.",
+        "Karim's resilience and determination are solidified, showing his ability to transform humiliation into a proactive quest for knowledge, a key trait for his eventual success as a 2otbo5ly home chef."
+      ],
+      "continuity_goal": "The rejection that turns him toward real learning. This episode solidifies Karim's understanding that passion alone isn't enough; formal training is necessary to achieve his culinary dreams, setting the stage for his growth in Act 2.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, short trimmed beard, green rubber wristband on RIGHT hand, cracked Android phone (when visible), blue hoodie.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-202257-episode-9-of/01-ahlam-el-matarem"
+    },
+    {
+      "episode_number": 10,
+      "name": "من تيك توك للورشة: فجأة بقيت تلميذ!",
+      "summary": "بعد ما تيك توك قفلها في وشه، كريم بيقرر يتعلم الطبخ بجد. بيسجل في ورشة الشيف حاتم في المهندسين، وبيكتشف إن الطبخ مش مجرد كاميرا وفلاتر. بيحاول يتعلم أساسيات زي التقطيع، بس بيواجه صعوبة وفشل كوميدي، وسط طلاب تانيين منهم اللي زهقان ومنهم اللي عامل نفسه فاهم. الشيف حاتم بيلاحظ كريم مش عشان شاطر، لكن لأنه الوحيد اللي بيسأل 'ليه' مش بس 'إزاي'. الحلقة بتنتهي والشيف حاتم بيسيب طبق كريم ويمشي من غير كلمة، تارك كريم بين الإحباط والعزيمة.",
+      "cliffhanger": "الشيف حاتم يتوقف أمام طبق كريم، ينظر إليه بتمعن، ثم يرفع عينيه لكريم بنظرة لا يمكن قراءتها. بدون كلمة واحدة، يدير ظهره ويمشي بهدوء. كريم ينظر إلى يديه الملطخة (مع ظهور رباطه الأخضر بوضوح)، ثم إلى الطبق، وملامحه تجمع بين الإحباط والعزيمة. تكست أوفرلاي: '@2otbo5ly قريبًا! الشيف كريم لسه بيبدأ!'",
+      "continuity_updates": [
+        "Chef Hatem is formally introduced, establishing his personality as a stern but observant mentor who values understanding ('why') over mere execution ('how').",
+        "Karim's transition from an aspiring TikTok chef to a humble student actively seeking formal culinary training is solidified, reinforcing his growth arc and the value of genuine skill.",
+        "The workshop location in Mohandeseen is established as a new primary setting for Karim's learning phase, contrasting with his home kitchen.",
+        "The narrative reinforces the idea that genuine culinary skill requires dedication and going beyond superficial 'TikTok hacks', setting up the value of expert home chefs on 2otbo5ly."
+      ],
+      "continuity_goal": "تقديم الشيف حاتم كشخصية مؤثرة ومعلم صارم لكن عادل. ترسيخ فكرة أن المهارة الحقيقية تتطلب جهدًا وتواضعًا، مما يمهد الطريق لتطوير كريم كطباخ موثوق به في 2otbo5ly. إظهار انتقال كريم من مرحلة 'صانع المحتوى' إلى 'طالب الطبخ'.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing an off-white home apron over a blue hoodie. On his right hand, he wears a prominent green rubber wristband. He always carries a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-202850-episode-10-of/01-tiktok-to-workshop-reality"
+    },
+    {
+      "episode_number": 11,
+      "name": "من صانع محتوى... لتقطيع بصل محترف!",
+      "summary": "Karim, still new to Chef Hatem's workshop, faces his biggest challenge yet: mastering the chef's knife. What seems simple to others becomes a repetitive, frustrating, and eventually, a triumph-filled journey. After 200 attempts, he finally achieves a perfect cut, only to find his mom's reaction is typically understated, prompting his signature neck-rub. This episode highlights Karim's dedication to genuine skill, setting the stage for his future as a trusted home chef.",
+      "cliffhanger": "Karim stares at his clean-cut onion like it's a trophy, a silent testament to his newfound skill, leaving viewers eager to see how he applies this discipline next.",
+      "continuity_updates": [
+        "Karim demonstrates his capacity for focused learning and discipline, a key development for his journey as a reliable home chef.",
+        "Chef Hatem's role as a tough but effective mentor is solidified, teaching Karim fundamental culinary skills and pushing him beyond superficial 'TikTok' cooking.",
+        "The contrast between superficial TikTok skills and foundational culinary training is highlighted, emphasizing the value of genuine expertise.",
+        "Karim's signature neck-rub gesture is reinforced, connecting his personal reactions to his journey and his mother's influence.",
+        "This episode subtly builds anticipation for Karim's future as a skilled home chef on 2otbo5ly, showing his commitment to quality."
+      ],
+      "continuity_goal": "Show Karim's capacity to learn when he slows down and listens, solidifying his path toward becoming a reliable home chef.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing an off-white home apron over a blue hoodie. On his right hand, he wears a prominent green rubber wristband. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-203527-episode-11-of/01-from-creator-to-cutter"
+    },
+    {
+      "episode_number": 12,
+      "name": "سر الصوص اللي محدش يعرفه",
+      "summary": "كريم بيحضر ورشة الشيف حاتم عن أساسيات الصوصات المصرية وبيكتشف إن الطشة والدقة وتركيبات البهارات دي مش مجرد 'طبخ أمهات' عادي، دي علم وهندسة طعم. الصدمة بتجيله لما بيكتشف إن كل التعقيد ده أمه بتعمله بفطرتها في البيت. بيرجع البيت وبيراقب أمه وهي بتطبخ بنظرة جديدة تماماً، لحد ما هي بتلاحظه.",
+      "cliffhanger": "أم كريم بتشوفه وهو بيراقبها، وبترفع حاجبها بنظرة عارفة ومبتسمة بخفة.",
+      "continuity_updates": [
+        "Karim's intellectual understanding of cooking deepens, linking formal training with intuitive home cooking.",
+        "Establishes a new layer of respect and appreciation from Karim towards Um Karim's culinary skills.",
+        "Reinforces Chef Hatem's role as a mentor who pushes Karim to think deeply, not just execute.",
+        "Sets the stage for Karim to integrate traditional Egyptian techniques with his refined skills, crucial for his future as a 2otbo5ly chef."
+      ],
+      "continuity_goal": "Demonstrates Karim's intellectual growth and the blending of his formal training with his culinary roots, setting the stage for him to become a truly skilled and authentic 2otbo5ly home chef, capable of understanding and recreating complex dishes.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing an off-white home apron over a blue hoodie. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. Chef Hatem: A heavyset Egyptian man in his late 40s, completely bald head, thick black mustache. Always in chef whites with rolled-up sleeves. Calm, deliberate movements. Um Karim: A 2D cartoon style character with a round face and warm expression. Silver-streaked hair usually pulled back loosely. Wearing a colorful galabeyya. Reading glasses sometimes on her head.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-203536-episode-12-of/01-el-sos-el-sire"
+    },
+    {
+      "episode_number": 14,
+      "name": "الجولة التانية: مطعم ولا مفيش؟",
+      "summary": "بعد شهرين من ورش الطبخ المكثفة عند الشيف حاتم، كريم بيقرر يرجع يقدم على شغل في المطاعم تاني. بتجيله مكالمتين، واحدة من مطعم بيشبحه، والتانية من 'نيل آند سبايس' في الزمالك بيطلبوه لترايال داي. كريم بيقضي الليل كله في تدريب مكثف ومحاولات يائسة للنوم، والخوف مالي قلبه من الفرصة الكبيرة دي اللي ممكن تغير كل حاجة في حياته.",
+      "cliffhanger": "Karim, eyes wide with a mix of fear and determination, holds his cracked Android phone. The screen shows the precise address of Nil & Spice in Zamalek. A faint Cairo soundscape (azan, traffic) plays. Text overlay: 'استنى للاخر'",
+      "continuity_updates": [
+        "The episode officially marks Karim's return to job applications, now with formal training, showing his growth from the 'failed TikToker' phase.",
+        "Nil & Spice is introduced as a significant new setting, foreshadowing Karim's entry into a professional kitchen environment.",
+        "The internal conflict between Karim's newfound skills and his lingering self-doubt/anxiety is established, setting up emotional stakes for the trial day.",
+        "The 'ghosting' by one restaurant serves as a relatable setback, reinforcing the harsh realities of the industry but also highlighting Karim's resilience when he receives the Nil & Spice call."
+      ],
+      "continuity_goal": "Establishes Nil & Spice as the next major setting for Karim's growth and introduces the challenge of the trial day, setting up his entry into professional kitchens.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, always slightly disheveled, warm brown eyes, and a short trimmed beard. He is wearing an off-white home apron over a blue hoodie. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-203657-episode-14-of/01-job-hunt-rollercoaster"
+    },
+    {
+      "episode_number": 13,
+      "name": "سر الملوخية... وغسيل المواعين",
+      "summary": "كريم بيحاول يطبخ ملوخية لوحده بس النتيجة كارثية. بيقرر يستنجد بأمه عشان تعلمه سر الملوخية الأصيلة. أم كريم بتوافق بس بشرط صعب: يغسل المواعين لمدة شهر كامل! كريم بيوافق بعد تردد، وبيبدأ رحلته في تعلم الملوخية على أصولها، ويكتشف إن ورا كل طبق حكاية وتراث عائلي.",
+      "cliffhanger": "Karim, alone in the quiet kitchen at night, replays the short video he secretly recorded of Um Karim's 'طشة' on his cracked Android phone. He pauses it, staring intently at the steam, then at Um Karim's satisfied face in the video. His own face shows a profound shift – a mix of awe, respect, and a dawning realization about the true 'نفس' of cooking, rubbing the back of his neck in deep thought.",
+      "continuity_updates": [
+        "Karim's understanding of cooking deepens from mere 'TikTok virality' to genuine skill and family heritage.",
+        "Um Karim's role as a source of authentic culinary knowledge and wisdom is firmly established.",
+        "The value of effort and patience in cooking is highlighted through Karim's 'dishwashing' penance.",
+        "Karim develops a deeper appreciation and respect for his mother's traditional cooking methods and the 'نفس' (soul/touch) she puts into her food, setting the stage for his growth as a home chef who values authenticity.",
+        "The episode foreshadows Karim's eventual embrace of traditional, authentic Egyptian cooking as the core of his 2otbo5ly offerings."
+      ],
+      "continuity_goal": "To firmly establish Um Karim's cooking knowledge and traditions as the authentic, foundational root of Karim's culinary identity, marking a significant shift from his pursuit of superficial TikTok virality towards valuing genuine skill and heritage. This sets the stage for his growth into a trusted home chef on 2otbo5ly.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing an off-white home apron over a blue hoodie or faded white t-shirt. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. Um Karim, a 2D cartoon character, has a round face with a warm expression that can turn sharp, silver-streaked hair usually pulled back loosely, and wears a colorful galabeyya. She sometimes has reading glasses on her head. Her hands are experienced, with a ring visible.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-203643-episode-13-of/01-molokheyya-deal"
+    },
+    {
+      "episode_number": 15,
+      "name": "٣ أيام على نار هادية",
+      "summary": "بعد يوم تجربة مرهق ومليء بالضغط في مطبخ مطعم 'نيل آند سبايس'، كريم بيقضي تلات أيام على أعصابه، مستني التليفون اللي ممكن يغير حياته. الشيف عمر كان صارم ومقالش ولا كلمة، وده خلا كريم في دوامة من الشك والخوف. لكن فجأة، التليفون بيرن... وبيجيله الخبر اللي كان مستنيه. فرحة جنونية، وبعدها لحظة تأمل على تيك توك، بتوعد بمرحلة جديدة هيقدم فيها أكل مطاعم بس من البيت.",
+      "cliffhanger": "Karim looks at his old TikTok profile on his cracked Android phone, his 312 followers prominent. A text overlay appears: 'الشيف كريم جاي يوريكم يعني إيه أكل مطاعم بس من البيت! استنوا @2otbo5ly'. He slowly puts the phone down, a determined glint in his eye, signifying his commitment to this new chapter and an implicit promise to his past audience.",
+      "continuity_updates": [
+        "Karim successfully secures his first professional kitchen job as a 'commis chef' at Nil & Spice.",
+        "The Nil & Spice kitchen is established as a new primary location for Karim's journey, contrasting with his home kitchen and the workshop.",
+        "Karim's determination and resilience are reinforced, showing his ability to overcome anxiety and past failures to achieve his goals, marking a significant step in his growth.",
+        "The episode sets the stage for Karim's growth in a professional culinary environment, providing him with the skills and experience that will later be invaluable for his offerings on 2otbo5ly.",
+        "The lingering presence of his TikTok past (looking at his profile without posting) hints at his eventual return to content creation, but now with newfound professional skill and a clearer purpose, aligning with 2otbo5ly's mission."
+      ],
+      "continuity_goal": "Karim's perseverance pays off, securing him a position that validates his dedication to formal culinary training and sets the stage for his growth in Act 3.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, always slightly disheveled, warm brown eyes, and a short trimmed beard. On his right hand, he wears a prominent green rubber wristband, always present. He usually holds a budget Android phone with a cracked bottom-right corner. He usually has a small flour smudge or sauce splash somewhere on him. His default outfit is an off-white home apron over a blue hoodie or faded white t-shirt. In professional kitchen scenes, he wears chef whites. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. Chef Omar is a heavyset, bald Egyptian man in his late 40s with a thick black mustache. He is always in chef whites with rolled-up sleeves and has calm, deliberate movements.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-203907-episode-15-of/01-three-days-waiting-call"
+    },
+    {
+      "episode_number": 16,
+      "name": "أول مواجهة في مطبخ الزمالك.. مين هيكسب؟",
+      "summary": "في أول يوم عمل له في مطبخ مطعم 'نيل آند سبايس' بالزمالك، يواجه كريم صدمة الواقع الصعب والسريع للمطاعم الاحترافية. يتعرف على زملائه الجدد: سلمى الديمي شيف الصارمة، محمود الشيف الحلواني الغاضب، حسن اللاين كوك المهووس بالكرة، ودينا مديرة الأوردرات الحديدية. بالرغم من الفوضى والإرهاق الشديد، يعود كريم إلى منزله في شبرا منهكًا لكنه يحمل ابتسامة تحدي، بينما سلمى تتساءل إن كان سيصمد.",
+      "cliffhanger": "Salma (in chef whites, hair tied back tightly) watches Karim leave from the kitchen entrance. A slight, almost imperceptible smirk plays on her lips. An Arabic text overlay appears: 'يا إما هيتعدل، يا إما هيسيب في أسبوعين.'",
+      "continuity_updates": [
+        "Karim is officially introduced to the professional kitchen environment at Nil & Spice, establishing a new core setting for his journey.",
+        "Salma is introduced as a key supporting character, setting up her role as a potential antagonist or challenging mentor figure.",
+        "Mahmoud, Hassan, and Dina are introduced, establishing the immediate social dynamics and personalities Karim must navigate.",
+        "The episode highlights the stark contrast between Karim's previous home-cooking environment and the demanding, fast-paced professional kitchen, reinforcing the 'humbled, focused, earnest' tone of Act 2.",
+        "Karim's resilience and determination are solidified, even amidst overwhelming pressure, foreshadowing his growth as a chef."
+      ],
+      "continuity_goal": "Establish the professional kitchen world and the cast within it, focusing on the distinct personalities that will shape Karim's professional journey.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is typically wearing chef whites during professional kitchen scenes. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-204352-episode-16-of/01-meet-the-nil-spice-crew"
+    },
+    {
+      "episode_number": 17,
+      "name": "طحن في مطبخ الزمالك",
+      "summary": "مونتاج سريع ومجهد لأول شهر لكريم في مطبخ 'نيل آند سبايس' بالزمالك. بيوري المجهود البدني والذهني الهائل، من التحضير الصباحي لخدمة نص الليل. الشيف عمر بيزعق، سلمى بتبص بصات حكم، وكريم بيتحسن بس على وشه الإرهاق. بيسجل لنفسه فيديوهات بسيطة عشان يفكر نفسه بالرحلة. في الآخر بيبص على فيديوهاته القديمة على تيك توك، وبيشوف غلطاته بعين تانية، وبيفهم إن الأكل الحلو وراه حكاية.",
+      "cliffhanger": "Karim, مرهق تماماً في غرفة تبديل الملابس، يخرج موبايله الأندرويد المشروخ. يفتح تطبيق تيك توك، يشاهد فيديوهاته القديمة (فلاش باك سريع). يظهر على وشه مزيج من التعب والتفكير العميق، وكأنه يرى أخطائه الماضية بوضوح جديد، مع ابتسامة خفيفة على شفايفه.",
+      "continuity_updates": [
+        "Karim's professional growth and increasing efficiency in a high-pressure kitchen environment are clearly established.",
+        "The harsh realities of professional cooking (long hours, demanding chefs, physical exhaustion) are shown, contrasting with his earlier, more carefree TikTok days.",
+        "Karim's internal drive and resilience are reinforced, showing his commitment to mastering his craft despite the difficulties.",
+        "The 'secret filming' of moments for himself connects his past TikTok identity with his current professional journey, showing self-reflection rather than immediate content creation.",
+        "The cliffhanger highlights his evolving perspective on his culinary journey and past content, setting the stage for future episodes where he might reconcile these two aspects of his life, potentially through 2otbo5ly."
+      ],
+      "continuity_goal": "إظهار مرور الوقت وتطور كريم المهني خلال أول شهر في المطبخ الاحترافي، مما يؤسس لمرحلة 'شيف مطاعم' قاسية وواقعية.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, always slightly disheveled, warm brown eyes, and a short trimmed beard. He is wearing chef whites, which are slightly disheveled and stained from work, over a faded white t-shirt. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-205033-episode-17-of/01-grind-month-nil-spice"
+    },
+    {
+      "episode_number": 18,
+      "name": "نار المطبخ... ومية سلمى",
+      "summary": "Karim experiences a public and humiliating failure in the high-pressure Nil & Spice kitchen when he overcooks a table's lamb during a busy Friday service. Chef Omar tears into him in front of everyone. Karim stands there, taking the abuse. After the chaos dies down, Salma, usually guarded, offers him a quiet, unexpected moment of kindness by sliding him a water bottle and a sympathetic word, marking the first crack in her tough exterior.",
+      "cliffhanger": "Karim takes a long drink from the water bottle, his messy dark curly hair falling forward. His eyes, still full of a mix of shame and resolve, look straight ahead. Text overlay: 'غلطة... بس مش النهاية. استنوا اللي جاي!'",
+      "continuity_updates": [
+        "Karim experiences a significant public humiliation and learns a harsh lesson about the pressures of a professional kitchen.",
+        "Salma's character gains depth, showing an unexpected empathetic side, fostering a budding alliance with Karim.",
+        "The episode reinforces the brutal reality of restaurant work, contrasting with the implied comfort and authenticity of home cooking via 2otbo5ly.",
+        "Karim's resolve despite failure hints at his growing resilience and determination, essential for his future journey with 2otbo5ly."
+      ],
+      "continuity_goal": "First real Karim-Salma moment — turns from colleagues to something more like allies",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, always slightly disheveled, warm brown eyes, and a short trimmed beard. He is wearing chef whites (his default is home apron over blue hoodie or faded white t-shirt, but for this episode, he's in chef whites). On his right hand, he wears a prominent green rubber wristband, always present. He has a budget Android phone with a cracked bottom-right corner (though not visible in this specific scene, it's a constant visual lock). His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. Salma is an Egyptian woman in her mid-20s, in chef whites with her hair tied back tightly. She moves with precise, efficient movements. Chef Omar is a heavyset Egyptian man in his late 40s, completely bald, with a thick black mustache. He is always in chef whites with rolled-up sleeves and has calm, deliberate movements, but is capable of exaggerated rage.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-205255-episode-18-of/01-kitchen-fire-salma-water"
+    },
+    {
+      "episode_number": 20,
+      "name": "لما فود بلوجر عالمية تكتشف أكلتك السرية",
+      "summary": "بينما كانت نور، مدونة الطعام الشهيرة، تقوم بمراجعة مطعم 'نيل آند سبايس'، لفت انتباهها طبق حواوشي شهي يُقدم لموظفي المطعم. تستغرب نور لعدم وجوده في قائمة الطعام وتصر على تذوقه، مبدية إعجابها الشديد. في لحظة مفاجئة لكريم، تقرر نور أن تتابعه على إنستجرام، مما يترك كريم في حالة صدمة وفخر مختلطين، ويتساءل عن معنى كلماتها.",
+      "cliffhanger": "كريم يقرأ الـ Bio الخاص بنور على إنستجرام: 'Food is a language' يكررها ثلاث مرات، وعلامات استفهام كتير على وشه.",
+      "continuity_updates": [
+        "تم تقديم شخصية 'نور' كمدونة طعام مؤثرة وذات نظرة ثاقبة للمواهب والأصالة في الطعام.",
+        "أظهرت الحلقة أن موهبة كريم الحقيقية تكمن في الأكل البيتي الأصيل، والذي يحظى بتقدير خارجي غير متوقع.",
+        "تم إعطاء كريم دفعة معنوية كبيرة وغير متوقعة، مما يكسر حاجز الشك الذاتي في بيئة المطاعم الصارمة.",
+        "تم زرع بذرة علاقة محتملة بين كريم ونور، حيث أن اهتمامها الصادق بأكله قد يفتح له أبوابًا جديدة خارج المطعم.",
+        "العبارة 'Food is a language' تشكل محورًا فكريًا جديدًا لكريم، وتربط الطعام بالتواصل والتعبير، وهو ما يتوافق مع روح '2otbo5ly' المستقبلية."
+      ],
+      "continuity_goal": "Establish Nour as a character with a keen sense for culinary talent and authenticity, making her a credible future advocate for Karim's home-cooked dishes. It shows Karim's growing confidence and the first hint of external success outside the restaurant hierarchy.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing chef whites, slightly disheveled and stained from work, over a faded white t-shirt. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. Nour is a 2D cartoon style character, a 23-year-old Egyptian woman. She has short natural hair, round wire-frame glasses, and is always carrying a camera or phone. She has a warm, focused, and observant expression, with bold outlines, in a warm Cairo palette. Her clothes are simple but put-together, not flashy, reflecting her genuine passion for food culture.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-211531-episode-20-of/01-blogger-discovers-karim"
+    },
+    {
+      "episode_number": 19,
+      "name": "سر الحواوشي: من بواقي المطعم لقلب الشيف عمر",
+      "summary": "كريم، ضاق ذرعًا بهدر الطعام في مطبخ 'نيل آند سبايس'، يستغل بواقي اللحم الضاني وخبز المطعم القديم ليعد حواوشي مصري بطريقة والدته. الوجبة التي كان من المفترض أن تكون مجرد أكل للموظفين تبهر الجميع، حتى الشيف عمر الصارم، الذي يعترف بجودة الطبق بكلمات قليلة ونظرة تقدير. ينتهي المشهد بسؤال من 'دينا' حول إمكانية إضافة هذا الطبق إلى 'المنيو السري' للمطعم، مما يترك كريم في حيرة وتفكير حول جذوره في الطهي.",
+      "cliffhanger": "Dina asks if the hawawshi could be a menu item, leaving Karim to ponder the future and Chef Omar's quiet approval.",
+      "continuity_updates": [
+        "Karim's innovative approach to cooking and his deep connection to traditional home cooking are further established as strengths, even within a professional kitchen setting.",
+        "Chef Omar's character shows a moment of respect and recognition for Karim's talent, signaling a subtle shift in their dynamic and validating Karim's home-rooted instincts.",
+        "Salma's observation hints at her growing appreciation or curiosity about Karim's unique style, potentially building their alliance.",
+        "The idea of a 'secret menu' or special items is introduced, hinting at future possibilities where Karim's creations could bridge the gap between home cooking and restaurant offerings, aligning with 2otbo5ly's vision.",
+        "The episode reinforces the theme that true culinary skill and authenticity can emerge from unexpected places, challenging the rigid norms of professional kitchens."
+      ],
+      "continuity_goal": "Karim's instincts are being recognized — his roots are his strength.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing slightly disheveled chef whites. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. A 2D cartoon style character, Salma, an Egyptian woman in her mid-20s, wearing chef whites with her hair tied back tightly. She moves with precise, efficient movements. Her expression is often guarded but can soften to a slight, approving smile. She has bold outlines and expressive features, in a warm Cairo palette. A 2D cartoon style character, Chef Omar, a heavyset Egyptian man in his late 40s. He is completely bald with a thick black mustache. He is always in chef whites with rolled-up sleeves. His movements are calm and deliberate, but his face is capable of sudden, exaggerated rage or subtle, rare approval. He has bold outlines and expressive features, in a warm Cairo palette. A 2D cartoon style character, Dina, the iron-willed orders manager, professional and direct, with bold outlines and expressive features, in a warm Cairo palette. Generic kitchen staff are 2D cartoon figures, varied appearances (thin, round, bald, mustached), wearing chef whites, with exaggerated expressions of surprise, happiness, and delight, bold outlines, warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-211517-episode-19-of/01-secret-hawawshi-challenge"
+    },
+    {
+      "episode_number": 21,
+      "name": "طحن ٦ شهور، والنتيجة؟",
+      "summary": "بعد ستة أشهر من الطحن والعمل الشاق في مطبخ 'نيل آند سبايس'، يحصل كريم على ترقيته المنتظرة لشيف 'دي-شيف'. يحتفل الفريق كله بطريقة بسيطة ودافئة على سطح المطعم ببيبسي وصندوق كنافة. تظهر فرحة كريم الصادقة وتتعمق العلاقة بينه وبين سلمى التي تظهر إعجابًا هادئًا. في النهاية، تكشف سلمى عن ورقة غامضة تثير التساؤلات.",
+      "cliffhanger": "سلمى تبتسم لكريم، ثم تسحب بهدوء ورقة مطبوعة (نصفها فقط يظهر شعار مدرسة طهي في إسبانيا، مع كلمة 'Application' أو 'قبول') من جيبها وتنظر إليها بتفكير عميق، ثم تخفيها سريعاً قبل أن يلاحظ كريم. يظهر تعليق نصي: 'هو فيه إيه تاني؟!'",
+      "continuity_updates": [
+        "Karim's promotion to Demi-Chef marks a significant professional milestone, showcasing his growth and resilience in a professional kitchen.",
+        "Salma's character gains depth, showing genuine (though subtle) support for Karim, deepening their relationship from colleagues to potential allies.",
+        "The simple celebration reinforces the 'kitchen family' theme, highlighting camaraderie and the value of small, authentic joys after hard work.",
+        "Salma's hidden paper introduces a new personal conflict or ambition for her, setting up future plot points and creating intrigue for her character arc."
+      ],
+      "continuity_goal": "الاحتفال بنجاح كريم المهني وتطوره كشيف، وتوطيد علاقته بفريق المطبخ، وبناء طبقة جديدة من العلاقة مع سلمى تمهيدًا لأحداث قادمة.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing chef whites (over a faded white t-shirt). On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. Salma is an Egyptian woman in her mid-20s, in chef whites with her hair tied back tightly. Her movements are precise and efficient. Her expression is usually unreadable but capable of subtle smiles and thoughtful looks. Other kitchen staff are stylized 2D cartoon figures, varying in appearance (e.g., thin, round, bald, mustached) but always expressive and in chef whites.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-211648-episode-21-of/01-karim-demi-chef-promo-konafa"
+    },
+    {
+      "episode_number": 23,
+      "name": "صوت حضن في زحمة طريق",
+      "summary": "كريم منصور، بعد يوم شاق من تحضير 400 طبق مكرونة بشاميل لزفاف في مطبخ 'نيل آند سبايس'، يمر بلحظة تقدير عميقة وغير متوقعة من والدة العروسة. يعكس الفيديو التعب الشديد وكواليس المطبخ الصاخبة، ثم يتحول إلى لحظة إنسانية مؤثرة توضح قيمة الطعام البيتي. ينتهي المشهد بكريم وهو عائد في الڤان، يتأمل اليوم، ويتحدث مع فارس بكلمات قليلة تحمل الكثير من المعاني، مما يمهد لتطور شخصيته وقدراته.",
+      "cliffhanger": "كريم بيقفل المكالمة مع فارس. بيبص من شباك الڤان، ابتسامة هادية وغير محسوسة بتترسم على وشه. نص مكتوب بيظهر: 'حاجة كبيرة بدأت تتغير... استنى للاخر'",
+      "continuity_updates": [
+        "Karim now knows he can successfully cook high-quality, emotionally resonant food at a large scale, which will be crucial for his future endeavors with 2otbo5ly, proving home-cooked can compete with catering.",
+        "This episode deepens Karim's understanding of the emotional connection people have with food, moving beyond just 'taste' to 'feeling', reinforcing his personal mission.",
+        "The subtle interaction with Fares reinforces their friendship, showing Fares as a consistent support.",
+        "The unexpected grace from the bride's mother provides Karim with significant emotional validation, fueling his passion and resilience against the 'restaurant food is better' mindset."
+      ],
+      "continuity_goal": "كريم بيكتشف إنه ممكن يطبخ بكميات كبيرة ويحافظ على الجودة، وده مهم في المستقبل.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing chef whites, slightly disheveled and stained from work, over a faded white t-shirt. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. The bride's mother is a 2D cartoon style Egyptian woman in her 50s, wearing an elegant dress, with warm, expressive facial features that can show delight and appreciation. Chef Omar is a heavyset Egyptian man in his late 40s, completely bald, with a thick black mustache. He is always in chef whites with rolled-up sleeves and has calm, deliberate movements, but is capable of exaggerated rage. Fares is a 2D cartoon style character, tall and lanky, almost always in an Ahly jersey or a puffer jacket, with a cheap phone gimbal or selfie stick in hand, and wide expressive eyes. He embodies restless, comedic energy.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-211715-episode-23-of/01-echo-of-a-hug"
+    },
+    {
+      "episode_number": 24,
+      "name": "طعم بيحكي حكاية.. بـ500 جنيه!",
+      "summary": "كريم، مرهق بعد يوم شغل طويل، بيقرا ريفيو نور عن أكل 'نيل آند سبايس' وبيكتشف إنها شافت فيه حاجة أعمق من مجرد طبق. كلامها عن أصالة أكله بيفرحه جداً. بيبعتلها شكر، وهي بترد عليه بسرعة، وده بيبدأ حوار بينهم بيوصل لسؤال مفاجئ عن ملوخية أم كريم.",
+      "cliffhanger": "نور وكريم بيكلموا بعض الساعة ١ بالليل... وهي بتسأله عن طعم ملوخية مامته.",
+      "continuity_updates": [
+        "Karim has received significant, authentic validation for his cooking from a respected food blogger, nourishing his internal passion.",
+        "The dynamic between Karim and Nour has been established, moving beyond reviewer/reviewed to a more personal, respectful connection.",
+        "The cliffhanger introduces a personal element (Um Karim's molokheyya) which will deepen the Karim-Nour relationship and tie back to Karim's roots."
+      ],
+      "continuity_goal": "The Karim-Nour dynamic begins in earnest",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-211810-episode-24-of/01-nour-review-home-soul"
+    },
+    {
+      "episode_number": 22,
+      "name": "أفكار مطاعم غريبة... وأفكاري أنا",
+      "summary": "يواجه كريم صراعًا داخليًا عندما يقترح الشيف عمر قائمة طعام جديدة تعتمد على دمج الأكل المصري للسياح بطرق غريبة مثل 'الكشري سوشي'. يحاول كريم اقتراح أفكار أصيلة ومبتكرة، لكن الشيف عمر يرفضها بشدة ويطلب منه الالتزام بالوصفات المكتوبة. تشعر سلمى بتعاطف صامت مع كريم الذي يجد نفسه حائرًا بين شغفه بالأكل الأصيل ومتطلبات المطبخ التجاري، مما يدفعه للبحث عن حل خارج جدران المطعم.",
+      "cliffhanger": "Karim goes home and sketches a dish on a napkin. Crosses it out. Sketches it again, with renewed determination.",
+      "continuity_updates": [
+        "Karim experiences significant creative frustration within the professional kitchen hierarchy, highlighting his conflict with commercial demands.",
+        "Chef Omar's rigid, profit-driven approach to 'modernizing' Egyptian food for tourists is firmly established as a major point of contention for Karim.",
+        "Salma shows a subtle, nascent empathy for Karim, hinting at a potential future alliance or understanding between them.",
+        "Karim's internal struggle between his passion for authentic, soulful cooking and the job's demands reinforces his independent spirit and foreshadows his eventual departure from restaurant work.",
+        "The episode underscores the tension between authentic Egyptian cuisine and commercialized fusion, aligning with 2otbo5ly's value proposition of delivering authentic, craveable food."
+      ],
+      "continuity_goal": "Plant the seed that this kitchen cannot hold Karim forever.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is typically wearing chef whites during professional kitchen scenes, or a home apron over a blue hoodie or faded white t-shirt in home scenes. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. No photoreal humans, no text baked into the scene, no random characters, no watermarks, no logos.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-211715-episode-22-of/01-koshary-sushi-frustration"
+    },
+    {
+      "episode_number": 25,
+      "name": "سر سلمى لأسبانيا",
+      "summary": "في مطبخ 'نيل آند سبايس' بالزمالك، وبعد خدمة مرهقة، تُفاجئ سلمى كريم بسرها الكبير: أنها تدخر وتخطط منذ عامين لدراسة الطهي في إسبانيا. يصبح كريم أول شخص في المطبخ تعرفه هذا السر، مما يعمق علاقتهما ويسلط الضوء على أن المطابخ الاحترافية غالبًا ما تكون محطات مؤقتة لأحلام أكبر.",
+      "cliffhanger": "Salma says 'أوعى تقول لحد.' (Don't tell anyone.) Karim mimes zipping his lips. Salma almost smiles, a rare moment of vulnerability.",
+      "continuity_updates": [
+        "Karim discovers Salma's long-term ambition for culinary school in Spain, establishing her future exit arc from Nil & Spice.",
+        "This revelation deepens the friendship and trust between Karim and Salma, shifting their relationship from colleagues to allies.",
+        "The episode highlights the theme that professional kitchens can be temporary stepping stones for chefs with bigger dreams, reinforcing the idea of diverse culinary paths, including the home chef model of 2otbo5ly.",
+        "Karim's growing empathy and understanding of his colleagues' personal struggles and ambitions are showcased, indicating his maturity."
+      ],
+      "continuity_goal": "Establish Salma's exit arc and deepen her friendship with Karim, showing he has developed real, chosen bonds beyond just professional colleagues.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is typically wearing chef whites during professional kitchen scenes. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. Salma is a 2D cartoon Egyptian woman in her mid-20s, in chef whites with her hair tied back tightly. She moves with precise, efficient movements and can show subtle vulnerability. Her face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-211853-episode-25-of/01-salmas-spain-secret"
+    },
+    {
+      "episode_number": 26,
+      "name": "حب الصنعة",
+      "summary": "بعد خدمة طويلة ومجهدة في مطبخ 'نيل آند سبايس'، يتشارك كريم والشيف عمر لحظة هدوء أثناء تنظيف المطبخ. يفتح عمر قلبه لكريم، كاشفاً عن فشل مطعمه السابق وكيف أثر ذلك عليه، ويقدم له نصيحة غالية: 'حب الصنعة مش البيزنس'. هذه النصيحة تترك أثراً عميقاً في نفس كريم، وتجعله يفكر في مساره كشيف.",
+      "cliffhanger": "Karim بيطفي أنوار المطبخ. بيحط إيده على رقبته (حركة مميزة لكريم)، وموبايله الأندرويد المشروخ باين شوية في إيده التانية. نظرة تفكير وهدوء على وشه. نص عربي يظهر: 'هل كريم هيفتكر النصيحة دي لما يبدأ طريقه لوحده؟'",
+      "continuity_updates": [
+        "Karim receives a pivotal piece of wisdom from Chef Omar, emphasizing the passion for craft over the business aspect, which will influence his future decisions, especially regarding 2otbo5ly.",
+        "This moment deepens the relationship between Karim and Omar, establishing Omar as an unexpected mentor.",
+        "The episode highlights the harsh realities of the restaurant business, subtly setting up 2otbo5ly as an alternative where passion can thrive without the same business pressures.",
+        "Karim's internal conflict regarding his culinary path is intensified, as he processes Omar's experience, which will be crucial for his character development in Act 4 and 5."
+      ],
+      "continuity_goal": "مستقبل كريم هيختبر إذا كان هيلتزم بالنصيحة دي ولا لأ.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing chef whites, slightly disheveled and stained from work. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. Chef Omar is a heavyset Egyptian man in his late 40s, completely bald, with a thick black mustache. He is always in chef whites with rolled-up sleeves. His movements are calm and deliberate, but his face is capable of exaggerated expressions of wisdom and past sadness. Both characters have bold outlines, expressive faces, and are rendered in a warm Cairo palette, never photoreal.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-211858-episode-26-of/01-omar-love-the-craft"
+    },
+    {
+      "episode_number": 27,
+      "name": "مطبخ نيل آند سبايس... على صفيح ساخن!",
+      "summary": "وصول الشيف رامي الجديد لمطبخ 'نيل آند سبايس' يقلب الأجواء الهادية. صراع علني ومكتوم بين رؤيته الأوروبية الحديثة وأصالة الشيف عمر. كريم في النص بيحاول يستوعب التوتر ده كله، والوضع في المطبخ بيتحول لبيئة سامة، لحد ما رامي ياخد قرار مفاجئ بيصدم الكل.",
+      "cliffhanger": "الشيف رامي بيستدعي كل الشيفات لاجتماع طارئ. بصوت حاد، بيقول: 'وجبة العاملين (Staff Meal) هتتلغي من بكرة!'. كريم بيشهق بصدمة، ولقطة مقربة على وجهه وعينيه المتفاجئة.",
+      "continuity_updates": [
+        "Introduction of Chef Ramy as the new executive chef at Nil & Spice, establishing his personality and culinary philosophy.",
+        "Immediate friction between Chef Ramy and Chef Omar, setting the stage for significant conflict within the kitchen.",
+        "Karim's role as an observer caught in the middle, deepening his understanding of different culinary philosophies and the pressures of a professional kitchen.",
+        "The kitchen atmosphere at Nil & Spice shifts to one of tension and hostility, directly impacting the work environment.",
+        "The cancellation of the staff meal highlights Ramy's rigid, profit-driven approach and creates immediate discontent among the staff."
+      ],
+      "continuity_goal": "Introduce the disruption that will fracture the kitchen.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing chef whites. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. Chef Omar is a 2D cartoon style heavyset Egyptian man in his late 40s, completely bald, with a thick black mustache. He is always in chef whites with rolled-up sleeves. His movements are calm and deliberate, but his face is capable of exaggerated expressions of wisdom and anger. Salma is a 2D cartoon style Egyptian woman in her mid-20s, in chef whites with her hair tied back tightly. She moves with precise, efficient movements and can show subtle emotions. Chef Ramy is a 2D cartoon style young Egyptian man, trained in Europe, with perfectly styled, slicked-back dark hair, a confident and often smug smirk, and pristine, new-looking chef whites. He moves with an air of authority and subtle condescension. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. All characters have bold outlines, expressive faces, and are rendered in a warm Cairo palette, never photoreal.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-213028-episode-27-of/01-karim-ramy-omar-clash"
+    },
+    {
+      "episode_number": 28,
+      "name": "روح الحواوشي ضاعت",
+      "summary": "يُغادر الشيف عمر وثلاثة من الشيفات مطبخ 'نيل آند سبايس' بعد استلام الشيف رامي للإدارة. يرى كريم كيف تتحول روح المطبخ البسيطة إلى برودة، خاصة عندما يلغي رامي وجبة الحواوشي التي كانت تجمعهم. رغم شعوره بالخسارة، يقرر كريم البقاء في المطعم بسبب حاجته للمال، لكن هذا القرار يترك أثراً عميقاً في نفسه.",
+      "cliffhanger": "كريم واقف عند مكان تحضير الحواوشي اللي بقى فاضي، بيبص عليه بكسرة نفس، وبإيده اليمين اللي عليها الأسورة الخضرا بيعدل موبايله الأندرويد المشروخ. نص عربي بيظهر: 'هل كريم هيفضل في المكان ده كتير؟'",
+      "continuity_updates": [
+        "This episode clearly establishes the emotional void and moral compromise Karim experiences within Nil & Spice, reinforcing that his time there is limited.",
+        "Chef Ramy's cold, profit-driven approach is solidified as a direct contrast to Karim's passion for authentic food and community.",
+        "Salma's silent empathy further strengthens her developing bond with Karim, hinting at her role as a potential ally or understanding colleague in his journey.",
+        "The symbolic loss of the hawawshi staff meal highlights the 'death' of the kitchen's soul, mirroring Karim's internal struggle and pushing him closer to finding an alternative (2otbo5ly) where his values can thrive.",
+        "The cliffhanger leaves Karim's future at Nil & Spice uncertain, encouraging viewers to anticipate his next move towards a more fulfilling culinary path."
+      ],
+      "continuity_goal": "تأكيد أن وقت كريم في مطبخ 'نيل آند سبايس' محدود، وأن هذه الأحداث هي التي تدفعه للبحث عن بديل حيث يمكنه الحفاظ على شغفه وقيمه، مما يمهد الطريق لـ 2otbo5ly.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing chef whites, slightly disheveled and stained from work. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. Salma is a 2D cartoon style Egyptian woman in her mid-20s, in chef whites with her hair tied back tightly. She moves with precise, efficient movements and can show subtle vulnerability. Her face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. Chef Omar is a 2D cartoon style heavyset Egyptian man in his late 40s, completely bald, with a thick black mustache. He is always in chef whites with rolled-up sleeves. His movements are calm and deliberate, but his face is capable of exaggerated expressions of wisdom and past sadness, and hearty laughter in flashbacks. He has bold outlines and is rendered in a warm Cairo palette. Chef Ramy is a 2D cartoon style young Egyptian man, clean-cut with a cold, dismissive expression. He wears pristine chef whites. His movements are precise and clinical. He has bold outlines and is rendered in a slightly muted, sterile palette. Line Cooks are generic 2D cartoon style Egyptian men, in chef whites, with varied appearances (thin, round, bald, mustached). Their faces are capable of expressing grimness or lively camaraderie. They have bold outlines and are rendered in a warm Cairo palette in flashbacks, and a more muted palette in current scenes. Generic kitchen assistants are 2D cartoon style figures, in chef whites, with clinical, harsh movements, no specific features.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-213130-episode-28-of/01-hawawshi-soul-gone"
+    },
+    {
+      "episode_number": 29,
+      "name": "مش مطبخ تيك توك؟",
+      "summary": "بعد إهانة من الشيف رامي بأن أفكاره 'مطبخ تيك توك'، يقرر كريم أن يترك مطبخ 'نيل آند سبايس'. يودعه الشيف رامي بنوع من الشماتة، بينما تمنحه سلمى نظرة دعم خفية. يخرج كريم إلى شوارع القاهرة، ويقف للحظة وهو يدرك أن قراره قد يفتح له أبوابًا جديدة، ولكنه يواجه أيضًا عالمًا من المجهول، لكنه متمسك بشغفه وأكله اللي بقلب.",
+      "cliffhanger": "He stands outside on the street. Cars pass. He has nowhere to be tomorrow for the first time in a year, but a new resolve to cook his way.",
+      "continuity_updates": [
+        "Karim's internal conflict between his passion and the commercial demands of a restaurant reaches its breaking point, leading to his resignation.",
+        "His decision to leave 'Nil & Spice' marks the end of his professional kitchen arc, setting the stage for his independent journey.",
+        "Salma's subtle support reinforces their growing bond and hints at future alliances outside the traditional restaurant hierarchy.",
+        "The episode emphasizes the theme of choosing principle and passion over stability, aligning with 2otbo5ly's value proposition for home chefs.",
+        "The cliffhanger now subtly hints at the possibility of a new path for Karim, where his 'TikTok kitchen' ideas might thrive."
+      ],
+      "continuity_goal": "End of the Nil & Spice arc — Karim chooses himself",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is typically wearing chef whites during professional kitchen scenes, or a home apron over a blue hoodie or faded white t-shirt in home scenes. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. No photoreal humans, no text baked into the scene, no random characters, no watermarks, no logos.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-213310-episode-29-of/01-tiktok-kitchen-insult"
+    },
+    {
+      "episode_number": 30,
+      "name": "حلم متجمد في المعادي",
+      "summary": "كريم يحصل على وظيفة بمرتب أفضل في مطعم 'بيت الشيخ' الفاخر في المعادي، لكنه يصدم بالواقع المرير: كل الأكل مجمد ومستورد. يقضي ثلاثة أشهر يتعلم فيها التسخين بدل الطهي، ويشاهد شغفه بالأكل يذبل تدريجياً، ليدرك أن المال وحده لا يكفي.",
+      "cliffhanger": "كريم يجلس في مخزن التلاجة، الإضاءة خافتة، يحدق في صواني محشي مجمدة بكميات كبيرة. تعبير على وجهه يمزج بين الصدمة واليأس، والموبايل الأندرويد المشروخ باين شوية في إيده التانية.",
+      "continuity_updates": [
+        "Karim learns that 'upscale' restaurants can prioritize profit and convenience over fresh ingredients, directly conflicting with his culinary values.",
+        "He experiences the profound emotional toll of working in an environment that stifles his passion, reinforcing that financial stability alone is insufficient for his fulfillment.",
+        "His disillusionment with the commercial restaurant industry deepens significantly, pushing him closer to seeking an alternative path where his passion for authentic cooking can thrive (foreshadowing his journey to 2otbo5ly).",
+        "This three-month period of growing despair and lack of creativity establishes a stark contrast with his future success as a home chef, highlighting the value of genuine, homemade food."
+      ],
+      "continuity_goal": "إظهار أن المال والمكانة بلا شغف بالصنعة يستنزفان كريم.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing chef whites, which might be slightly disheveled or stained from work. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. No photoreal humans, no text baked into the scene, no random characters, no watermarks, no logos.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-213314-episode-30-of/01-frozen-dream-maadi"
+    },
+    {
+      "episode_number": 31,
+      "name": "حلم النيو كايرو... اتكسر",
+      "summary": "يُظهر الفيديو حماس كريم الأولي للعمل في مطعم عصري بالرحاب، مع فريق شبابي وأكل شكله تحفة. ثم يتحول المشهد تدريجياً ليكشف عن التأخر في دفع الرواتب، وخلافات الفريق، وصولاً إلى إغلاق المطعم وترك كريم بلا مرتب 3 شهور، مؤكداً أن المظاهر خداعة وأن شغفه لا يكفي وحده.",
+      "cliffhanger": "يغادر كريم حاملاً 'إيصال دين' مكتوبًا بخط اليد ولا شيء آخر، عيناه تائهتان في شوارع القاهرة المليئة بالسيارات المسرعة، لا يعلم أين يذهب غداً.",
+      "continuity_updates": [
+        "This episode clearly establishes Karim's deep-seated frustration with the traditional restaurant industry, reinforcing the idea that it consistently fails passionate chefs.",
+        "The financial betrayal solidifies Karim's need for a stable, fair, and self-controlled culinary path, directly setting the stage for his eventual journey towards 2otbo5ly.",
+        "His current state of unemployment and despair is the emotional low point that will precede his return to home cooking and TikTok.",
+        "The handwritten IOU becomes a symbolic representation of his lost earnings and the exploitation he faced, a tangible reminder of why he can't rely on traditional employment."
+      ],
+      "continuity_goal": "The external world keeps failing him — he must find something he controls",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing chef whites, which start pristine and become slightly disheveled. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. Generic young chefs are 2D cartoon style figures, varied appearances (thin, round, bald, mustached), wearing chef whites, capable of exaggerated expressions of camaraderie, frustration, or anger.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-213606-episode-31-of/01-new-cairo-dream-broken"
+    },
+    {
+      "episode_number": 33,
+      "name": "دفعة بالرز بلبن",
+      "summary": "بعد سلسلة إخفاقات في المطاعم التجارية، يعود كريم إلى المنزل محبطًا ويائسًا. أم كريم تعد له طبق الأرز باللبن المفضل لديه، وتشاركه حكمة جدته عن شغف الطهي الحقيقي، مما يوقظ فيه الأمل ويدفعه للعودة إلى عالم الطبخ بطريقته الخاصة.",
+      "cliffhanger": "Karim picks up his cracked Android phone with his right hand (green wristband visible) and taps the camera app, a flicker of determination in his eyes, signaling his return to creating food content.",
+      "continuity_updates": [
+        "Karim's emotional lowest point is clearly established, making his subsequent return to cooking a earned and heartfelt moment.",
+        "Um Karim's role as a source of wisdom and emotional anchor is reinforced, highlighting the deep connection between food, family, and passion.",
+        "The episode marks Karim's definitive pivot away from the commercial restaurant world and back towards his roots in home cooking and content creation.",
+        "The opening of the camera app directly sets up the next episode, where Karim will begin filming his first new TikTok video after his hiatus, aligning with the continuity goal of his return to TikTok being earned through love, not ambition.",
+        "The subtle hints in the captions and pinned comment about 'home chefs' and 'food from a skilled home chef' start to gently tease the 2otbo5ly app's concept."
+      ],
+      "continuity_goal": "The pivot back to TikTok is earned through love, not ambition",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie or faded white t-shirt. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. Um Karim (Mama Zeinab) is a 2D cartoon style 52-year-old Egyptian woman. She has a round face with a warm expression that can turn sharp. Her silver-streaked hair is usually pulled back loosely. She is wearing a colorful galabeyya at home. Reading glasses are sometimes on her head. Her hands are often near the blue and white speckled pot. Her face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-213617-episode-33-of/01-um-karim-push-roz-bel-laban-revival"
+    },
+    {
+      "episode_number": 32,
+      "name": "لما تشوف نفسك القديمة في المراية",
+      "summary": "كريم في أقصى درجات الإحباط بعد ترك العمل في المطاعم، بيقضي وقته في أوضته، مابقاش بيطبخ بقاله كتير. بيعيد اكتشاف فيديوهاته القديمة على تيك توك، اللي كانت تعبر عن أحلامه الطفولية، وبيشوفها بمزيج من الإحراج والحنين. أم كريم بتدعمه بصمت بطبق رز بلبن، وفارس بيقعد معاه على السطح بدون كلام.",
+      "cliffhanger": "هل طبق الرز بلبن ده هيكون شرارة البداية الجديدة لكريم؟ ومين اللي هيقف جنبه في رحلته الجاية؟ استنوا الحلقة الجاية!",
+      "continuity_updates": [
+        "Karim's emotional lowest point is established, completing his journey through the challenges of professional kitchens and unemployment.",
+        "The silent, unwavering support of Um Karim and Fares is highlighted, showing the emotional anchors in Karim's life.",
+        "The contrast between Karim's past amateurish attempts and his current (though dormant) culinary skill is emphasized, setting up his future growth.",
+        "The Roz Bel Laban cliffhanger acts as a symbolic moment of comfort and potential inspiration, directly leading into Act 4 where Um Karim becomes a catalyst for his return to cooking."
+      ],
+      "continuity_goal": "تجهيز الأرضية العاطفية للتحول الكبير في الفصل الرابع، وإظهار عمق إحباط كريم قبل دفعة أمه له للعودة للطبخ.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie or faded white t-shirt. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. A 2D cartoon style character, Fares, a tall and lanky Egyptian man, in an Ahly jersey. He holds a cheap phone gimbal in hand. His eyes are wide and expressive. He has bold outlines and is rendered in a warm Cairo palette. A 2D cartoon style character, Um Karim (Mama Zeinab), a round-faced Egyptian woman in her early 50s with a warm expression, which can turn sharp. She has silver-streaked hair usually pulled back loosely and wears a colorful galabeyya. Reading glasses are sometimes on her head. She has bold outlines and is rendered in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-213613-episode-32-of/01-karim-old-tiktoks-lowpoint"
+    },
+    {
+      "episode_number": 34,
+      "name": "سر حواوشي نيل آند سبايس في بيتي",
+      "summary": "بعد سلسلة من الإخفاقات في المطاعم، يعود كريم إلى مطبخه المتواضع ليصنع الحواوشي بلمسته الخاصة، مستخدمًا 'وصفة نيل آند سبايس' المعدلة لميزانية بيته. يصور الفيديو بعفوية وينشره في الواحدة صباحًا، ليصدم عند استيقاظه بمشاهدات فاقت 40 ألفًا.",
+      "cliffhanger": "Karim stares at his ceiling, hands raised in disbelief, as the phone screen shows '40K views'.",
+      "continuity_updates": [
+        "The phone-against-oil-bottle setup is established as Karim's iconic authentic filming method, reinforcing his return to his roots.",
+        "Karim's internal conflict between his professional failures and his passion for cooking is highlighted, setting the stage for future validation.",
+        "The unexpected viral success of a simple, authentic home-cooked meal foreshadows 2otbo5ly's core value proposition.",
+        "This episode marks a significant turning point in Karim's journey, shifting him from despair to a new sense of purpose and potential."
+      ],
+      "continuity_goal": "The phone-against-oil-bottle setup is established as Karim's iconic authentic filming method, reinforcing his return to his roots.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-213621-episode-34-of/01-hawawshi-secret-viral"
+    },
+    {
+      "episode_number": 35,
+      "name": "ردود من القلب",
+      "summary": "كريم غرقان في الرد على تعليقات فيديو الحواوشي اللي ضرب معاه، حاسس بتعب بس كل كومنت بيجيله بيوصل إحساس بالانتماء والفهم بعد فترة إحباط طويلة. فارس طبعًا بيستغل اللحظة ويصوره، والفيديو ده كمان بيضرب. رسالة من نور بتيجي تأكدله إنه كان صح من الأول.",
+      "cliffhanger": "VISUAL: Close-up على شاشة موبايل كريم. كومنت جديد بيظهر: 'الأكل ده ميتوصاش عليه! طب ده ممكن يوصل لحد عندي؟' Karim's expression is thoughtful, a mix of surprise and consideration, as the screen freezes on the comment. (Sound: dramatic, curious sting music)",
+      "continuity_updates": [
+        "Karim's validation now stems from genuine community engagement, sharply contrasting with his previous professional failures and loneliness.",
+        "The raw, authentic filming style (phone against oil bottle) is reinforced as a key element of his renewed success and connection with his audience.",
+        "Fares's role as a hype man and accidental content creator is further highlighted, showing how his chaotic energy contributes to Karim's virality.",
+        "Nour's early recognition of Karim's talent is confirmed, building anticipation for their future interactions and her role in his journey.",
+        "The cliffhanger directly sets up the concept of 2otbo5ly, hinting at the possibility of ordering unique, home-cooked, TikTok-famous dishes, thereby building hype for the app's launch."
+      ],
+      "continuity_goal": "Establish the new audience as real and relational — not just numbers, showing the profound impact of genuine connection on Karim's journey.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. A 2D cartoon style character, Fares, a tall and lanky Egyptian man in his mid-20s. He is wearing an Ahly jersey. He holds a cheap phone gimbal in his hand. His eyes are wide and expressive, with a restless, comedic energy. He has bold outlines and is rendered in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-214547-episode-35-of/01-rodood-men-el-alb"
+    },
+    {
+      "episode_number": 37,
+      "name": "الأكل اللي بتموت عليه ... هيجي لحد بيتك!",
+      "summary": "نور تحاول إقناع كريم المتشكك بفكرة 2otbo5ly في مقهى مزدحم. كريم يرى في البداية أنه مجرد تطبيق آخر، لكن نور تعرض له كيف يمكن للتطبيق أن يربط عشاق أكل تيك توك بالشيفات المنزليين. يبدأ كريم في إدراك أن هذا هو بالضبط ما كان يفعله بالفعل، ويشتعل فيه بصيص أمل جديد.",
+      "cliffhanger": "Karim's thumb presses the 2otbo5ly app icon, and the screen briefly flashes the app's loading screen before fading to black, signaling his first interaction with the platform.",
+      "continuity_updates": [
+        "The 2otbo5ly app is officially introduced to Karim, marking the beginning of Act 4 and his journey towards joining the platform.",
+        "Karim's initial skepticism and ultimate realization formalize his internal conflict and his true passion for home cooking.",
+        "The episode establishes Nour as a key figure in Karim's path towards 2otbo5ly, showcasing her role in guiding him.",
+        "The cliffhanger directly sets up Karim's exploration of the app in the next episode."
+      ],
+      "continuity_goal": "2otbo5ly is introduced as a system that formalizes what Karim already is, providing him a path forward that aligns with his authentic passion for home cooking.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a blue hoodie. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. A 2D cartoon style character, Nour, a 23-year-old Egyptian woman. She has short natural hair and wears round wire-frame glasses. She is holding a smartphone in her hand. Her clothes are simple but put-together, not flashy. Her expression is warm and focused, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. A 2D cartoon style character, Chef Omar, a heavyset Egyptian man in his late 40s, completely bald, with a thick black mustache. He is wearing chef whites with rolled-up sleeves and is capable of exaggerated rage. His face is expressive, with bold outlines, in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-214650-episode-37-of/01-nour-convinces-karim"
+    },
+    {
+      "episode_number": 36,
+      "name": "حكايتي مع الأكل... وليه أكل البيت كسب",
+      "summary": "كريم يتأمل رحلته من فشل المطاعم لنجاح فيديوهات الأكل البيتي. يعرض فيديوهاته للمحشي والملوخية (بلمسة أم كريم)، التي تحقق 200 ألف مشاهدة. يتلقى تعليقًا محوريًا يسأل عن إمكانية طلب الطعام، مما يدفعه للتفكير في خطوة جديدة.",
+      "cliffhanger": "Karim screenshots the pivotal comment asking if the food can be ordered and texts it to Nour, hinting at a major next step and the potential for a new culinary venture.",
+      "continuity_updates": [
+        "Karim's journey through restaurant failures and his return to authentic home cooking is fully established.",
+        "The success of his home-cooked content (Mahshi, Molokheyya) demonstrates audience demand for genuine, traditional dishes.",
+        "Um Karim's subtle influence and the iconic blue and white speckled pot are featured, reinforcing her role as an emotional anchor and source of culinary wisdom.",
+        "The pivotal comment 'هو أنا ممكن أطلب الأكل ده من مكان؟' directly sets up the discovery of 2otbo5ly in a future episode.",
+        "Karim texting Nour with this crucial information establishes her role as a potential partner or guide in his next phase."
+      ],
+      "continuity_goal": "The comment 'can I order this?' is the seed of the 2otbo5ly discovery.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. Um Karim (Mama Zeinab) is a 2D cartoon style 52-year-old Egyptian woman. She has a round face with a warm expression that can turn sharp. Her silver-streaked hair is usually pulled back loosely. She is wearing a colorful galabeyya at home. Reading glasses are sometimes on her head. Her hands are often near the blue and white speckled pot. Her face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-214638-episode-36-of/01-honest-chef-molokheyya-demand"
+    },
+    {
+      "episode_number": 39,
+      "name": "مطبخ الأحلام بفلوس أول طلبات",
+      "summary": "بعد أول طلبات ناجحة من 2otbo5ly، كريم بيقرر يعمل 'مطبخ الأحلام' بتاعه. بيجيب إضاءة جديدة، وفارس بيساعده بطريقة كوميدية. أم كريم بتاخد دور 'مراقب الجودة' بتذوق كل حاجة قبل ما تطلع، وفارس بيتحول لـ'مدير عمليات' بس بشيت إكسيل مضحك. المطبخ الصغير بيتحول لاستوديو ومطعم، بس بروح البيت الأصيلة.",
+      "cliffhanger": "VISUAL: The ring light is up. The blue speckled pot is center stage, gleaming. Karim looks at the setup, then directly at his phone camera, giving a final, determined nod and a confident smile.",
+      "continuity_updates": [
+        "Karim's home kitchen is visually upgraded with professional lighting, signifying his growth and investment through 2otbo5ly earnings, while maintaining its authentic home feel.",
+        "Um Karim's role as a silent but crucial quality control figure is established, reinforcing the 'homemade' authenticity and family involvement.",
+        "Fares's transition into a comedic 'operations manager' with his elaborate, yet chaotic, spreadsheets adds a new layer to his character and the team dynamic.",
+        "The 'phone against oil bottle' setup is now integrated into a more professional but still authentic home studio, showing evolution not abandonment of his roots.",
+        "The episode visually establishes the home kitchen as both Karim's cooking studio and the production hub for 2otbo5ly orders, clearly linking the app's success to tangible improvements."
+      ],
+      "continuity_goal": "Visually establish Karim's home kitchen as the vibrant hub for his 2otbo5ly operations, showcasing how the app empowers home chefs to invest in their craft and space.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He wears a home apron over a blue hoodie or faded white t-shirt. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. A 2D cartoon style character, Fares, a tall and lanky Egyptian man in his mid-20s. He is wearing an Ahly jersey or a puffer jacket. He holds a cheap phone gimbal or selfie stick in hand. His eyes are wide and expressive, with a restless, comedic energy. He has bold outlines and is rendered in a warm Cairo palette. A 2D cartoon style character, Um Karim (Mama Zeinab), a round-faced Egyptian woman in her early 50s with a warm expression that can turn sharp. She has silver-streaked hair usually pulled back loosely and wears a colorful galabeyya. Reading glasses are sometimes on her head. She has bold outlines and is rendered in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-214939-episode-39-of/01-kitchen-glow-up-first-orders"
+    },
+    {
+      "episode_number": 38,
+      "name": "أول أوردر ملوخية!",
+      "summary": "كريم بيستقبل أول أوردر ليه على 2otbo5ly: ملوخية أم كريم الأسطورية في الدقي بـ 250 جنيه. مع توجيهات أم كريم الدقيقة، بيطبخها ويوصلها بنفسه. لحظة الحقيقة لما الزبونة بتقول 'أيوه، ده الكلام!'، مكالمة لفارس بتأكد لكريم إنه لقى مكانه. وفي الأسانسير بتجيله طلبات تانية.",
+      "cliffhanger": "Karim gets another order notification in the elevator. Then another.",
+      "continuity_updates": [
+        "Karim successfully completes his first 2otbo5ly order, validating his new path.",
+        "Um Karim's Molokheyya recipe is established as a signature dish for Karim on 2otbo5ly.",
+        "The 2otbo5ly app's functionality (receiving orders, connecting chefs with customers via video links) is clearly demonstrated.",
+        "Karim's confidence and sense of purpose are fully reignited, contrasting with his previous despair.",
+        "The episode ends with a clear indication of massive demand, setting up future challenges and growth for Karim and 2otbo5ly."
+      ],
+      "continuity_goal": "Karim's first 2otbo5ly order lands perfectly — this is the beginning.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. A 2D cartoon style character, Um Karim (Mama Zeinab), a round-faced Egyptian woman in her early 50s with a warm expression, which can turn sharp. She has silver-streaked hair usually pulled back loosely and wears a colorful galabeyya. Reading glasses are sometimes on her head. She has bold outlines and is rendered in a warm Cairo palette. A 2D cartoon style character, Fares, a tall and lanky Egyptian man in his mid-20s. He is wearing an Ahly jersey. He holds a cheap phone gimbal in his hand. His eyes are wide and expressive, with a restless, comedic energy. He has bold outlines and is rendered in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-214938-episode-38-of/01-first-molokheyya-delivery"
+    },
+    {
+      "episode_number": 40,
+      "name": "تحدي كنافة كريم بروليه (150 جنيه بس!)",
+      "summary": "Karim takes on his first 2otbo5ly challenge: recreate a viral Crème brûlée Kunafa from a TikTok link, all within a 150 EGP budget. After two comedic failures, he triumphs, delivering a restaurant-quality dish from his home kitchen, attracting massive views and setting the stage for 2otbo5ly's unique challenge format.",
+      "cliffhanger": "VISUAL: Close-up on Karim's cracked Android phone. A new 2otbo5ly notification pops up, followed by several more, rapidly filling the screen. Karim's eyes widen in surprise. (Sound: rapid succession of notification pings, building to a comedic crescendo).",
+      "continuity_updates": [
+        "The 2otbo5ly challenge format (user sends TikTok link + sets budget = custom dish from home chef) is clearly established.",
+        "Karim's ability to recreate complex, viral TikTok dishes within a budget is showcased, reinforcing his expertise and the app's value.",
+        "The comedic aspect of Karim's struggles and Fares's role as a chaotic observer are highlighted.",
+        "The episode sets up high anticipation for future 2otbo5ly requests, emphasizing the app's growing popularity and demand for Karim's skills."
+      ],
+      "continuity_goal": "Establish the 2otbo5ly challenge format – a user sends a TikTok link + sets a budget = a custom dish from a home chef.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie or faded white t-shirt. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. A 2D cartoon style character, Fares, a tall and lanky Egyptian man in his mid-20s. He is almost always in an Ahly jersey or a puffer jacket. He holds a cheap phone gimbal or selfie stick in his hand. His eyes are wide and expressive, with a restless, comedic energy. He has bold outlines and is rendered in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-215151-episode-40-of/01-kunafa-challenge-150egp"
+    },
+    {
+      "episode_number": 41,
+      "name": "تحدي برجر الحواوشي المستحيل",
+      "summary": "يتلقى كريم طلبًا غريبًا على 2otbo5ly: 'برجر حواوشي' بـ 250 جنيه. يوثق فارس رحلة كريم المجنونة على مدار يومين وخمس محاولات فاشلة، كل واحدة أسوأ من اللي قبلها، والناس بتتفاعل أكتر مع الفشل. بعد تعب وتركيز، بينجح كريم في تحضير الطبق المثالي، وبيوصل فيديو الكشف عن البرجر لمليون مشاهدة. منهكًا، بيقعد في المطبخ ويكتشف إن متابعينه وصلوا 800 ألف، فبيتصل بأبوه بفرحة عارمة.",
+      "cliffhanger": "Karim, exhausted, sits on his kitchen floor. He looks at his cracked Android phone, sees his follower count hit 800K, and with a wide, proud smile, immediately dials his dad to share the news.",
+      "continuity_updates": [
+        "Karim successfully tackles an 'impossible' fusion food request through 2otbo5ly, solidifying his reputation as a capable home chef who can deliver on unique TikTok food trends.",
+        "This episode marks Karim's first major viral moment (1M views on the reveal, 800K followers), significantly boosting his online presence and validating his move to 2otbo5ly, establishing him as a go-to for challenging requests.",
+        "The iterative process of trial and error is shown, reinforcing the 'process-oriented content' trend and Karim's dedication, making his success feel earned and relatable.",
+        "Fares's role as cameraman and hype man is further established, documenting Karim's journey and adding comedic elements.",
+        "The call to his dad signals a moment of personal triumph and shared success, potentially foreshadowing his dad's increasing involvement or pride in Karim's work, and setting up an emotional beat for the next episode."
+      ],
+      "continuity_goal": "This is Karim's first 1M-view moment, solidifying his reputation as a unique home chef capable of delivering on impossible TikTok food requests through 2otbo5ly. It's a key milestone in his character arc, showing his growth and dedication.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He wears a home apron over a blue hoodie or faded white t-shirt. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. A 2D cartoon style character, Fares, a tall and lanky Egyptian man in his mid-20s. He is wearing an Ahly jersey or a puffer jacket. He holds a cheap phone gimbal or selfie stick in hand. His eyes are wide and expressive, with a restless, comedic energy. He has bold outlines and is rendered in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-215306-episode-41-of/01-hawawshi-burger-impossible-challenge"
+    },
+    {
+      "episode_number": 42,
+      "name": "أوردر العيد اللي لم شملنا",
+      "summary": "سلمى، عائدة من إسبانيا بعد فشل دراستها للطبخ، تجد نفسها تساعد كريم في مطبخه المنزلي الضيق لتحضير أوردر عيد ضخم لـ 15 عيلة من خلال 2otbo5ly، بميزانية 500 جنيه بس. العمل الشاق طوال الليل يحوّل المطبخ إلى خلية نحل، وتُدرك سلمى أن كريم وجد 'مطعم' أحلامه في بيته. تنتهي الحلقة بإشارتها إلى بقائها لمساعدة كريم، مما يفتح الباب لمستقبلها في 2otbo5ly.",
+      "cliffhanger": "Salma doesn't leave; she puts her hand on Karim's shoulder, implying she will continue to help with 2otbo5ly orders, as Karim looks at his phone with the app displayed.",
+      "continuity_updates": [
+        "Salma's arc from professional restaurant chef to acknowledging the value and potential of home cooking (and 2otbo5ly) is significantly advanced, showing her finding a new 'home' for her culinary skills.",
+        "The home kitchen is further established as a legitimate, high-volume production hub for 2otbo5ly, capable of handling large and demanding orders.",
+        "Karim's growing confidence and leadership as a home chef are highlighted, as he successfully manages a massive order and gains respect from a seasoned professional like Salma.",
+        "The episode reinforces the brand's ability to connect customers with home chefs for large, budget-friendly, and high-quality orders, especially for special occasions like Eid.",
+        "The cliffhanger sets up Salma potentially joining Karim as a regular collaborator for 2otbo5ly, adding a new dynamic to the team and hinting at future plot developments."
+      ],
+      "continuity_goal": "Close Salma's arc; reinforce that the home kitchen is a real kitchen.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie or faded white t-shirt. On his right hand, he wears a prominent green rubber wristband, always present. He always carries a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. A 2D cartoon style character, Salma, a mid-20s Egyptian woman. She is wearing chef whites, with her hair tied back tightly. Her movements are precise and efficient. Her face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-215346-episode-42-of/01-eid-order-salma-karim-kitchen-transformation"
+    },
+    {
+      "episode_number": 44,
+      "name": "سر صوص أم كريم الفايرال",
+      "summary": "كريم، وهو واثق من صوص جديد لأوردر 2otbo5ly، بيخلّي أم كريم تدوقه. بتدوقه بتعبير وش خفيف، بتضيف لمسة سحرية من برطمان صغير جنب حلتها الزرقا، وبتوافق عليه بهزّة راس بسيطة، وتمشي ولا كأن شيئًا حدث. كريم، اللي كان متلخبط الأول، بيرفع الفيديو زي ما هو وبيكتشف إن أم كريم كسبت الإنترنت! الفيديو بيجيب 3 مليون مشاهدة، والتعليقات كلها: 'أم كريم هي الشيف الحقيقي!'.",
+      "cliffhanger": "Karim, exhausted but elated, sits on the home kitchen floor, scrolling through his cracked Android phone, showing 3M views. Um Karim walks in, wearing her reading glasses on her head, glances at the phone in Karim's hand, and says 'طب وبعدين؟' then casually walks back into the kitchen, leaving Karim speechless. (Sound: azaan in background, kitchen clatter as she walks away).",
+      "continuity_updates": [
+        "Um Karim is now established as a beloved, unintentionally viral, off-screen character whose culinary wisdom is unparalleled.",
+        "The cultural value of 'Nafas' (the special touch in home cooking) is emphasized through Um Karim's actions and the audience's reaction.",
+        "Karim further solidifies his role as a bridge between traditional home cooking and modern TikTok trends/2otbo5ly delivery.",
+        "The home kitchen is reaffirmed as a source of authentic, high-quality food, capable of generating viral content."
+      ],
+      "continuity_goal": "Um Karim becomes a beloved offscreen character – lean into this from now on.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. A 2D cartoon style character, Um Karim, a round-faced Egyptian woman in her early 50s with a warm expression that can turn sharp in a second. She has silver-streaked hair usually pulled back loosely. She is wearing a colorful galabeyya. Reading glasses are sometimes on her head. Her face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-220723-episode-44-of/01-um-karim-secret-sauce"
+    },
+    {
+      "episode_number": 43,
+      "name": "شوارعنا في بيتك: الـ150 جنيه عملت إيه؟",
+      "summary": "Karim proudly launches his new 'شوارعنا في بيتك' sub-series on 2otbo5ly, promising authentic Egyptian street food like Feteer Meshaltet, Shubra Hawawshi, and special Ta'ameya delivered right to people's homes, all within a budget. The video showcases the mouth-watering dishes, prepared with love and skill in his home kitchen. As orders pour in, overwhelming Karim and Fares, Um Karim surprisingly joins the kitchen at 6 AM to effortlessly help with dough prep. Her natural skill and dry wit are accidentally captured, making her an instant internet sensation. The episode ends with Karim, exhausted but happy, discovering a shocking waitlist of 200 orders, leaving him in comical disbelief.",
+      "cliffhanger": "لقطة مقربة على موبايل كريم الأندرويد اللي شاشته مكسورة. إشعار بيظهر: 'قائمة انتظار: 200 طلب'. كريم بيبص بصدمة، وعينيه بتوسع بشكل كوميدي، وبيحك ورا رقبته ببطء، مع صوت كوميدي مفاجئ.",
+      "continuity_updates": [
+        "Karim successfully launches his 'شوارعنا في بيتك' sub-series, diversifying 2otbo5ly's offerings to include authentic street food, confirming the app's ability to fulfill unique and diverse food requests within a budget.",
+        "The home kitchen is firmly established as a legitimate, high-volume production hub, capable of handling significant order spikes, reinforcing the 'home kitchen soul' amidst scaling operations.",
+        "Um Karim's accidental virality highlights the authenticity and home-cooked charm of 2otbo5ly meals, providing a new, beloved 'face' for the brand and the series while adding a strong comedic element.",
+        "The episode emphasizes the tension and comedic struggle of scaling a home-based food business, making Karim's journey relatable and engaging for the audience.",
+        "Fares's role as the chaotic hype man and operations support is further solidified through his exaggerated reactions to the order surge.",
+        "The cliffhanger (200-person waitlist) effectively builds hype for 2otbo5ly's growing demand and Karim's future challenges, encouraging viewers to anticipate the next episode and the app's launch."
+      ],
+      "continuity_goal": "إظهار حجم العمليات وهو بيتوسع مع الحفاظ على روح المطبخ البيتي الأصيلة.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man, medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie or faded white t-shirt. On his right hand, he wears a prominent green rubber wristband — always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. His signature gesture is rubbing the back of his neck when thinking or embarrassed. A 2D cartoon style character, Fares, a tall and lanky Egyptian man in his mid-20s. He is almost always in an Ahly jersey or a puffer jacket. He holds a cheap phone gimbal or selfie stick in hand. His eyes are wide and expressive, with a restless, comedic energy. He has bold outlines and is rendered in a warm Cairo palette. A 2D cartoon style character, Um Karim (Mama Zeinab), a 52-year-old Egyptian woman. She has a round face with a warm expression that can turn sharp in a second. Her silver-streaked hair is usually pulled back loosely. She wears a colorful galabeyya at home — varies by episode but always a galabeyya. Reading glasses are sometimes perched on her head. She has bold outlines and is rendered in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-220721-episode-43-of/01-shawareena-fi-beitak-launch-150egp"
+    },
+    {
+      "episode_number": 45,
+      "name": "ليه أكلي أغلى؟ (السر مش في السعر)",
+      "summary": "Karim directly confronts the online buzz about a copycat chef undercutting his prices. He passionately breaks down the painstaking development of his signature 'Hawawshi Burger,' showcasing his rigorous research, meticulous ingredient selection (contrasting quality with cheap alternatives), and a hilarious, rapid-fire montage of his many failed attempts. Karim confidently argues that his higher price isn't just about ingredients, but the untold story, relentless dedication, and unique passion baked into every bite—a value that a simple imitation can never replicate. This transforms a competitive threat into a powerful educational moment for his audience, implicitly highlighting 2otbo5ly's unique offering. The episode ends with Chef Ramy watching Karim's video, hinting at future developments.",
+      "cliffhanger": "Chef Ramy (from EP29) watches Karim's video on his phone, his face unseen, creating an ominous and intriguing end to the episode, hinting at future interactions and a potential clash of philosophies.",
+      "continuity_updates": [
+        "Karim's approach to dealing with competition is established: confident, educational, and focused on his unique process and story, reinforcing his brand identity and authenticity.",
+        "The 'Hawawshi Burger' is solidified as one of Karim's signature and popular 2otbo5ly dishes, showcasing his skill in creating unique, viral fusion foods for the app.",
+        "The value proposition of 2otbo5ly is implicitly strengthened by demonstrating the genuine effort, quality, and 'story' behind home-cooked, unique dishes, justifying their price over cheaper imitations and emphasizing the app's role in connecting users to this quality.",
+        "The return of Chef Ramy (even if just his hands) sets up a potential future conflict or interaction, connecting back to Karim's past in professional kitchens and hinting at a clash between 'home chef' and 'professional chef' philosophies."
+      ],
+      "continuity_goal": "Establish Karim's process and philosophy as the real product, demonstrating that his unique value proposition lies in his dedication, research, and personal touch, not just the final ingredients.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. A 2D cartoon style character, Fares, a tall and lanky Egyptian man in his mid-20s. He is wearing an Ahly jersey. He holds a cheap phone gimbal in hand. His eyes are wide and expressive, with a restless, comedic energy. He has bold outlines and is rendered in a warm Cairo palette. A 2D cartoon style character, Chef Ramy, an Egyptian man, young, with a sleek, modern appearance. His hands are visible, clean, well-manicured, holding a premium smartphone. His face is unseen.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-220816-episode-45-of/01-hidden-cost-hawawshi-burger"
+    },
+    {
+      "episode_number": 46,
+      "name": "لما الكاميرا بتشوف أكتر من اللي بتوريه",
+      "summary": "نور بتقترح على كريم يعملوا وثائقي عنه وعن 2otbo5ly. كريم بيتوتر ومش متعود على الكاميرات اللي بتوثّق كل حاجة بعيد عن شخصيته اللي بيقدمها على تيك توك. نور بأسئلتها الهادية بتخليه يطلع جانب أعمق وأكثر تأملًا من شخصيته، وبتصوره وهو بيطبخ مش بس عشان الفيديو، لكن كأن الكاميرا مش موجودة. الحلقة بتوري الصراع الداخلي لكريم ما بين شخصيته اللي بيقدمها أونلاين، وشخصيته الحقيقية لما الكاميرا بترصد كل لحظة، مع تأكيد على قيمة أكل البيت اللي بيقدمه من خلال 2otbo5ly.",
+      "cliffhanger": "Nour (off-screen, voice) asks: 'سؤال أخير يا كريم... إيه الأكلة اللي تطبخها لحد بتحبه بجد؟ الأكلة اللي بتطلع من القلب؟'. Extreme close-up on Karim's face, green rubber wristband on right hand visible, eyes thoughtful, expression changing from hesitant to deeply contemplative. Long, silent pause, only faint Cairo traffic sounds.",
+      "continuity_updates": [
+        "The Karim-Nour dynamic deepens, showing Karim allowing himself to be seen beyond his usual TikTok persona and exploring his vulnerability.",
+        "The concept of a 'documentary' about Karim and 2otbo5ly is introduced, setting up future content pillars and potentially a new narrative arc for the series.",
+        "Karim's internal struggle with vulnerability and authenticity is highlighted, adding emotional depth to his character.",
+        "The episode explicitly reinforces 2otbo5ly's brand by connecting Karim's passion for genuine home cooking to the app's core value proposition.",
+        "The cliffhanger sets up a deeply personal revelation for the next episode, building anticipation."
+      ],
+      "continuity_goal": "Karim-Nour dynamic reaches emotional depth; show Karim allowing himself to be seen.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He wears a home apron over a blue hoodie or faded white t-shirt. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. A 2D cartoon style character, Nour, a mid-20s Egyptian woman. She has short natural hair and wears round wire-frame glasses. She is always carrying a camera or phone. She has simple but put-together clothes—not flashy. Her face has a warm, focused expression when she's observing. She has bold outlines and is rendered in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-221013-episode-46-of/01-nour-karim-doc-reveal"
+    },
+    {
+      "episode_number": 50,
+      "name": "سنة بعدها: من الإحباط لأكل المطاعم",
+      "summary": "كريم بيزور محل الكشري اللي قعد فيه مكسور بعد رفض المطاعم في الحلقة ٩، وبيحكي عن رحلته في سنة واحدة مع 2otbo5ly. بيستعرض نجاحه وأرقامه وفريقه اللي كبر، وبيختم وهو بيطبخ مع أمه في المطبخ، عشان يثبت إن الأكل البيتي الأصيل هو اللي بيكسب دايماً. كل ده بفضل 2otbo5ly اللي خلى أكل التيك توك يوصل لحد باب البيت.",
+      "cliffhanger": "A 2otbo5ly order notification pops up on Karim's cracked phone screen, indicating continuous demand and future cooking.",
+      "continuity_updates": [
+        "Karim's personal journey from despair to success is celebrated and explicitly linked to 2otbo5ly, reinforcing the app's role in empowering home chefs and delivering unique TikTok-famous dishes.",
+        "The home kitchen is reaffirmed as Karim's true domain and the source of his authentic, successful cooking, capable of producing high-demand meals.",
+        "The 'team' (Um Karim, Fares, Salma, Chef Hatem) is visually acknowledged, emphasizing the community built around Karim and implicitly, 2otbo5ly's growing network of talent.",
+        "The recurring visual anchor of Karim's cracked phone propped against a bottle of oil signifies his humble beginnings and commitment to authenticity, even amidst widespread success, and his green wristband remains a constant.",
+        "The cliffhanger (new order notification) reinforces 2otbo5ly's ongoing demand and Karim's continuous engagement with it, leaving the door open for future episodes and challenges."
+      ],
+      "continuity_goal": "Close the arc of Karim's struggle and success, showcasing 2otbo5ly's impact on his life and reaffirming the core values of home cooking and community. The final phone shot reinforces his humble beginnings while hinting at future growth.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. A 2D cartoon style character, Um Karim, a round-faced Egyptian woman in her early 50s with a warm expression that can turn sharp in a second. Her silver-streaked hair is usually pulled back loosely. She is wearing a colorful galabeyya at home. Reading glasses are sometimes perched on her head. She has bold outlines and is rendered in a warm Cairo palette. A 2D cartoon style character, Fares, a tall and lanky Egyptian man in his mid-20s. He is almost always in an Ahly jersey or a puffer jacket. He holds a cheap phone gimbal or selfie stick in hand. His eyes are wide and expressive, with a restless, comedic energy. He has bold outlines and is rendered in a warm Cairo palette. A 2D cartoon style character, Salma, an Egyptian woman in her mid-20s. She is in chef whites with her hair tied back tightly. Her movements are precise and efficient, and her expression is usually unreadable until it isn't. She has bold outlines and is rendered in a warm Cairo palette. A 2D cartoon style character, Chef Hatem, a heavyset Egyptian man in his late 40s. He has a completely bald head and a thick black mustache. He is always in chef whites with rolled-up sleeves. His movements are calm and deliberate. He has bold outlines and is rendered in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-221219-episode-50-of/01-sana-ba3daha-koshary-flex"
+    },
+    {
+      "episode_number": 48,
+      "name": "رجوع الأستاذ: لما خبرة السنين تلاقي طريقها الجديد",
+      "summary": "بعد ما الشيف حاتم شاف فيديوهات كريم الفايرال، بيبعتله رسالة ويطلب يقابله. في قعدة قهوة، الشيف حاتم بيكشف لكريم إن ورشته بتواجه صعوبات مالية وإن التعليم مبقاش يجيب همه. كريم، اللي فاكر فضل أستاذه عليه، بيعرض عليه شراكة فريدة من نوعها على 2otbo5ly: يطبخوا سوا، ويعملوا سلسلة 'اللي اتعلمته ومين اللي علمني' عشان خبرة الشيف حاتم توصل لجمهور جديد. الشيف حاتم بيضحك الأول، لكن بيوافق، في لحظة بتجمع بين جيلين الطبخ وبتأكد إن الأصالة ليها مكان دايماً.",
+      "cliffhanger": "الاسبوع الجاي، أول حصة للشيف حاتم في مطبخي... تفتكروا هيعمل إيه؟",
+      "continuity_updates": [
+        "Chef Hatem's character arc is brought full circle, transforming him from a struggling mentor to a partner, solidifying his role within Karim's culinary journey and the 2otbo5ly ecosystem, directly adhering to the pinned beat.",
+        "The episode reinforces 2otbo5ly's value proposition as a platform that not only provides unique food but also supports home chefs and preserves culinary heritage, integrating traditional expertise with modern distribution.",
+        "Karim demonstrates growth and maturity by recognizing and acting on the opportunity to help his former mentor, showcasing his business acumen and loyalty.",
+        "A new content series 'اللي اتعلمته ومين اللي علمني' is established, promising future episodes featuring Chef Hatem's traditional cooking techniques and wisdom, appealing to the audience's interest in authentic Egyptian recipes.",
+        "The financial challenges faced by traditional culinary institutions are highlighted and addressed through an innovative partnership, making the narrative relatable to market trends."
+      ],
+      "continuity_goal": "Close the Chef Hatem arc with a return that elevates both characters.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie or faded white t-shirt. On his right hand, he wears a prominent green rubber wristband — always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. His signature gesture is rubbing the back of his neck when thinking or embarrassed. A 2D cartoon style character, Chef Hatem, a heavyset Egyptian man in his late 40s. He has a completely bald head and a thick black mustache. He is always wearing chef whites with rolled-up sleeves. His movements are calm and deliberate, but his face can show weariness or a subtle, hopeful smile. He has bold outlines and expressive features, rendered in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-221209-episode-48-of/01-shef-hatem-yergaa-full-circle"
+    },
+    {
+      "episode_number": 49,
+      "name": "تحدي كشري التاكو بـ700 جنيه",
+      "summary": "كريم بيواجه أصعب تحدي في مسيرته على 2otbo5ly: تحضير 'كشري تاكو ياباني' لعزومة 20 فرد بميزانية 700 جنيه. بنشوف رحلته خلال أسبوع من التجارب والفشل والنجاح عشان يوصل للوصفة المثالية. في النهاية، المضيف يتذوق الطبق ويسأل كريم سؤال يخليه في حيرة.",
+      "cliffhanger": "المضيف بيسأل: 'مفكرتش تفتح مطعم حقيقي؟' كريم بيبتسم بس مش بيرد.",
+      "continuity_updates": [
+        "يتم عرض كريم في أعلى مستوياته الفنية والإبداعية، مما يعزز صورته كشيف مبدع وقادر على تنفيذ الطلبات الصعبة والمعقدة.",
+        "يتم إبراز قدرة 2otbo5ly على تحقيق رغبات العملاء الأكثر تطلبًا، وربطهم بشيفات منازل بمستوى احترافي.",
+        "يتم التأكيد على فكرة أن المطبخ المنزلي قادر على إنتاج أطباق فاخرة تنافس المطاعم الراقية.",
+        "السؤال الأخير من المضيف يفتح الباب أمام صراع كريم الداخلي حول مستقبله المهني، وهو ما يعد بتحولات في الحلقات القادمة."
+      ],
+      "continuity_goal": "عرض كريم وهو بيشتغل بأعلى كفاءة فنية وإبداعية عنده.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. A 2D cartoon style character, Fares, a tall and lanky Egyptian man in his mid-20s. He is almost always in an Ahly jersey or a puffer jacket. He holds a cheap phone gimbal or selfie stick in hand. His eyes are wide and expressive, with a restless, comedic energy. He has bold outlines and is rendered in a warm Cairo palette. A 2D cartoon style character, Salma, an Egyptian woman in her mid-20s. She is wearing chef whites in kitchen scenes, with her hair tied back tightly. Her movements are precise and efficient. Her expression is usually unreadable, but capable of subtle admiration, with bold outlines, in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-221216-episode-49-of/01-koshary-taco-challenge-700egp"
+    },
+    {
+      "episode_number": 47,
+      "name": "تحدي عزومة رمضان بـ500 جنيه",
+      "summary": "كريم يواجه تحدي رمضان الأكبر: تحضير عزومة كاملة لـ10 عائلات بـ500 جنيه فقط من خلال 2otbo5ly. بمساعدة أم كريم وسلمى وفارس، يتحول مطبخ البيت لخلية نحل وسط فوضى مبهجة. رغم الضغط والمصاعب الصغيرة، ينجح الفريق في إعداد أطباق رمضان الأصيلة والمشهية التي تفوق كل التوقعات، مما يبرز قوة العمل الجماعي وقدرة 2otbo5ly على تقديم المستحيل. تنتهي الحلقة بلحظة سكون وتأمل مع آذان المغرب.",
+      "cliffhanger": "The iftar azaan begins to play loudly from a nearby mosque. All four characters – Karim, Um Karim, Salma, and Fares – stop their work, covered in flour and sweat, and simply listen, a moment of peaceful calm after the storm, their faces reflecting deep satisfaction and reverence.",
+      "continuity_updates": [
+        "This episode cements Karim's leadership and the team's (Um Karim, Salma, Fares) effectiveness in handling massive 2otbo5ly orders during peak demand like Ramadan.",
+        "It reinforces the home kitchen's capability as a high-volume production hub, delivering restaurant-quality, traditional food at budget-friendly prices.",
+        "The episode highlights the 'joyful chaos' and community aspect of 2otbo5ly, showcasing the human element behind the food.",
+        "The cliffhanger leaves viewers with a moment of serene anticipation, setting up the next phase (delivery, customer reaction) after the immense effort."
+      ],
+      "continuity_goal": "Show the team at full strength and the kitchen at its peak, demonstrating 2otbo5ly's capability to handle large, traditional Ramadan orders efficiently and affordably, reinforcing Karim's leadership and the power of his team.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie. On his right hand, he wears a prominent green rubber wristband, always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. A 2D cartoon style character, Fares, a tall and lanky Egyptian man in his mid-20s. He is wearing an Ahly jersey, holding a cheap phone gimbal in hand. His eyes are wide and expressive, with a restless, comedic energy. He has bold outlines and is rendered in a warm Cairo palette. A 2D cartoon style character, Um Karim, a round-faced Egyptian woman in her early 50s with a warm expression that can turn sharp in a second. She has silver-streaked hair usually pulled back loosely. She is wearing a colorful galabeyya. Reading glasses are sometimes on her head. Her face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. A 2D cartoon style character, Salma, a mid-20s Egyptian woman. She is wearing chef whites, with her hair tied back tightly. Her movements are precise and efficient. Her face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs/20260319-221140-episode-47-of/01-ramadan-budget-feast-challenge"
+    },
+    {
+      "episode_number": 1,
+      "name": "فول بالكمأة... ولا فولة؟",
+      "summary": "كريم، مدفوعاً بطموح طهوي ليلي، بيحاول يحول الفول المدمس المتواضع لوجبة فاخرة بزيت الكمأة وبيض بوشيه. الفيديو هيبرز ثقته المبالغ فيها بنفسه وتسلسل الأحداث الكوميدي اللي بيوصل لكارثة مطبخية، بس بيختم بتفاؤله اللي مبيتكسرش رغم الفوضى.",
+      "cliffhanger": "34 views but Karim captions it 'Egyptian fine dining, stay tuned' — he genuinely believes.",
+      "continuity_updates": [
+        "Establishes Karim's passionate but untrained personality and his 'unshakeable belief' despite clear failure, setting his core character trait.",
+        "Introduces the home kitchen as Karim's primary setting and the blue and white speckled pot as a visual anchor for future episodes.",
+        "Hints at Fares's role as a supporter/viewer (implicitly, as 30 of 34 views are his), even if not physically present, establishing their dynamic.",
+        "Sets up the comedic tone of the series, focusing on relatable mishaps and optimistic recovery, which aligns with Act 1's 'warm chaos' tone.",
+        "The low view count (34 views) clearly establishes Karim's humble beginnings as a TikTok creator, setting the stage for his growth and the journey towards 2otbo5ly.",
+        "Karim's aspiration to make 'gourmet' food at home lays the subtle groundwork for 2otbo5ly's future value proposition: restaurant-quality food from home chefs."
+      ],
+      "continuity_goal": "Establish Karim as passionate but untrained, introduce Fares as sidekick",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie or faded white t-shirt. On his right hand, he wears a prominent green rubber wristband — always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. His signature gesture is rubbing the back of his neck when thinking or embarrassed.",
+      "run_dir": "/Users/barbary/Documents/New project/runs_egyptian/20260319-230942-episode-1-of/01-ful-bil-truffle-disaster"
+    },
+    {
+      "episode_number": 3,
+      "name": "أطول فيديو محشي في التاريخ",
+      "summary": "كريم وفارس بيحاولوا يلاقوا اسم لقناة كريم على التيك توك، وبيستقروا على اسم عادي جداً. كريم بيصر يعمل فيديو محشي 22 دقيقة، متخيل إن الناس عايزة تشوف 'العملية كاملة'. فارس بيحاول يقنعه يختصر لكن كريم بيرفض، والنتيجة: الفيديو بيجيب 12 مشاهدة بس، والصورة المصغرة مش واضحة.",
+      "cliffhanger": "The mahshi video has 12 views. The thumbnail is blurry.",
+      "continuity_updates": [
+        "The episode establishes Karim's initial naive understanding of TikTok's content demands, specifically his inability to grasp the need for short-form, engaging content.",
+        "It reinforces Fares's role as the more pragmatic and content-savvy friend, contrasting with Karim's earnest but misguided passion.",
+        "The 'Chef Karim' brand name is settled upon, showcasing Karim's lack of creative branding at this early stage.",
+        "The visual detail of the blurry thumbnail and 12 views directly addresses the specified cliffhanger, emphasizing the failure of his initial approach."
+      ],
+      "continuity_goal": "Show Karim's creative blind spots and Fares's eye for content.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie or faded white t-shirt. On his right hand, he wears a prominent green rubber wristband — always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. His signature gesture is rubbing the back of his neck when thinking or embarrassed. A 2D cartoon style character, Fares, a tall and lanky Egyptian man in his mid-20s. He is almost always in an Ahly jersey or a puffer jacket. He holds a cheap phone gimbal or selfie stick in hand. His eyes are wide and expressive, with a restless, comedic energy. He has bold outlines and is rendered in a warm Cairo palette. Both characters adhere to the cartoon_hybrid style with bold outlines, expressive faces, and a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs_egyptian/20260319-230942-episode-3-of/01-karim-long-mahshi-fail"
+    },
+    {
+      "episode_number": 6,
+      "name": "الرز التعليمي: ألدينتي ولا كارثة؟",
+      "summary": "كريم بيقرر يعمل محتوى تعليمي عن الرز المفلفل. بعد ليلة على يوتيوب، بيطبخ الرز وبيطلع ناشف زي الحصى، فبيسميه 'ألدينتي ستايل'. في المحاولة التانية بيطلع معجن خالص، فبيقول عليه 'كريمة الرز'. أم كريم بتشوف الفيديوهات وبتكتفي بـ'يا ابني' اللي بتضرب في دماغ كريم.",
+      "cliffhanger": "كلمة 'يا ابني' من أم كريم بتتردد في دماغ كريم وهو باصص للرز المعجن، وشه بيقلب من الإحراج للتفكير، كأنه سمع نداء داخلي لازم يستجيبله. نظرة في عينيه بتقول: 'لازم أتعلم أطبخ بجد... أو ألاقي حد يطبخلي!'",
+      "continuity_updates": [
+        "Karim's self-deception and misguided confidence in content creation are clearly established.",
+        "The comedic tension between Karim's aspirations and his current skill level is highlighted.",
+        "Um Karim's role as a silent, yet powerful, reality check is reinforced.",
+        "The episode provides the first clear indication that Karim needs to genuinely learn cooking skills beyond just filming videos, setting the stage for his journey towards formal training (Act 2).",
+        "The 'al dente' and 'rice cream' jokes serve as memorable, relatable failures for the audience.",
+        "Subtle hints about '2otbo5ly' are introduced in the captions and cliffhanger, building anticipation for the app's launch and its role in solving cooking dilemmas."
+      ],
+      "continuity_goal": "أول إشارة إن كريم لازم يتعلم الطبخ بجد مش بس يعمل فيديوهات.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie or faded white t-shirt. On his right hand, he wears a prominent green rubber wristband — always present. He usually has a small flour smudge or sauce splash somewhere on him. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. His signature gesture is rubbing the back of his neck when thinking or embarrassed. A 2D cartoon style character, Um Karim, a round-faced Egyptian woman in her early 50s with a warm expression that can turn sharp in a second. She has silver-streaked hair usually pulled back loosely. She is wearing a colorful galabeyya. Reading glasses are sometimes on her head. Her face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs_egyptian/20260319-230942-episode-6-of/01-karim-rice-fail-al-dente"
+    },
+    {
+      "episode_number": 8,
+      "name": "أرقامي مش بتكدب",
+      "summary": "كريم وفارس بيراجعوا أرقام التيك توك بعد 3 شهور من المحتوى. الأرقام محبطة جداً، وكريم بيتذكر كلام أبوه عن 'الشغلانة العدلة'. الإحباط بيتحول لتصميم، وكريم بياخد قرار مصيري: لازم يتعلم الطبخ صح. تنتهي الحلقة وهو بيدور على كورسات طبخ في القاهرة، وبيلاقي ورشة الشيف حاتم.",
+      "cliffhanger": "هل ورشة الشيف حاتم هتكون طريق كريم عشان يحقق حلمه؟ استنوا الحلقة الجاية!",
+      "continuity_updates": [
+        "This episode marks the end of Act 1, transitioning Karim from a 'failed TikToker' to someone serious about culinary education, setting up Act 2.",
+        "The introduction of Chef Hatem's workshop via Google search directly connects to Episode 10 and Karim's journey to learn 'properly'.",
+        "Reinforces the 'parental pressure' pain point, making Karim's struggle relatable to many Egyptian youth.",
+        "Highlights Karim's stubborn optimism and passion, even in moments of despair, which is central to his character, making his pivot more impactful."
+      ],
+      "continuity_goal": "Close Act 1 — the TikTok fantasy has met reality, something has to change.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie or faded white t-shirt. On his right hand, he wears a prominent green rubber wristband — always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. His signature gesture is rubbing the back of his neck when thinking or embarrassed. A 2D cartoon style character, Fares, a tall and lanky Egyptian man in his mid-20s. He is almost always in an Ahly jersey or a puffer jacket. He holds a cheap phone gimbal or selfie stick in hand. His eyes are wide and expressive, with a restless, comedic energy. He has bold outlines and is rendered in a warm Cairo palette. Abu Karim is a male voice-over character, not visually depicted, but his dialogue is heard.",
+      "run_dir": "/Users/barbary/Documents/New project/runs_egyptian/20260319-230942-episode-8-of/01-karim-audit-reality"
+    },
+    {
+      "episode_number": 5,
+      "name": "كشري بالجبنة: الحرب العالمية في الكومنتات",
+      "summary": "كريم بيواجه عاصفة من التعليقات السلبية بعد فيديو الكشري بالجبنة بتاعه اللي جاب 800 مشاهدة. فارس بيقرا التعليقات القاسية اللي بتهاجمه على 'تدنيس' الأكل المصري، وكريم بيوصل لقمة الإحباط. لكن تعليق واحد إيجابي بيغير كل حاجة وبيخليه ياخد قرار عنيد، بيوريه لفارس كإعلان حرب على المنتقدين.",
+      "cliffhanger": "كريم بيرد على كل الكومنتات، حتى الشتايم، بنفس الرد: 'شكراً على الاهتمام 🙏'.",
+      "continuity_updates": [
+        "Karim's resilience and stubbornness are firmly established early in his journey, showing he won't be easily broken by online criticism.",
+        "The tension between traditional Egyptian cuisine and modern/experimental twists is highlighted, a theme that will recur throughout the series.",
+        "Fares's role as the comedic and dramatic foil to Karim is reinforced, solidifying their dynamic.",
+        "The cracked Android phone becomes an iconic visual element, symbolizing Karim's budget and authenticity, and now his stubborn hope as it holds his motivational wallpaper."
+      ],
+      "continuity_goal": "Show Karim's resilience — he doesn't crumble, he files it away, ready to fight another day.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie. On his right hand, he wears a prominent green rubber wristband — always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. His signature gesture is rubbing the back of his neck when thinking or embarrassed. A 2D cartoon style character, Fares, a tall and lanky Egyptian man in his mid-20s. He is almost always in an Ahly jersey or a puffer jacket. He holds a cheap phone gimbal or selfie stick in hand. His eyes are wide and expressive, with a restless, comedic energy. He has bold outlines and is rendered in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs_egyptian/20260319-230942-episode-5-of/01-kushary-cheese-comment-storm"
+    },
+    {
+      "episode_number": 2,
+      "name": "سماش برجر بالمصحف الشريف (والأم شافته!)",
+      "summary": "كريم بيحاول يعمل أحسن سماش برجر في مصر، بس للأسف معندوش مكبس. بيضطر يستلف قاعدة المصحف بتاعة والدته، وأثناء ما هو مندمج في 'السماش'، أم كريم بتدخل المطبخ وبتشوف المنظر! المشكلة بتتحول لخناقة كوميدية بيوثقها فارس سراً. لما الفيديو بيعدي ٤ آلاف مشاهدة، كريم بيتحول غضبه لابتسامة ماكرة وبيقرر يستغل دراما البيت عشان فيديوهاته تعمل تريند.",
+      "cliffhanger": "Karim realizes the audience wants the drama, not just the food.",
+      "continuity_updates": [
+        "Introduction of Um Karim as a key character, establishing her traditional values in contrast to Karim's modern aspirations and her strong, comedic presence.",
+        "Demonstrates that raw, unscripted family interactions can generate significant audience engagement, setting up Karim's new content strategy focused on authentic, relatable moments rather than just polished cooking.",
+        "Reinforces Fares's role as the chaos agent and accidental viral content creator, highlighting his ability to capture unexpected moments."
+      ],
+      "continuity_goal": "Introduce Um Karim, show that authentic family moments get more views than cooking",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie or faded white t-shirt. On his right hand, he wears a prominent green rubber wristband — always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. His signature gesture is rubbing the back of his neck when thinking or embarrassed. A 2D cartoon style character, Um Karim, a round-faced Egyptian woman in her early 50s with a warm expression that can turn sharp in a second. She has silver-streaked hair usually pulled back loosely. She is wearing a colorful galabeyya. Reading glasses are sometimes on her head. Her face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. A 2D cartoon style character, Fares, a tall and lanky Egyptian man in his mid-20s. He is almost always in an Ahly jersey or a puffer jacket. He holds a cheap phone gimbal or selfie stick in hand. His eyes are wide and expressive, with a restless, comedic energy. He has bold outlines and is rendered in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs_egyptian/20260319-230942-episode-2-of/01-el-holy-smash-burger"
+    },
+    {
+      "episode_number": 7,
+      "name": "قالولي 'يا صاحبي'.. وميعرفوش إني شيف!",
+      "summary": "كريم وفارس بيقابلوا عمرو، إنفلونسر تيك توك مشهور، عشان يعملوا كولاب. عمرو بيتعالى على كريم وبيقلل منه، وبيقوله 'يا صاحبي' بسخرية وبيقوله ممكن يكون 'مساعد شيف' معاه. كريم بيستحمل اللقاء بابتسامة مصطنعة. أول ما بيطلعوا، بيقسم إنه هيتجاوز عمرو وهيفتكر اليوم ده كويس. في المترو، كريم بيبدأ يتفرج على فيديوهات عمرو بعين كلها تحدي وتخطيط.",
+      "cliffhanger": "كريم على المترو، عمال يتفرج على فيديوهات عمرو على موبايله المكسور، ابتسامة خفيفة بتظهر على وشه كأنه لقى خطة. النص الظاهر على الشاشة: 'تفتكروا كريم ناوي على إيه؟ مين هيكسب في الآخر؟'",
+      "continuity_updates": [
+        "This episode establishes Karim's deep-seated motivation and resilience, showing he's not easily deterred by condescension, which will fuel his journey with 2otbo5ly.",
+        "It highlights the contrast between authentic passion and skill (Karim) versus superficial virality and ego (Amr), setting up a key theme that 2otbo5ly will eventually champion by valuing real talent.",
+        "The encounter serves as a pivotal moment for Karim, planting a long-arc motivation to prove himself and eventually rise above those who underestimated him, directly fulfilling the pinned beat's continuity goal."
+      ],
+      "continuity_goal": "زرع دافع قوي وطويل الأمد لكريم ليتجاوز كل من شكك في قدراته أو قلل منه. هذه اللحظة ستظل محفورة في ذاكرته كوقود لطموحه المستقبلي.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a blue hoodie or faded white t-shirt, and a home apron when applicable. On his right hand, he wears a prominent green rubber wristband — always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. His signature gesture is rubbing the back of his neck when thinking or embarrassed. A 2D cartoon style character, Fares, a tall and lanky Egyptian man in his mid-20s. He is wearing an Ahly jersey or a puffer jacket. He holds a cheap phone gimbal or selfie stick in hand. His eyes are wide and expressive, with a restless, comedic energy. He has bold outlines and is rendered in a warm Cairo palette. A 2D cartoon style character, Amr, a stylized, smug Egyptian man with trendy clothes, capable of exaggerated expressions of condescension, bold outlines, in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs_egyptian/20260319-230942-episode-7-of/01-collab-clash-amr-karim"
+    },
+    {
+      "episode_number": 4,
+      "name": "ريحة الأكل بتفتح بيوت الجيران.. واللايف بيتقفل!",
+      "summary": "كريم بيطبخ لايف على تيك توك طاجن لحمة بالبرقوق ريحته بتجنن، بس اللايف بيتحول لكارثة كوميدية لما الجيران يشموا الريحة ويخبطوا على الباب، وماما تنادي عليه بصوت عالي، وفي الآخر يكتشف إنه نسي البوتاجاز والعين شغالة. بيقفل اللايف في ثواني وهو محتاس، وبيبدأ يفكر في خطط جديدة عشان يوصل أكل بيته الأصيل لكل الناس من غير الفوضى دي.",
+      "cliffhanger": "كريم قاعد بيفكر في خطة جديدة عشان يوصل الأكل البيتي الأصيل ده لكل الناس من غير الفوضى دي. تفتكروا هيعمل إيه؟",
+      "continuity_updates": [
+        "The episode firmly establishes Karim's home kitchen as a lively, chaotic, and authentic Egyptian setting, contrary to a controlled studio, reinforcing the 'home cooking' aspect of 2otbo5ly.",
+        "It highlights Karim's struggle to maintain a professional online persona amidst real-world interruptions common in Egyptian apartment buildings, making his character relatable and endearing.",
+        "The cliffhanger sets up Karim's next steps, hinting at his continuous drive to overcome challenges and implicitly find a way to scale his reach with his authentic home-cooked food, which aligns with 2otbo5ly's mission.",
+        "The low viewer count for Karim's live stream emphasizes his humble beginnings, making his eventual success with 2otbo5ly more impactful.",
+        "Um Karim's and Am Saber's interactions reinforce the 'Authentic & Comedic Family/Neighbor Interactions' trend signal, adding cultural authenticity and relatability."
+      ],
+      "continuity_goal": "تثبيت فكرة أن مطبخ كريم مكان حيوي وفوضوي مش استوديو طبخ متحكم فيه، وإبراز قوة الأكل البيتي المصري في جذب الناس.",
+      "character_sheet_prompt_en": "A 2D cartoon style character, Karim Mansour, a mid-20s Egyptian man with a medium build. He has messy dark curly hair, warm brown eyes, and a short trimmed beard. He is wearing a home apron over a blue hoodie or faded white t-shirt. On his right hand, he wears a prominent green rubber wristband — always present. When visible, he holds a budget Android phone with a cracked bottom-right corner. His face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette. He usually has a small flour smudge or sauce splash somewhere on him. His signature gesture is rubbing the back of his neck when thinking or embarrassed. A 2D cartoon style character, Um Karim, a round-faced Egyptian woman in her early 50s with a warm expression that can turn sharp in a second. She has silver-streaked hair usually pulled back loosely. She is wearing a colorful galabeyya. Reading glasses are sometimes on her head. Her face is expressive, capable of wide exaggerated expressions, with bold outlines, in a warm Cairo palette.",
+      "run_dir": "/Users/barbary/Documents/New project/runs_egyptian/20260319-230942-episode-4-of/01-irresistible-smell-trap"
+    }
+  ]
 }

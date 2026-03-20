@@ -438,13 +438,15 @@ class ViralFactoryPipeline:
                 if self.config.series.enabled:
                     image_prompt = (
                         "Vertical 2D cartoon animated poster for an Egyptian TikTok social comedy series. "
+                        "STUNNING eye-catching cover that makes viewers STOP scrolling. "
                         f"Series title: {self.config.series.title}. "
                         f"Episode idea: {pack['concept']['angle_summary']}. "
                         f"Arabic cover text idea: {pack['final_video_plan'].get('cover_text_ar', '')}. "
                         "Protagonist: Egyptian man in mid-20s, messy dark curly hair, warm brown eyes, short trimmed beard, "
                         "green rubber wristband on right hand, home apron over blue hoodie. "
-                        "Bold cartoon outlines, expressive faces, warm Cairo palette (ochre, terracotta, warm yellow), "
-                        "craveable stylized food. No photoreal humans."
+                        "Bold cartoon outlines, exaggerated expressive face, dramatic lighting with golden warm tones, "
+                        "vibrant saturated colors, depth of field, craveable stylized food in foreground. "
+                        "Cairo rooftop or kitchen atmosphere. No photoreal humans."
                     )
                 else:
                     image_prompt = (
@@ -465,9 +467,14 @@ class ViralFactoryPipeline:
             shot_assets: List[Dict[str, Any]] = []
             shots = pack["final_video_plan"].get("shots", [])[:self.config.assets.video_count_per_script]
 
+            # Character sheet as style anchor across all shots and episodes
+            char_sheet = self._series_character_sheet_path()
+            style_ref = char_sheet if char_sheet.exists() else None
+
             # Distribute dialogue lines evenly across shots for per-shot audio
             dialogue_all = pack["final_script"].get("dialogue", [])
             n_shots = len(shots)
+            prev_last_frame: Path | None = None  # chain shots for visual continuity
 
             for shot_pos, shot in enumerate(shots):
                 idx = int(shot["shot_index"])
@@ -478,7 +485,7 @@ class ViralFactoryPipeline:
                     shot_audio_path = media_dir / f"shot-{idx:02d}-audio.wav"
                     if not shot_audio_path.exists():
                         self._log(ep, f"shot {shot_pos+1}/{n_shots} audio…")
-                        shot_voiceover = shot.get("voiceover_ar", "").strip()
+                        shot_voiceover = (shot.get("voiceover_ar") or "").strip()
                         try:
                             if shot_voiceover and self.config.series.character_voices:
                                 # New path: shot has its own written voiceover — use it directly
@@ -514,19 +521,40 @@ class ViralFactoryPipeline:
 
                 if video_path.exists():
                     metadata: Dict[str, Any] = {"local_file": str(video_path), "reused": True}
+                    # Extract last frame from existing video for chaining to next shot
+                    last_frame_path = media_dir / f"shot-{idx:02d}-lastframe.png"
+                    if not last_frame_path.exists():
+                        try:
+                            subprocess.run(
+                                ["ffmpeg", "-y", "-sseof", "-0.1", "-i", str(video_path),
+                                 "-frames:v", "1", "-q:v", "2", str(last_frame_path)],
+                                capture_output=True, timeout=30,
+                            )
+                        except Exception:
+                            pass
+                    if last_frame_path.exists():
+                        prev_last_frame = last_frame_path
                 else:
-                    # Generate a per-shot reference image for image-to-video consistency
+                    # Determine source_image: chain from previous shot's last frame, or use ref image
                     ref_image_path = media_dir / f"shot-{idx:02d}-ref.png"
                     source_image: Path | None = None
-                    shot_image_prompt = shot.get("shot_image_prompt_en", "")
-                    if shot_image_prompt and self.config.assets.generate_images:
-                        if not ref_image_path.exists():
-                            self._log(ep, f"shot {shot_pos+1}/{n_shots} ref image…")
-                            self.client.generate_image(
-                                prompt=shot_image_prompt,
-                                output_path=ref_image_path,
-                            )
-                        source_image = ref_image_path
+
+                    if prev_last_frame is not None and prev_last_frame.exists():
+                        # Chain: use previous shot's last frame for visual continuity
+                        source_image = prev_last_frame
+                        self._log(ep, f"shot {shot_pos+1}/{n_shots} chained from previous shot")
+                    else:
+                        # First shot or no previous frame: use per-shot ref image
+                        shot_image_prompt = shot.get("shot_image_prompt_en", "")
+                        if shot_image_prompt and self.config.assets.generate_images:
+                            if not ref_image_path.exists():
+                                self._log(ep, f"shot {shot_pos+1}/{n_shots} ref image…")
+                                self.client.generate_image(
+                                    prompt=shot_image_prompt,
+                                    output_path=ref_image_path,
+                                )
+                            source_image = ref_image_path
+
                     self._log(ep, f"shot {shot_pos+1}/{n_shots} video (Veo, ~4 min)…")
                     metadata = self.client.generate_video(
                         prompt=shot["veo_prompt_en"],
@@ -534,7 +562,23 @@ class ViralFactoryPipeline:
                         output_dir=media_dir,
                         shot_index=idx,
                         source_image=source_image,
+                        style_reference_image=style_ref,
                     )
+
+                    # Extract last frame for chaining to next shot
+                    if video_path.exists():
+                        last_frame_path = media_dir / f"shot-{idx:02d}-lastframe.png"
+                        try:
+                            subprocess.run(
+                                ["ffmpeg", "-y", "-sseof", "-0.1", "-i", str(video_path),
+                                 "-frames:v", "1", "-q:v", "2", str(last_frame_path)],
+                                capture_output=True, timeout=30,
+                            )
+                            if last_frame_path.exists():
+                                prev_last_frame = last_frame_path
+                        except Exception:
+                            pass
+
                 shot_assets.append(
                     {
                         "shot_index": shot["shot_index"],

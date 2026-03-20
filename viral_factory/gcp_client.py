@@ -297,8 +297,6 @@ class VertexFactoryClient:
         source_image: Path | None = None,
     ) -> Dict[str, Any]:
         self._load_genai()
-        if style_reference_image is not None and source_image is not None:
-            raise VertexClientError("Use either style_reference_image or source_image for video generation, not both.")
         config_kwargs: Dict[str, Any] = {
             "aspect_ratio": self.config.assets.video_aspect_ratio,
             "duration_seconds": self.config.assets.video_duration_seconds,
@@ -347,29 +345,42 @@ class VertexFactoryClient:
         return payload
 
     def synthesize_speech(self, *, text: str, prompt: str, output_path: Path) -> Dict[str, Any]:
-        """Synthesize Arabic speech using Google Cloud TTS."""
-        from google.cloud import texttospeech as tts
-        synthesis_input = tts.SynthesisInput(text=text)
-        voice = tts.VoiceSelectionParams(
+        """Synthesize Arabic speech using Gemini TTS (Egyptian accent)."""
+        self._load_genai()
+        types = self._genai_types
+        model = self.config.models.tts_model or "gemini-2.5-flash-preview-tts"
+        speech_cfg = types.SpeechConfig(
             language_code=self.config.assets.tts_language_code,
-            name=self.config.assets.tts_voice_name,
-        )
-        audio_config = tts.AudioConfig(
-            audio_encoding=tts.AudioEncoding.LINEAR16,
-            sample_rate_hertz=24000,
+            voice_config=types.VoiceConfig(
+                prebuilt_voice_config=types.PrebuiltVoiceConfig(
+                    voice_name=self.config.assets.tts_voice_name,
+                )
+            ),
         )
         def _call():
-            resp = self.tts_client.synthesize_speech(
-                input=synthesis_input, voice=voice, audio_config=audio_config
+            response = self.text_client.models.generate_content(
+                model=model,
+                contents=text,
+                config=types.GenerateContentConfig(
+                    response_modalities=["AUDIO"],
+                    speech_config=speech_cfg,
+                ),
             )
-            if not resp.audio_content:
-                raise VertexClientError("Cloud TTS returned no audio.")
-            return resp.audio_content
+            pcm: bytes = b""
+            for c in (response.candidates or []):
+                for p in (getattr(c.content, "parts", None) or []):
+                    blob = getattr(p, "inline_data", None)
+                    if blob and blob.data:
+                        pcm += blob.data
+            if not pcm:
+                raise VertexClientError("Gemini TTS returned no audio.")
+            return pcm
 
-        wav_bytes = _with_retry(_call, max_attempts=2)
+        pcm = _with_retry(_call, max_attempts=2)
+        wav = _pcm_to_wav(pcm, sample_rate=24000, num_channels=1, sample_width=2)
         ensure_dir(output_path.parent)
-        output_path.write_bytes(wav_bytes)
-        return {"audio_file": str(output_path), "bytes": len(wav_bytes)}
+        output_path.write_bytes(wav)
+        return {"audio_file": str(output_path), "bytes": len(wav)}
 
     def synthesize_dialogue(
         self,
@@ -380,39 +391,47 @@ class VertexFactoryClient:
         language_code: str,
         output_path: Path,
     ) -> Dict[str, Any]:
-        """Synthesize multi-character dialogue into a single WAV using Google Cloud TTS."""
-        from google.cloud import texttospeech as tts
-        audio_config = tts.AudioConfig(
-            audio_encoding=tts.AudioEncoding.LINEAR16,
-            sample_rate_hertz=24000,
-        )
-        # Cloud TTS LINEAR16 returns a WAV file with header on the first chunk.
-        # Concatenate raw PCM by stripping the 44-byte WAV header from all but the first segment.
-        all_wav_chunks: List[bytes] = []
+        """Synthesize multi-character dialogue using Gemini TTS (Egyptian accent)."""
+        self._load_genai()
+        types = self._genai_types
+        model = self.config.models.tts_model or "gemini-2.5-flash-preview-tts"
+        all_pcm: bytes = b""
         for entry in dialogue:
             speaker = entry.get("speaker", "")
             text = entry.get("text", "").strip()
             if not text:
                 continue
             voice_name = character_voices.get(speaker, default_voice)
-            voice = tts.VoiceSelectionParams(language_code=language_code, name=voice_name)
-            def _call(t=text, v=voice):
-                resp = self.tts_client.synthesize_speech(
-                    input=tts.SynthesisInput(text=t), voice=v, audio_config=audio_config
+            speech_cfg = types.SpeechConfig(
+                language_code=language_code,
+                voice_config=types.VoiceConfig(
+                    prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name=voice_name)
+                ),
+            )
+            def _call(t=text, sc=speech_cfg):
+                resp = self.text_client.models.generate_content(
+                    model=model,
+                    contents=t,
+                    config=types.GenerateContentConfig(
+                        response_modalities=["AUDIO"],
+                        speech_config=sc,
+                    ),
                 )
-                if not resp.audio_content:
-                    raise VertexClientError(f"Cloud TTS returned no audio for speaker '{speaker}'.")
-                return resp.audio_content
-            all_wav_chunks.append(_with_retry(_call, max_attempts=2))
+                seg: bytes = b""
+                for c in (resp.candidates or []):
+                    for p in (getattr(c.content, "parts", None) or []):
+                        blob = getattr(p, "inline_data", None)
+                        if blob and blob.data:
+                            seg += blob.data
+                if not seg:
+                    raise VertexClientError(f"TTS returned no audio for '{speaker}'.")
+                return seg
+            all_pcm += _with_retry(_call, max_attempts=2)
 
-        if not all_wav_chunks:
-            raise VertexClientError("Cloud TTS returned no audio data for dialogue.")
+        if not all_pcm:
+            raise VertexClientError("Gemini TTS returned no audio for dialogue.")
 
-        # Merge: keep header from first chunk, strip 44-byte WAV header from the rest
-        merged = all_wav_chunks[0]
-        for chunk in all_wav_chunks[1:]:
-            merged += chunk[44:]
-
+        wav = _pcm_to_wav(all_pcm, sample_rate=24000, num_channels=1, sample_width=2)
         ensure_dir(output_path.parent)
-        output_path.write_bytes(merged)
-        return {"audio_file": str(output_path), "bytes": len(merged)}
+        output_path.write_bytes(wav)
+        return {"audio_file": str(output_path), "bytes": len(wav)}

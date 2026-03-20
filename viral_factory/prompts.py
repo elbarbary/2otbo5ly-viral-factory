@@ -77,6 +77,15 @@ def _series_rules(config: AppConfig) -> str:
 - Make the episode work as a self-contained short, but leave a reason to return for the next episode.
 - Characters only appear if they are listed in that episode's key_characters — do not add characters who haven't been introduced yet.
 - Tone and emotional weight must match the act this episode belongs to.
+
+VISUAL ATTRACTIVENESS (critical for TikTok stop-scroll):
+- EVERY shot must be visually stunning: use dramatic lighting, saturated warm colors, depth of field.
+- Vary camera angles across shots: shot 1 = wide/establishing, shot 2 = close-up reaction or food detail, shot 3 = dynamic angle (low angle hero shot, over-the-shoulder, or bird's eye food shot).
+- Food scenes: extreme close-ups with steam, dripping sauce, golden crispy textures, sizzling oil. Make the viewer HUNGRY.
+- Facial expressions: exaggerated cartoon emotions — wide eyes, big grins, shocked jaw drops. TikTok = expressiveness.
+- Each shot MUST have a DIFFERENT setting or camera angle from the previous shot — never repeat the same composition.
+- Use bold color contrast: warm kitchen tones (amber, golden) vs cool outdoor scenes (blue dusk, neon signs).
+- Add environmental storytelling: laundry on balconies, street cats, stacked dishes, phone notifications on screen.
 """.strip()
 
 
@@ -518,7 +527,7 @@ Return JSON only:
       "duration_seconds": {config.assets.video_duration_seconds},
       "purpose": "string",
       "continuity_lock": "string",
-      "shot_image_prompt_en": "string — a still-frame Imagen prompt describing the FIRST FRAME of this shot in full cartoon detail, including all character visual locks. This image will be used as the source frame for image-to-video generation.",
+      "shot_image_prompt_en": "string — a visually STUNNING still-frame Imagen prompt for the FIRST FRAME of this shot. Include: all character visual locks, dramatic lighting (golden hour, neon, warm kitchen glow), strong color palette, depth of field. Make it scroll-stopping beautiful. Each shot must have a DIFFERENT camera angle and setting from the others.",
       "veo_prompt_en": "string",
       "negative_prompt_en": "string",
       "overlay_text_ar": "string",
@@ -621,7 +630,7 @@ Return JSON only:
         "duration_seconds": {config.assets.video_duration_seconds},
         "purpose": "string",
         "continuity_lock": "string",
-        "shot_image_prompt_en": "string — still-frame Imagen prompt for the FIRST FRAME of this shot, full cartoon detail including all character visual locks",
+        "shot_image_prompt_en": "string — visually STUNNING still-frame Imagen prompt for the FIRST FRAME. Dramatic lighting, strong colors, depth of field, all character visual locks. Different camera angle and setting from other shots.",
         "veo_prompt_en": "string",
         "negative_prompt_en": "string",
         "overlay_text_ar": "string",
