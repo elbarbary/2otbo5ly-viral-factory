@@ -549,9 +549,11 @@ class ViralFactoryPipeline:
                         if shot_image_prompt and self.config.assets.generate_images:
                             if not ref_image_path.exists():
                                 self._log(ep, f"shot {shot_pos+1}/{n_shots} ref image…")
+                                ref_imgs = [series_character_sheet] if series_character_sheet and series_character_sheet.exists() else None
                                 self.client.generate_image(
                                     prompt=shot_image_prompt,
                                     output_path=ref_image_path,
+                                    reference_images=ref_imgs,
                                 )
                             source_image = ref_image_path
 

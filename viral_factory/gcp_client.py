@@ -5,6 +5,7 @@ import random
 import socket
 import struct
 import time
+import urllib.request
 from pathlib import Path
 from typing import Any, Callable, Dict, List, Tuple, TypeVar
 
@@ -102,7 +103,7 @@ class VertexFactoryClient:
         self._genai_types = types
 
     def _make_client(self, location: str, timeout_ms: int = 120_000):
-        """timeout_ms: HttpOptions.timeout is in milliseconds per the SDK spec."""
+        """Vertex AI client — used only for Veo video generation."""
         self._load_genai()
         project = os.getenv("GOOGLE_CLOUD_PROJECT")
         if not project:
@@ -114,29 +115,31 @@ class VertexFactoryClient:
             http_options=self._genai_types.HttpOptions(api_version="v1", timeout=timeout_ms)
         )
 
+    def _make_api_key_client(self, timeout_ms: int = 120_000):
+        """Gemini API key client — used for text, images, and TTS."""
+        self._load_genai()
+        api_key = os.getenv("GEMINI_API_KEY")
+        if not api_key:
+            raise VertexClientError("Set GEMINI_API_KEY before running Gemini API calls.")
+        return self._genai.Client(
+            api_key=api_key,
+            http_options=self._genai_types.HttpOptions(timeout=timeout_ms)
+        )
+
     @property
     def text_client(self):
         if self._text_client is None:
             with self._client_lock:
                 if self._text_client is None:
-                    self._text_client = self._make_client(os.getenv("GOOGLE_CLOUD_LOCATION", "global"), timeout_ms=120_000)
+                    self._text_client = self._make_api_key_client(timeout_ms=120_000)
         return self._text_client
-
-    @property
-    def tts_client(self):
-        if self._tts_client is None:
-            with self._client_lock:
-                if self._tts_client is None:
-                    from google.cloud import texttospeech
-                    self._tts_client = texttospeech.TextToSpeechClient()
-        return self._tts_client
 
     @property
     def video_client(self):
         if self._video_client is None:
             with self._client_lock:
                 if self._video_client is None:
-                    self._video_client = self._make_client(os.getenv("GOOGLE_CLOUD_VIDEO_LOCATION", "us-central1"), timeout_ms=1_800_000)
+                    self._video_client = self._make_api_key_client(timeout_ms=1_800_000)
         return self._video_client
 
     def _response_to_dict(self, response: Any) -> Dict[str, Any]:
@@ -272,17 +275,33 @@ class VertexFactoryClient:
             return extract_json_blob(text), self._response_to_dict(response)
         return _with_retry(_call)
 
-    def generate_image(self, *, prompt: str, output_path: Path) -> Dict[str, Any]:
+    def generate_image(self, *, prompt: str, output_path: Path, reference_images: list = None) -> Dict[str, Any]:
         def _call():
             self._load_genai()
-            response = self.text_client.models.generate_images(
+            types = self._genai_types
+            contents = []
+            if reference_images:
+                for ref_path in reference_images:
+                    ref_bytes = Path(ref_path).read_bytes()
+                    suffix = Path(ref_path).suffix.lower()
+                    mime = "image/png" if suffix == ".png" else "image/jpeg"
+                    contents.append(types.Part.from_bytes(data=ref_bytes, mime_type=mime))
+            contents.append(prompt)
+            response = self.text_client.models.generate_content(
                 model=self.config.models.image_model,
-                prompt=prompt,
-                config=self._genai_types.GenerateImagesConfig(image_size=self.config.assets.image_size)
+                contents=contents,
+                config=types.GenerateContentConfig(
+                    response_modalities=["IMAGE", "TEXT"],
+                ),
             )
-            ensure_dir(output_path.parent)
-            response.generated_images[0].image.save(str(output_path))
-            return self._strip_binary_fields(self._response_to_dict(response))
+            for candidate in (response.candidates or []):
+                for part in (getattr(candidate.content, "parts", None) or []):
+                    blob = getattr(part, "inline_data", None)
+                    if blob and getattr(blob, "mime_type", None) and blob.mime_type.startswith("image/"):
+                        ensure_dir(output_path.parent)
+                        output_path.write_bytes(blob.data)
+                        return self._strip_binary_fields(self._response_to_dict(response))
+            raise VertexClientError("Gemini 3 Pro Image returned no image in response.")
         return _with_retry(_call)
 
     def generate_video(
@@ -300,22 +319,12 @@ class VertexFactoryClient:
         config_kwargs: Dict[str, Any] = {
             "aspect_ratio": self.config.assets.video_aspect_ratio,
             "duration_seconds": self.config.assets.video_duration_seconds,
-            "enhance_prompt": self.config.assets.video_enhance_prompt,
             "number_of_videos": 1,
-            "person_generation": self.config.assets.video_person_generation,
-            "resolution": self.config.assets.video_resolution
         }
         if negative_prompt:
             config_kwargs["negative_prompt"] = negative_prompt
         if seed is not None:
             config_kwargs["seed"] = seed
-        if style_reference_image is not None:
-            config_kwargs["reference_images"] = [
-                self._genai_types.VideoGenerationReferenceImage(
-                    image=self._genai_types.Image.from_file(location=str(style_reference_image)),
-                    reference_type=self._genai_types.VideoGenerationReferenceType.STYLE,
-                )
-            ]
         if self.config.assets.video_output_gcs_uri:
             config_kwargs["output_gcs_uri"] = self.config.assets.video_output_gcs_uri
         video_config = self._genai_types.GenerateVideosConfig(**config_kwargs)
@@ -331,6 +340,8 @@ class VertexFactoryClient:
         payload = self._strip_binary_fields(self._response_to_dict(result))
         ensure_dir(output_dir)
         videos = getattr(result, "generated_videos", []) or []
+        if not videos:
+            print(f"  [video] WARNING: generated_videos is empty. result attrs: {[a for a in dir(result) if not a.startswith('_')]}", flush=True)
         if videos:
             video_obj = getattr(videos[0], "video", None)
             if video_obj is not None:
@@ -338,6 +349,20 @@ class VertexFactoryClient:
                 if uri:
                     payload["gcs_uri"] = uri
                 video_bytes = getattr(video_obj, "video_bytes", None)
+                if not video_bytes and uri:
+                    # Gemini API Veo returns a download URI instead of inline bytes.
+                    # Try SDK download first, then fall back to authenticated HTTP.
+                    try:
+                        video_bytes = self.video_client.files.download(file=uri)
+                        print(f"  [video] downloaded via SDK from {uri}", flush=True)
+                    except Exception as sdk_exc:
+                        print(f"  [video] SDK download failed ({sdk_exc!r}), trying HTTP…", flush=True)
+                        api_key = os.getenv("GEMINI_API_KEY", "")
+                        download_url = f"{uri}?key={api_key}&alt=media"
+                        req = urllib.request.Request(download_url, headers={"User-Agent": "viral-factory/1.0"})
+                        with urllib.request.urlopen(req, timeout=300) as resp:
+                            video_bytes = resp.read()
+                        print(f"  [video] downloaded via HTTP ({len(video_bytes)} bytes)", flush=True)
                 if video_bytes:
                     video_path = output_dir / f"shot-{shot_index:02d}.mp4"
                     video_path.write_bytes(video_bytes)
@@ -348,7 +373,7 @@ class VertexFactoryClient:
         """Synthesize Arabic speech using Gemini TTS (Egyptian accent)."""
         self._load_genai()
         types = self._genai_types
-        model = self.config.models.tts_model or "gemini-2.5-flash-preview-tts"
+        model = self.config.models.tts_model or "gemini-2.5-pro-preview-tts"
         speech_cfg = types.SpeechConfig(
             language_code=self.config.assets.tts_language_code,
             voice_config=types.VoiceConfig(
@@ -394,7 +419,7 @@ class VertexFactoryClient:
         """Synthesize multi-character dialogue using Gemini TTS (Egyptian accent)."""
         self._load_genai()
         types = self._genai_types
-        model = self.config.models.tts_model or "gemini-2.5-flash-preview-tts"
+        model = self.config.models.tts_model or "gemini-2.5-pro-preview-tts"
         all_pcm: bytes = b""
         for entry in dialogue:
             speaker = entry.get("speaker", "")
